@@ -1,0 +1,3404 @@
+{
+  "genre": "thrash metal",
+  "artists_fetched": 500,
+  "cities": {
+    "Aachen": [
+      "Holy Moses"
+    ],
+    "Aalborg": [
+      "Mercenary"
+    ],
+    "Aarhus": [
+      "HateSphere"
+    ],
+    "Aberdeen": [
+      "Hellripper"
+    ],
+    "Adelaide": [
+      "Truth Corroded"
+    ],
+    "Albacete": [
+      "Angelus Apatrida"
+    ],
+    "Altamonte Springs": [
+      "Death"
+    ],
+    "Amherst": [
+      "Lich King"
+    ],
+    "Antioch": [
+      "Sadus"
+    ],
+    "Argentina": [
+      "Malicia",
+      "Tungsteno",
+      "Vapuleador"
+    ],
+    "Arlington": [
+      "Gammacide",
+      "Pantera",
+      "Warbeast"
+    ],
+    "Arlington County": [
+      "Deceased"
+    ],
+    "Athens": [
+      "Bio‐Cancer",
+      "Chronosphere",
+      "Memorain",
+      "Skeletonwitch",
+      "Suicidal Angels"
+    ],
+    "Austin": [
+      "Skrew"
+    ],
+    "Australia": [
+      "Hobbs' Angel of Death",
+      "Vomitor"
+    ],
+    "Azpeitia": [
+      "Legen Beltza"
+    ],
+    "Baar": [
+      "Messiah"
+    ],
+    "Bad Grönenbach": [
+      "Mystic Prophecy"
+    ],
+    "Balingen": [
+      "Traitor"
+    ],
+    "Bangalore": [
+      "Kryptos"
+    ],
+    "Barcelona": [
+      "Aggression"
+    ],
+    "Bayern": [
+      "Running Death"
+    ],
+    "Beauport": [
+      "Soothsayer"
+    ],
+    "Belo Horizonte": [
+      "Chakal",
+      "Holocausto",
+      "Mutilator",
+      "Overdose",
+      "Sarcófago",
+      "Sepultura"
+    ],
+    "Beograd": [
+      "Space Eater"
+    ],
+    "Berkeley": [
+      "Testament"
+    ],
+    "Berlin": [
+      "Fatal Embrace",
+      "Reactory"
+    ],
+    "Bielsko-Biała": [
+      "Astharoth"
+    ],
+    "Bilbao": [
+      "Anarko"
+    ],
+    "Birmingham": [
+      "Sacrilege"
+    ],
+    "Bogotá": [
+      "Agony",
+      "Perpetual Warfare"
+    ],
+    "Boston": [
+      "Black Mass",
+      "Dream Theater",
+      "Revocation",
+      "Wargasm"
+    ],
+    "Brandon": [
+      "Nasty Savage"
+    ],
+    "Brasília": [
+      "Violator"
+    ],
+    "Bratislava": [
+      "Catastrofy"
+    ],
+    "Braunschweig": [
+      "Dew‐Scented"
+    ],
+    "Brazil": [
+      "Andralls",
+      "Hell Poison"
+    ],
+    "Bremen": [
+      "Lucifuge"
+    ],
+    "Bridgend": [
+      "Bullet for My Valentine"
+    ],
+    "Bristol": [
+      "Onslaught"
+    ],
+    "Broken Hill": [
+      "Fury"
+    ],
+    "Brooklyn": [
+      "Carnivore"
+    ],
+    "Brussels": [
+      "Channel Zero"
+    ],
+    "Budapest": [
+      "Akela"
+    ],
+    "Buenos Aires": [
+      "Vrede"
+    ],
+    "Burgas": [
+      "Staffa"
+    ],
+    "Bærum": [
+      "Susperia"
+    ],
+    "Calgary": [
+      "Hazzerd"
+    ],
+    "Cali": [
+      "Inquisition"
+    ],
+    "Campana": [
+      "Violent Execution"
+    ],
+    "Campinas": [
+      "Kamala"
+    ],
+    "Canada": [
+      "Mortillery"
+    ],
+    "Cannes": [
+      "Heart Attack"
+    ],
+    "Canyon Country": [
+      "Merciless Death"
+    ],
+    "Catalunya": [
+      "Crisix",
+      "Körgull the Exterminator"
+    ],
+    "Catania": [
+      "Schizo"
+    ],
+    "Charleston": [
+      "Byzantine",
+      "Interceptor",
+      "Interceptor"
+    ],
+    "Cheltenham": [
+      "Reign of Fury"
+    ],
+    "Chicago": [
+      "Aftermath",
+      "Bloodletter",
+      "Cyclone Temple",
+      "Devastation",
+      "Funeral Nation",
+      "Macabre",
+      "Master",
+      "Usurper",
+      "Znöwhite"
+    ],
+    "Chile": [
+      "Betrayed",
+      "Nuclear"
+    ],
+    "Cincinnati": [
+      "Acid Mass"
+    ],
+    "Cleveland": [
+      "Chimaira",
+      "Crucified Mortals",
+      "Ringworm",
+      "The Spudmonsters"
+    ],
+    "Corpus Christi": [
+      "Devastation"
+    ],
+    "Czechia": [
+      "Krucipüsk"
+    ],
+    "Dallas": [
+      "Power Trip",
+      "Rotting Corpse"
+    ],
+    "Darmstadt": [
+      "Abandoned"
+    ],
+    "Delta": [
+      "Witches Hammer"
+    ],
+    "Denmark": [
+      "Artillery",
+      "Blackhorned"
+    ],
+    "Denver": [
+      "Havok"
+    ],
+    "Dortmund": [
+      "Angel Dust"
+    ],
+    "Düsseldorf": [
+      "Assassin",
+      "Deathrow"
+    ],
+    "Ecatepec de Morelos": [
+      "Transmetal"
+    ],
+    "Edinburgh": [
+      "The Exploited"
+    ],
+    "Enschede": [
+      "Pestilence"
+    ],
+    "Esbjerg": [
+      "Invocator"
+    ],
+    "Essen": [
+      "Kreator"
+    ],
+    "Eureka": [
+      "Mr. Bungle"
+    ],
+    "Finland": [
+      "Força Macabra",
+      "National Napalm Syndicate"
+    ],
+    "France": [
+      "Agressor"
+    ],
+    "Franconville": [
+      "Massacra"
+    ],
+    "Frankfurt am Main": [
+      "Exumer",
+      "Tankard",
+      "Tankwart"
+    ],
+    "Fredrikstad": [
+      "Under The Oak"
+    ],
+    "Fulda": [
+      "Witchburner"
+    ],
+    "Fusa": [
+      "Inculter"
+    ],
+    "Geldrop": [
+      "Legion of the Damned",
+      "Occult"
+    ],
+    "Gelsenkirchen": [
+      "Sodom"
+    ],
+    "Genova": [
+      "Necrodeath"
+    ],
+    "Germany": [
+      "Accu§er",
+      "Darkness",
+      "Delirious",
+      "Delirium Tremens",
+      "Depressive Age",
+      "Dezperadoz",
+      "Headhunter",
+      "Legal Hate",
+      "Pessimist",
+      "Pänzer",
+      "Torment",
+      "Vendetta",
+      "Vomitory"
+    ],
+    "Gladbeck": [
+      "Grave Digger"
+    ],
+    "González Catán": [
+      "Morthifera"
+    ],
+    "Gothenburg": [
+      "Deathwitch",
+      "Dimension Zero"
+    ],
+    "Graz": [
+      "Deathstorm"
+    ],
+    "Greece": [
+      "Exarsis",
+      "The Crucifier"
+    ],
+    "Guarulhos": [
+      "Power from Hell"
+    ],
+    "Guelph": [
+      "Razor"
+    ],
+    "Hamburg": [
+      "Iron Angel",
+      "Minotaur",
+      "Warpath"
+    ],
+    "Hannover": [
+      "Cripper"
+    ],
+    "Hayward": [
+      "Forbidden"
+    ],
+    "Heilbronn": [
+      "The Prophecy 23"
+    ],
+    "Helsingborg": [
+      "Darkane",
+      "Terror 2000"
+    ],
+    "Herenthout": [
+      "Patriarch"
+    ],
+    "Hermosa Beach": [
+      "Black Flag"
+    ],
+    "Hessen": [
+      "Disbelief"
+    ],
+    "Hochelaga": [
+      "Anonymus"
+    ],
+    "Houston": [
+      "D.R.I."
+    ],
+    "Huddersfield": [
+      "Evile"
+    ],
+    "Huntington Park": [
+      "Slayer"
+    ],
+    "Indiana": [
+      "Steel Aggressor",
+      "Wraith"
+    ],
+    "Indonesia": [
+      "Betrayer"
+    ],
+    "Iquique": [
+      "Atomicide"
+    ],
+    "Ironbridge": [
+      "Cancer"
+    ],
+    "Istanbul": [
+      "Pentagram"
+    ],
+    "Italy": [
+      "Catarrhal Noise",
+      "Game Over",
+      "IN.SI.DIA",
+      "Tossic",
+      "Ul Mik Longobardeath",
+      "Vexed"
+    ],
+    "Japan": [
+      "Impaler",
+      "LOVEBITES",
+      "Shellshock"
+    ],
+    "Jonquière": [
+      "Voivod"
+    ],
+    "Jyväskylä": [
+      "Lost Society"
+    ],
+    "Kaiserslautern": [
+      "Adorned Graves"
+    ],
+    "Kampen": [
+      "Dead Head"
+    ],
+    "Kansas City": [
+      "Ares Kingdom"
+    ],
+    "Karlsruhe": [
+      "Spitfire"
+    ],
+    "Katowice": [
+      "Dragon",
+      "KAT"
+    ],
+    "Kavala": [
+      "Drunkard"
+    ],
+    "Koblenz": [
+      "Desaster"
+    ],
+    "Kolbotn": [
+      "Nekromantheon"
+    ],
+    "Kraków": [
+      "Saratan",
+      "Virgin Snatch"
+    ],
+    "Krasnogorsk": [
+      "Железный Поток"
+    ],
+    "Krefeld": [
+      "Blood Red Angel"
+    ],
+    "Kristinehamn": [
+      "Insane"
+    ],
+    "Kuwana": [
+      "Sabbat"
+    ],
+    "L'Hospitalet de Llobregat": [
+      "Ktulu"
+    ],
+    "Lake Forest": [
+      "Madrost"
+    ],
+    "Landsberg am Lech": [
+      "Dust Bolt"
+    ],
+    "Lappeenranta": [
+      "Mokoma"
+    ],
+    "Laurel": [
+      "Tension"
+    ],
+    "Leeds": [
+      "Cryptic Shift"
+    ],
+    "Lemi": [
+      "Stam1na"
+    ],
+    "Lille": [
+      "Loudblast"
+    ],
+    "Lima": [
+      "Anal Vomit",
+      "Maze of Terror",
+      "Necropsya"
+    ],
+    "Linköping": [
+      "Witchery"
+    ],
+    "Little Rock": [
+      "Living Sacrifice"
+    ],
+    "Lohja": [
+      "Aura of Pestilence"
+    ],
+    "London": [
+      "Angel Witch",
+      "Savage Messiah"
+    ],
+    "Lorraine": [
+      "Mortuary"
+    ],
+    "Los Angeles": [
+      "Agent Steel",
+      "Dark Angel",
+      "Deliverance",
+      "Evildead",
+      "Fear Factory",
+      "Heretic",
+      "Hirax",
+      "Holy Terror",
+      "Megadeth",
+      "Metallica",
+      "Seizure",
+      "Suicidal Tendencies",
+      "Terror"
+    ],
+    "Lörrach": [
+      "Necronomicon"
+    ],
+    "Madrid": [
+      "In Vain"
+    ],
+    "Mainz": [
+      "Nocturnal"
+    ],
+    "Marbach am Neckar": [
+      "Cockroach"
+    ],
+    "Medellín": [
+      "Athanator",
+      "Reencarnación",
+      "Witchtrap"
+    ],
+    "Medicine Hat": [
+      "Disciples of Power"
+    ],
+    "Melbourne": [
+      "Desecrator",
+      "Desecrator",
+      "Deströyer 666",
+      "Envenomed",
+      "Frankenbok",
+      "Harlott",
+      "In Malice's Wake",
+      "King Gizzard & the Lizard Wizard",
+      "Nocturnal Graves"
+    ],
+    "Memphis": [
+      "Evil Army"
+    ],
+    "Messina": [
+      "Bunker 66"
+    ],
+    "Mexico": [
+      "Leprosy",
+      "Leprosy",
+      "Strike Master"
+    ],
+    "Miami": [
+      "Solstice"
+    ],
+    "Middlesbrough": [
+      "Annihilist"
+    ],
+    "Milano": [
+      "Bulldozer"
+    ],
+    "Minsk": [
+      "Vicious Crusade"
+    ],
+    "Mol": [
+      "Exoto"
+    ],
+    "Montréal": [
+      "Aggression",
+      "E‐Force",
+      "Obliveon"
+    ],
+    "Moorabbin": [
+      "Mortification"
+    ],
+    "Moscow": [
+      "Shah",
+      "Б.А.У."
+    ],
+    "München": [
+      "Sieges Even"
+    ],
+    "Münster": [
+      "Taskforce Toxicator"
+    ],
+    "Nagoya": [
+      "OUTRAGE"
+    ],
+    "Netherlands": [
+      "Chainsaw"
+    ],
+    "New Jersey": [
+      "God Forbid",
+      "Hades"
+    ],
+    "New Orleans": [
+      "Exhorder"
+    ],
+    "New York": [
+      "Agnostic Front",
+      "Anthrax",
+      "Cro‐Mags",
+      "Prong",
+      "Pro‐Pain",
+      "Stormtroopers of Death"
+    ],
+    "Newburgh": [
+      "All Out War"
+    ],
+    "Newcastle upon Tyne": [
+      "Hellkrusher",
+      "Skyclad",
+      "Venom"
+    ],
+    "Newquay": [
+      "Rash Decision"
+    ],
+    "Newry": [
+      "Gama Bomb"
+    ],
+    "Newton": [
+      "Anal Cunt"
+    ],
+    "Nordrhein-Westfalen": [
+      "Vulture"
+    ],
+    "Norway": [
+      "Dead Trooper",
+      "Deathhammer",
+      "Vulture Lord"
+    ],
+    "Norwich": [
+      "Shrapnel"
+    ],
+    "Nottingham": [
+      "Sabbat"
+    ],
+    "Nyköping": [
+      "Mezzrow"
+    ],
+    "Oak Harbor": [
+      "The Accüsed"
+    ],
+    "Oakland": [
+      "Bloodbath",
+      "Defiance",
+      "Hatriot",
+      "Lȧȧz Rockit",
+      "Machine Head",
+      "Skitzo"
+    ],
+    "Odense": [
+      "Anoxia"
+    ],
+    "Old Bridge Township": [
+      "Overkill"
+    ],
+    "Olpe": [
+      "Eradicator"
+    ],
+    "Olsztyn": [
+      "Vader"
+    ],
+    "Ondres": [
+      "Gojira"
+    ],
+    "Orlando": [
+      "Trivium"
+    ],
+    "Osaka": [
+      "GARLICBOYS",
+      "Gargoyle",
+      "Narcotic Greed"
+    ],
+    "Oslo": [
+      "Blood Tsunami",
+      "Infernö",
+      "Nocturnal Breed"
+    ],
+    "Osnabrück": [
+      "S.D.I."
+    ],
+    "Ottawa": [
+      "Annihilator",
+      "Exciter"
+    ],
+    "Paris": [
+      "No Return"
+    ],
+    "Patras": [
+      "Death Courier"
+    ],
+    "Peekskill": [
+      "Toxik"
+    ],
+    "Perm": [
+      "Grenouer"
+    ],
+    "Perth": [
+      "Grave Forsaken"
+    ],
+    "Philadelphia": [
+      "Vektor"
+    ],
+    "Phoenix": [
+      "Flotsam and Jetsam",
+      "Sacred Reich",
+      "Soulfly"
+    ],
+    "Pittsburgh": [
+      "Mantic Ritual"
+    ],
+    "Plano": [
+      "Absu"
+    ],
+    "Plzeň": [
+      "Tudor"
+    ],
+    "Poitou-Charentes": [
+      "Manzer"
+    ],
+    "Poland": [
+      "Bloodthirst",
+      "KAT & Roman Kostrzewski",
+      "Turbo",
+      "Wolf Spider"
+    ],
+    "Portland": [
+      "Toxic Holocaust",
+      "Wehrmacht"
+    ],
+    "Porto Alegre": [
+      "Leviaethan"
+    ],
+    "Portugal": [
+      "Angriff",
+      "Ramp"
+    ],
+    "Poviglio": [
+      "Raw Power"
+    ],
+    "Poznań": [
+      "Acid Drinkers"
+    ],
+    "Praha": [
+      "Arakain",
+      "Dymytry",
+      "Törr"
+    ],
+    "Preston": [
+      "Xentrix"
+    ],
+    "Queens": [
+      "Nuclear Assault"
+    ],
+    "Querétaro": [
+      "Tulkas"
+    ],
+    "Québec": [
+      "Riotor"
+    ],
+    "Raleigh": [
+      "Corrosion of Conformity"
+    ],
+    "Reading": [
+      "Sylosis"
+    ],
+    "Richmond": [
+      "Enforced",
+      "Exodus",
+      "GWAR",
+      "Municipal Waste"
+    ],
+    "Rio de Janeiro": [
+      "Dorsal Atlântica",
+      "Farscape"
+    ],
+    "Roma": [
+      "Fomento"
+    ],
+    "Rotterdam": [
+      "Thanatos"
+    ],
+    "Rovereto": [
+      "National Suicide"
+    ],
+    "Russia": [
+      "Hellraiser",
+      "Siberian Meat Grinder",
+      "Д.И.В.",
+      "Коррозия металла",
+      "Мастер"
+    ],
+    "Råde": [
+      "Cadaver"
+    ],
+    "San Antonio": [
+      "Aggravator"
+    ],
+    "San Diego": [
+      "As I Lay Dying",
+      "Psychotic Waltz"
+    ],
+    "San Francisco": [
+      "Death Angel",
+      "Desecration",
+      "Hatchet",
+      "Hexx",
+      "Insanity",
+      "Metal Church",
+      "Possessed",
+      "Skinlab",
+      "Vöetsek"
+    ],
+    "Sankt-Peterburg": [
+      "Tanator"
+    ],
+    "Santa Barbara": [
+      "DevilDriver"
+    ],
+    "Santiago": [
+      "Criminal",
+      "Insecurity",
+      "Massakre"
+    ],
+    "Santos": [
+      "Vulcano"
+    ],
+    "Schleswig": [
+      "Rezet"
+    ],
+    "Seattle": [
+      "Nevermore"
+    ],
+    "Sheboygan": [
+      "Morbid Saint"
+    ],
+    "Singapore": [
+      "Oshiego"
+    ],
+    "Slovenia": [
+      "Eruption"
+    ],
+    "Solingen": [
+      "Accept"
+    ],
+    "Sopron": [
+      "Moby Dick"
+    ],
+    "Spain": [
+      "Dishammer",
+      "Fuck Off",
+      "Omission",
+      "Violblast"
+    ],
+    "Spas-Klepiki": [
+      "Кувалда"
+    ],
+    "St. Louis": [
+      "Anacrusis"
+    ],
+    "Stockholm": [
+      "Decadence",
+      "Dr.Living Dead!"
+    ],
+    "Stoke-on-Trent": [
+      "Discharge"
+    ],
+    "Strängnäs": [
+      "Merciless"
+    ],
+    "Sweden": [
+      "Bestial Mockery",
+      "Eternal Evil",
+      "Guillotine",
+      "Ice Age",
+      "Raise Hell",
+      "Tyranex",
+      "Warfect"
+    ],
+    "Switzerland": [
+      "Poltergeist"
+    ],
+    "Sydney": [
+      "Mortal Sin"
+    ],
+    "São Bernardo do Campo": [
+      "Necromancia"
+    ],
+    "São José dos Campos": [
+      "Attomica"
+    ],
+    "São Paulo": [
+      "Bywar",
+      "Deathgeist",
+      "Genocídio",
+      "Korzus"
+    ],
+    "Tampa": [
+      "Iced Earth"
+    ],
+    "Tampere": [
+      "Urn"
+    ],
+    "Tel Aviv": [
+      "Hammercult"
+    ],
+    "Thessaloniki": [
+      "Firewind"
+    ],
+    "Thunder Bay": [
+      "VHS",
+      "Wreck-Defy"
+    ],
+    "Tilburg": [
+      "Flesh Made Sin"
+    ],
+    "Tokyo": [
+      "Abigail",
+      "Barbatos",
+      "Evil",
+      "GASTUNK",
+      "Jurassic Jade",
+      "Jurassic Jade",
+      "SNAKE"
+    ],
+    "Torino": [
+      "Ultra-Violence"
+    ],
+    "Tornio": [
+      "Terveet Kädet"
+    ],
+    "Toronto": [
+      "Anvil",
+      "Infernäl Mäjesty",
+      "Sacrifice",
+      "Slaughter"
+    ],
+    "Trollhättan": [
+      "The Crown"
+    ],
+    "Tucson": [
+      "Atrophy",
+      "Napalm Strike"
+    ],
+    "Turku": [
+      "Axegressor"
+    ],
+    "Tychy": [
+      "Gallower"
+    ],
+    "Ukraine": [
+      "Bestial Invasion",
+      "Zombie Attack"
+    ],
+    "Umeå": [
+      "Meshuggah"
+    ],
+    "United Kingdom": [
+      "Acid Reign",
+      "Arbitrater",
+      "Detritus",
+      "Helgrind",
+      "Lawnmower Deth",
+      "M-pire of Evil",
+      "Solitary"
+    ],
+    "United States": [
+      "Bad Yodelers",
+      "Believer",
+      "Charred Walls of the Damned",
+      "Crimson Thorn",
+      "Dead Horse",
+      "Diamond Plate",
+      "Détente",
+      "Heathen",
+      "Mordred",
+      "Noisem",
+      "Quick Change",
+      "Ramming Speed",
+      "Realm",
+      "Tormenter",
+      "Tourniquet",
+      "Vio-lence"
+    ],
+    "Uppsala": [
+      "Defleshed",
+      "F.K.Ü."
+    ],
+    "Utting": [
+      "Schweisser"
+    ],
+    "Valparaíso": [
+      "Critical Defiance",
+      "Demoniac"
+    ],
+    "Vancouver": [
+      "Terrifier"
+    ],
+    "Vantaa": [
+      "Dead Shape Figure"
+    ],
+    "Varese": [
+      "Hyades"
+    ],
+    "Velbert": [
+      "Mekong Delta"
+    ],
+    "Venice": [
+      "Cyco Miko"
+    ],
+    "Ventura": [
+      "Warbringer"
+    ],
+    "Vitoria-Gasteiz": [
+      "Soziedad Alkoholika"
+    ],
+    "Vojvodina": [
+      "Alitor"
+    ],
+    "Vällingby": [
+      "Bathory"
+    ],
+    "Växjö": [
+      "Hypnosia"
+    ],
+    "Växjö Municipality": [
+      "Antichrist"
+    ],
+    "Võru": [
+      "Tankist"
+    ],
+    "Walsrode": [
+      "Ravager"
+    ],
+    "Warsaw": [
+      "Chain Reaction",
+      "Species"
+    ],
+    "Weil am Rhein": [
+      "Destruction"
+    ],
+    "Weimar": [
+      "Die Apokalyptischen Reiter"
+    ],
+    "Wettswil am Albis": [
+      "Lunacy"
+    ],
+    "Wien": [
+      "Mortal Strike"
+    ],
+    "Wolfsburg": [
+      "Protector"
+    ],
+    "Worcester": [
+      "Fury"
+    ],
+    "Wrocław": [
+      "Magnus"
+    ],
+    "Wuppertal": [
+      "Contradiction"
+    ],
+    "Würzburg": [
+      "Paradox",
+      "Zerre"
+    ],
+    "Zurich": [
+      "Battalion",
+      "Cataract",
+      "Celtic Frost",
+      "Coroner"
+    ],
+    "Ñuñoa": [
+      "Torturer"
+    ]
+  },
+  "city_ranking": [
+    [
+      "United States",
+      16
+    ],
+    [
+      "Los Angeles",
+      13
+    ],
+    [
+      "Germany",
+      13
+    ],
+    [
+      "Melbourne",
+      9
+    ],
+    [
+      "San Francisco",
+      9
+    ],
+    [
+      "Chicago",
+      9
+    ],
+    [
+      "Tokyo",
+      7
+    ],
+    [
+      "United Kingdom",
+      7
+    ],
+    [
+      "Sweden",
+      7
+    ],
+    [
+      "New York",
+      6
+    ],
+    [
+      "Belo Horizonte",
+      6
+    ],
+    [
+      "Oakland",
+      6
+    ],
+    [
+      "Italy",
+      6
+    ],
+    [
+      "Russia",
+      5
+    ],
+    [
+      "Athens",
+      5
+    ],
+    [
+      "Boston",
+      4
+    ],
+    [
+      "Richmond",
+      4
+    ],
+    [
+      "Poland",
+      4
+    ],
+    [
+      "Toronto",
+      4
+    ],
+    [
+      "Zurich",
+      4
+    ],
+    [
+      "Cleveland",
+      4
+    ],
+    [
+      "São Paulo",
+      4
+    ],
+    [
+      "Spain",
+      4
+    ],
+    [
+      "Frankfurt am Main",
+      3
+    ],
+    [
+      "Praha",
+      3
+    ],
+    [
+      "Arlington",
+      3
+    ],
+    [
+      "Phoenix",
+      3
+    ],
+    [
+      "Newcastle upon Tyne",
+      3
+    ],
+    [
+      "Montréal",
+      3
+    ],
+    [
+      "Oslo",
+      3
+    ],
+    [
+      "Mexico",
+      3
+    ],
+    [
+      "Japan",
+      3
+    ],
+    [
+      "Charleston",
+      3
+    ],
+    [
+      "Medellín",
+      3
+    ],
+    [
+      "Osaka",
+      3
+    ],
+    [
+      "Hamburg",
+      3
+    ],
+    [
+      "Santiago",
+      3
+    ],
+    [
+      "Norway",
+      3
+    ],
+    [
+      "Argentina",
+      3
+    ],
+    [
+      "Lima",
+      3
+    ],
+    [
+      "Ottawa",
+      2
+    ],
+    [
+      "Geldrop",
+      2
+    ],
+    [
+      "Denmark",
+      2
+    ],
+    [
+      "Portland",
+      2
+    ],
+    [
+      "Rio de Janeiro",
+      2
+    ],
+    [
+      "San Diego",
+      2
+    ],
+    [
+      "Uppsala",
+      2
+    ],
+    [
+      "Düsseldorf",
+      2
+    ],
+    [
+      "Portugal",
+      2
+    ],
+    [
+      "Catalunya",
+      2
+    ],
+    [
+      "Brazil",
+      2
+    ],
+    [
+      "Greece",
+      2
+    ],
+    [
+      "Valparaíso",
+      2
+    ],
+    [
+      "Finland",
+      2
+    ],
+    [
+      "Berlin",
+      2
+    ],
+    [
+      "Katowice",
+      2
+    ],
+    [
+      "Thunder Bay",
+      2
+    ],
+    [
+      "Tucson",
+      2
+    ],
+    [
+      "Würzburg",
+      2
+    ],
+    [
+      "New Jersey",
+      2
+    ],
+    [
+      "Helsingborg",
+      2
+    ],
+    [
+      "Moscow",
+      2
+    ],
+    [
+      "Dallas",
+      2
+    ],
+    [
+      "Australia",
+      2
+    ],
+    [
+      "Stockholm",
+      2
+    ],
+    [
+      "Indiana",
+      2
+    ],
+    [
+      "Gothenburg",
+      2
+    ],
+    [
+      "Kraków",
+      2
+    ],
+    [
+      "London",
+      2
+    ],
+    [
+      "Ukraine",
+      2
+    ],
+    [
+      "Chile",
+      2
+    ],
+    [
+      "Bogotá",
+      2
+    ],
+    [
+      "Warsaw",
+      2
+    ],
+    [
+      "Olsztyn",
+      1
+    ],
+    [
+      "Huntington Park",
+      1
+    ],
+    [
+      "Weil am Rhein",
+      1
+    ],
+    [
+      "Essen",
+      1
+    ],
+    [
+      "Old Bridge Township",
+      1
+    ],
+    [
+      "Tampa",
+      1
+    ],
+    [
+      "Berkeley",
+      1
+    ],
+    [
+      "Jonquière",
+      1
+    ],
+    [
+      "Kuwana",
+      1
+    ],
+    [
+      "Aachen",
+      1
+    ],
+    [
+      "Solingen",
+      1
+    ],
+    [
+      "Nagoya",
+      1
+    ],
+    [
+      "Gelsenkirchen",
+      1
+    ],
+    [
+      "Poviglio",
+      1
+    ],
+    [
+      "Braunschweig",
+      1
+    ],
+    [
+      "Edinburgh",
+      1
+    ],
+    [
+      "Ecatepec de Morelos",
+      1
+    ],
+    [
+      "Tornio",
+      1
+    ],
+    [
+      "Altamonte Springs",
+      1
+    ],
+    [
+      "Koblenz",
+      1
+    ],
+    [
+      "Gladbeck",
+      1
+    ],
+    [
+      "Orlando",
+      1
+    ],
+    [
+      "Huddersfield",
+      1
+    ],
+    [
+      "Stoke-on-Trent",
+      1
+    ],
+    [
+      "Velbert",
+      1
+    ],
+    [
+      "Guelph",
+      1
+    ],
+    [
+      "Lörrach",
+      1
+    ],
+    [
+      "Albacete",
+      1
+    ],
+    [
+      "Vitoria-Gasteiz",
+      1
+    ],
+    [
+      "Poznań",
+      1
+    ],
+    [
+      "Wolfsburg",
+      1
+    ],
+    [
+      "Arlington County",
+      1
+    ],
+    [
+      "Esbjerg",
+      1
+    ],
+    [
+      "Trollhättan",
+      1
+    ],
+    [
+      "Newry",
+      1
+    ],
+    [
+      "Preston",
+      1
+    ],
+    [
+      "Denver",
+      1
+    ],
+    [
+      "Sydney",
+      1
+    ],
+    [
+      "Houston",
+      1
+    ],
+    [
+      "Umeå",
+      1
+    ],
+    [
+      "Czechia",
+      1
+    ],
+    [
+      "Ventura",
+      1
+    ],
+    [
+      "Thessaloniki",
+      1
+    ],
+    [
+      "Enschede",
+      1
+    ],
+    [
+      "Plano",
+      1
+    ],
+    [
+      "Moorabbin",
+      1
+    ],
+    [
+      "Fulda",
+      1
+    ],
+    [
+      "Bridgend",
+      1
+    ],
+    [
+      "Philadelphia",
+      1
+    ],
+    [
+      "Jyväskylä",
+      1
+    ],
+    [
+      "Rotterdam",
+      1
+    ],
+    [
+      "Lille",
+      1
+    ],
+    [
+      "Poitou-Charentes",
+      1
+    ],
+    [
+      "Santos",
+      1
+    ],
+    [
+      "Heilbronn",
+      1
+    ],
+    [
+      "Paris",
+      1
+    ],
+    [
+      "Amherst",
+      1
+    ],
+    [
+      "Santa Barbara",
+      1
+    ],
+    [
+      "Bærum",
+      1
+    ],
+    [
+      "Ironbridge",
+      1
+    ],
+    [
+      "Weimar",
+      1
+    ],
+    [
+      "Bad Grönenbach",
+      1
+    ],
+    [
+      "Kampen",
+      1
+    ],
+    [
+      "Mainz",
+      1
+    ],
+    [
+      "St. Louis",
+      1
+    ],
+    [
+      "Hayward",
+      1
+    ],
+    [
+      "Kolbotn",
+      1
+    ],
+    [
+      "Brussels",
+      1
+    ],
+    [
+      "Hochelaga",
+      1
+    ],
+    [
+      "São José dos Campos",
+      1
+    ],
+    [
+      "Torino",
+      1
+    ],
+    [
+      "Vällingby",
+      1
+    ],
+    [
+      "Sopron",
+      1
+    ],
+    [
+      "Minsk",
+      1
+    ],
+    [
+      "Antioch",
+      1
+    ],
+    [
+      "Lemi",
+      1
+    ],
+    [
+      "Queens",
+      1
+    ],
+    [
+      "Sheboygan",
+      1
+    ],
+    [
+      "Linköping",
+      1
+    ],
+    [
+      "Växjö",
+      1
+    ],
+    [
+      "Norwich",
+      1
+    ],
+    [
+      "Baar",
+      1
+    ],
+    [
+      "Memphis",
+      1
+    ],
+    [
+      "Bangalore",
+      1
+    ],
+    [
+      "Bristol",
+      1
+    ],
+    [
+      "Schleswig",
+      1
+    ],
+    [
+      "Switzerland",
+      1
+    ],
+    [
+      "Newquay",
+      1
+    ],
+    [
+      "Raleigh",
+      1
+    ],
+    [
+      "Lappeenranta",
+      1
+    ],
+    [
+      "Venice",
+      1
+    ],
+    [
+      "Eureka",
+      1
+    ],
+    [
+      "Hannover",
+      1
+    ],
+    [
+      "Bratislava",
+      1
+    ],
+    [
+      "Newton",
+      1
+    ],
+    [
+      "Oak Harbor",
+      1
+    ],
+    [
+      "Wuppertal",
+      1
+    ],
+    [
+      "Nyköping",
+      1
+    ],
+    [
+      "Azpeitia",
+      1
+    ],
+    [
+      "Campinas",
+      1
+    ],
+    [
+      "Aarhus",
+      1
+    ],
+    [
+      "Franconville",
+      1
+    ],
+    [
+      "Tel Aviv",
+      1
+    ],
+    [
+      "Graz",
+      1
+    ],
+    [
+      "Utting",
+      1
+    ],
+    [
+      "Reading",
+      1
+    ],
+    [
+      "Genova",
+      1
+    ],
+    [
+      "Campana",
+      1
+    ],
+    [
+      "Sankt-Peterburg",
+      1
+    ],
+    [
+      "Hermosa Beach",
+      1
+    ],
+    [
+      "Wrocław",
+      1
+    ],
+    [
+      "Nordrhein-Westfalen",
+      1
+    ],
+    [
+      "Kristinehamn",
+      1
+    ],
+    [
+      "Wettswil am Albis",
+      1
+    ],
+    [
+      "Brasília",
+      1
+    ],
+    [
+      "Burgas",
+      1
+    ],
+    [
+      "Indonesia",
+      1
+    ],
+    [
+      "Canada",
+      1
+    ],
+    [
+      "Vancouver",
+      1
+    ],
+    [
+      "Corpus Christi",
+      1
+    ],
+    [
+      "Råde",
+      1
+    ],
+    [
+      "Nottingham",
+      1
+    ],
+    [
+      "Beograd",
+      1
+    ],
+    [
+      "Budapest",
+      1
+    ],
+    [
+      "Brandon",
+      1
+    ],
+    [
+      "Olpe",
+      1
+    ],
+    [
+      "Beauport",
+      1
+    ],
+    [
+      "Varese",
+      1
+    ],
+    [
+      "Darmstadt",
+      1
+    ],
+    [
+      "L'Hospitalet de Llobregat",
+      1
+    ],
+    [
+      "Istanbul",
+      1
+    ],
+    [
+      "Cannes",
+      1
+    ],
+    [
+      "Catania",
+      1
+    ],
+    [
+      "Perm",
+      1
+    ],
+    [
+      "Vantaa",
+      1
+    ],
+    [
+      "Middlesbrough",
+      1
+    ],
+    [
+      "Milano",
+      1
+    ],
+    [
+      "Slovenia",
+      1
+    ],
+    [
+      "Newburgh",
+      1
+    ],
+    [
+      "San Antonio",
+      1
+    ],
+    [
+      "Delta",
+      1
+    ],
+    [
+      "Hessen",
+      1
+    ],
+    [
+      "Adelaide",
+      1
+    ],
+    [
+      "Seattle",
+      1
+    ],
+    [
+      "Messina",
+      1
+    ],
+    [
+      "Spas-Klepiki",
+      1
+    ],
+    [
+      "Bayern",
+      1
+    ],
+    [
+      "Roma",
+      1
+    ],
+    [
+      "Cincinnati",
+      1
+    ],
+    [
+      "Birmingham",
+      1
+    ],
+    [
+      "Perth",
+      1
+    ],
+    [
+      "Plzeň",
+      1
+    ],
+    [
+      "Kansas City",
+      1
+    ],
+    [
+      "Bielsko-Biała",
+      1
+    ],
+    [
+      "Fusa",
+      1
+    ],
+    [
+      "Herenthout",
+      1
+    ],
+    [
+      "Netherlands",
+      1
+    ],
+    [
+      "Québec",
+      1
+    ],
+    [
+      "Mol",
+      1
+    ],
+    [
+      "Osnabrück",
+      1
+    ],
+    [
+      "Calgary",
+      1
+    ],
+    [
+      "Ñuñoa",
+      1
+    ],
+    [
+      "Guarulhos",
+      1
+    ],
+    [
+      "Tychy",
+      1
+    ],
+    [
+      "Lorraine",
+      1
+    ],
+    [
+      "Aalborg",
+      1
+    ],
+    [
+      "Krasnogorsk",
+      1
+    ],
+    [
+      "Canyon Country",
+      1
+    ],
+    [
+      "Münster",
+      1
+    ],
+    [
+      "Odense",
+      1
+    ],
+    [
+      "Madrid",
+      1
+    ],
+    [
+      "Balingen",
+      1
+    ],
+    [
+      "São Bernardo do Campo",
+      1
+    ],
+    [
+      "Tampere",
+      1
+    ],
+    [
+      "Marbach am Neckar",
+      1
+    ],
+    [
+      "Krefeld",
+      1
+    ],
+    [
+      "Vojvodina",
+      1
+    ],
+    [
+      "Cheltenham",
+      1
+    ],
+    [
+      "Leeds",
+      1
+    ],
+    [
+      "München",
+      1
+    ],
+    [
+      "Turku",
+      1
+    ],
+    [
+      "Dortmund",
+      1
+    ],
+    [
+      "Laurel",
+      1
+    ],
+    [
+      "Bilbao",
+      1
+    ],
+    [
+      "Aberdeen",
+      1
+    ],
+    [
+      "Barcelona",
+      1
+    ],
+    [
+      "Võru",
+      1
+    ],
+    [
+      "Iquique",
+      1
+    ],
+    [
+      "Kaiserslautern",
+      1
+    ],
+    [
+      "Worcester",
+      1
+    ],
+    [
+      "Medicine Hat",
+      1
+    ],
+    [
+      "Lake Forest",
+      1
+    ],
+    [
+      "Patras",
+      1
+    ],
+    [
+      "Buenos Aires",
+      1
+    ],
+    [
+      "Porto Alegre",
+      1
+    ],
+    [
+      "France",
+      1
+    ],
+    [
+      "Brooklyn",
+      1
+    ],
+    [
+      "Broken Hill",
+      1
+    ],
+    [
+      "Ondres",
+      1
+    ],
+    [
+      "Bremen",
+      1
+    ],
+    [
+      "González Catán",
+      1
+    ],
+    [
+      "Kavala",
+      1
+    ],
+    [
+      "Landsberg am Lech",
+      1
+    ],
+    [
+      "Wien",
+      1
+    ],
+    [
+      "Växjö Municipality",
+      1
+    ],
+    [
+      "Miami",
+      1
+    ],
+    [
+      "Singapore",
+      1
+    ],
+    [
+      "Little Rock",
+      1
+    ],
+    [
+      "Cali",
+      1
+    ],
+    [
+      "Austin",
+      1
+    ],
+    [
+      "Pittsburgh",
+      1
+    ],
+    [
+      "Lohja",
+      1
+    ],
+    [
+      "Peekskill",
+      1
+    ],
+    [
+      "New Orleans",
+      1
+    ],
+    [
+      "Rovereto",
+      1
+    ],
+    [
+      "Querétaro",
+      1
+    ],
+    [
+      "Fredrikstad",
+      1
+    ],
+    [
+      "Tilburg",
+      1
+    ],
+    [
+      "Walsrode",
+      1
+    ],
+    [
+      "Karlsruhe",
+      1
+    ],
+    [
+      "Strängnäs",
+      1
+    ]
+  ],
+  "metro_ranking": [
+    [
+      "San Francisco Bay Area",
+      21
+    ],
+    [
+      "United States",
+      16
+    ],
+    [
+      "Greater Los Angeles",
+      14
+    ],
+    [
+      "Germany",
+      13
+    ],
+    [
+      "Melbourne",
+      9
+    ],
+    [
+      "Chicago",
+      9
+    ],
+    [
+      "New York metro",
+      8
+    ],
+    [
+      "Tokyo",
+      7
+    ],
+    [
+      "United Kingdom",
+      7
+    ],
+    [
+      "Sweden",
+      7
+    ],
+    [
+      "Belo Horizonte",
+      6
+    ],
+    [
+      "Italy",
+      6
+    ],
+    [
+      "Russia",
+      5
+    ],
+    [
+      "Athens",
+      5
+    ],
+    [
+      "Greater São Paulo",
+      5
+    ],
+    [
+      "Boston",
+      4
+    ],
+    [
+      "Poland",
+      4
+    ],
+    [
+      "Toronto",
+      4
+    ],
+    [
+      "Zurich",
+      4
+    ],
+    [
+      "Cleveland",
+      4
+    ],
+    [
+      "Spain",
+      4
+    ],
+    [
+      "Ruhr region",
+      3
+    ],
+    [
+      "Frankfurt am Main",
+      3
+    ],
+    [
+      "Praha",
+      3
+    ],
+    [
+      "Arlington",
+      3
+    ],
+    [
+      "Phoenix",
+      3
+    ],
+    [
+      "Newcastle upon Tyne",
+      3
+    ],
+    [
+      "Montréal",
+      3
+    ],
+    [
+      "Oslo",
+      3
+    ],
+    [
+      "Mexico",
+      3
+    ],
+    [
+      "Japan",
+      3
+    ],
+    [
+      "Charleston",
+      3
+    ],
+    [
+      "Medellín",
+      3
+    ],
+    [
+      "Osaka",
+      3
+    ],
+    [
+      "Hamburg",
+      3
+    ],
+    [
+      "Santiago",
+      3
+    ],
+    [
+      "Norway",
+      3
+    ],
+    [
+      "Argentina",
+      3
+    ],
+    [
+      "Lima",
+      3
+    ],
+    [
+      "Ottawa",
+      2
+    ],
+    [
+      "Geldrop",
+      2
+    ],
+    [
+      "Denmark",
+      2
+    ],
+    [
+      "Portland",
+      2
+    ],
+    [
+      "Rio de Janeiro",
+      2
+    ],
+    [
+      "San Diego",
+      2
+    ],
+    [
+      "Uppsala",
+      2
+    ],
+    [
+      "Düsseldorf",
+      2
+    ],
+    [
+      "Portugal",
+      2
+    ],
+    [
+      "Catalunya",
+      2
+    ],
+    [
+      "Brazil",
+      2
+    ],
+    [
+      "Greece",
+      2
+    ],
+    [
+      "Valparaíso",
+      2
+    ],
+    [
+      "Finland",
+      2
+    ],
+    [
+      "Berlin",
+      2
+    ],
+    [
+      "Katowice",
+      2
+    ],
+    [
+      "Thunder Bay",
+      2
+    ],
+    [
+      "Tucson",
+      2
+    ],
+    [
+      "Würzburg",
+      2
+    ],
+    [
+      "New Jersey",
+      2
+    ],
+    [
+      "Helsingborg",
+      2
+    ],
+    [
+      "Moscow",
+      2
+    ],
+    [
+      "Dallas",
+      2
+    ],
+    [
+      "Australia",
+      2
+    ],
+    [
+      "Stockholm",
+      2
+    ],
+    [
+      "Indiana",
+      2
+    ],
+    [
+      "Gothenburg",
+      2
+    ],
+    [
+      "Kraków",
+      2
+    ],
+    [
+      "London",
+      2
+    ],
+    [
+      "Ukraine",
+      2
+    ],
+    [
+      "Chile",
+      2
+    ],
+    [
+      "Bogotá",
+      2
+    ],
+    [
+      "Warsaw",
+      2
+    ],
+    [
+      "Olsztyn",
+      1
+    ],
+    [
+      "Weil am Rhein",
+      1
+    ],
+    [
+      "Old Bridge Township",
+      1
+    ],
+    [
+      "Tampa",
+      1
+    ],
+    [
+      "Jonquière",
+      1
+    ],
+    [
+      "Kuwana",
+      1
+    ],
+    [
+      "Aachen",
+      1
+    ],
+    [
+      "Solingen",
+      1
+    ],
+    [
+      "Nagoya",
+      1
+    ],
+    [
+      "Poviglio",
+      1
+    ],
+    [
+      "Braunschweig",
+      1
+    ],
+    [
+      "Edinburgh",
+      1
+    ],
+    [
+      "Ecatepec de Morelos",
+      1
+    ],
+    [
+      "Tornio",
+      1
+    ],
+    [
+      "Altamonte Springs",
+      1
+    ],
+    [
+      "Koblenz",
+      1
+    ],
+    [
+      "Gladbeck",
+      1
+    ],
+    [
+      "Orlando",
+      1
+    ],
+    [
+      "Huddersfield",
+      1
+    ],
+    [
+      "Stoke-on-Trent",
+      1
+    ],
+    [
+      "Velbert",
+      1
+    ],
+    [
+      "Guelph",
+      1
+    ],
+    [
+      "Lörrach",
+      1
+    ],
+    [
+      "Albacete",
+      1
+    ],
+    [
+      "Vitoria-Gasteiz",
+      1
+    ],
+    [
+      "Poznań",
+      1
+    ],
+    [
+      "Wolfsburg",
+      1
+    ],
+    [
+      "Arlington County",
+      1
+    ],
+    [
+      "Esbjerg",
+      1
+    ],
+    [
+      "Trollhättan",
+      1
+    ],
+    [
+      "Newry",
+      1
+    ],
+    [
+      "Preston",
+      1
+    ],
+    [
+      "Denver",
+      1
+    ],
+    [
+      "Sydney",
+      1
+    ],
+    [
+      "Houston",
+      1
+    ],
+    [
+      "Umeå",
+      1
+    ],
+    [
+      "Czechia",
+      1
+    ],
+    [
+      "Ventura",
+      1
+    ],
+    [
+      "Thessaloniki",
+      1
+    ],
+    [
+      "Enschede",
+      1
+    ],
+    [
+      "Plano",
+      1
+    ],
+    [
+      "Moorabbin",
+      1
+    ],
+    [
+      "Fulda",
+      1
+    ],
+    [
+      "Bridgend",
+      1
+    ],
+    [
+      "Philadelphia",
+      1
+    ],
+    [
+      "Jyväskylä",
+      1
+    ],
+    [
+      "Rotterdam",
+      1
+    ],
+    [
+      "Lille",
+      1
+    ],
+    [
+      "Poitou-Charentes",
+      1
+    ],
+    [
+      "Santos",
+      1
+    ],
+    [
+      "Heilbronn",
+      1
+    ],
+    [
+      "Paris",
+      1
+    ],
+    [
+      "Amherst",
+      1
+    ],
+    [
+      "Santa Barbara",
+      1
+    ],
+    [
+      "Bærum",
+      1
+    ],
+    [
+      "Ironbridge",
+      1
+    ],
+    [
+      "Weimar",
+      1
+    ],
+    [
+      "Bad Grönenbach",
+      1
+    ],
+    [
+      "Kampen",
+      1
+    ],
+    [
+      "Mainz",
+      1
+    ],
+    [
+      "St. Louis",
+      1
+    ],
+    [
+      "Kolbotn",
+      1
+    ],
+    [
+      "Brussels",
+      1
+    ],
+    [
+      "Hochelaga",
+      1
+    ],
+    [
+      "São José dos Campos",
+      1
+    ],
+    [
+      "Torino",
+      1
+    ],
+    [
+      "Vällingby",
+      1
+    ],
+    [
+      "Sopron",
+      1
+    ],
+    [
+      "Minsk",
+      1
+    ],
+    [
+      "Antioch",
+      1
+    ],
+    [
+      "Lemi",
+      1
+    ],
+    [
+      "Sheboygan",
+      1
+    ],
+    [
+      "Linköping",
+      1
+    ],
+    [
+      "Växjö",
+      1
+    ],
+    [
+      "Norwich",
+      1
+    ],
+    [
+      "Baar",
+      1
+    ],
+    [
+      "Memphis",
+      1
+    ],
+    [
+      "Bangalore",
+      1
+    ],
+    [
+      "Bristol",
+      1
+    ],
+    [
+      "Schleswig",
+      1
+    ],
+    [
+      "Switzerland",
+      1
+    ],
+    [
+      "Newquay",
+      1
+    ],
+    [
+      "Raleigh",
+      1
+    ],
+    [
+      "Lappeenranta",
+      1
+    ],
+    [
+      "Venice",
+      1
+    ],
+    [
+      "Eureka",
+      1
+    ],
+    [
+      "Hannover",
+      1
+    ],
+    [
+      "Bratislava",
+      1
+    ],
+    [
+      "Newton",
+      1
+    ],
+    [
+      "Oak Harbor",
+      1
+    ],
+    [
+      "Wuppertal",
+      1
+    ],
+    [
+      "Nyköping",
+      1
+    ],
+    [
+      "Azpeitia",
+      1
+    ],
+    [
+      "Campinas",
+      1
+    ],
+    [
+      "Aarhus",
+      1
+    ],
+    [
+      "Franconville",
+      1
+    ],
+    [
+      "Tel Aviv",
+      1
+    ],
+    [
+      "Graz",
+      1
+    ],
+    [
+      "Utting",
+      1
+    ],
+    [
+      "Reading",
+      1
+    ],
+    [
+      "Genova",
+      1
+    ],
+    [
+      "Campana",
+      1
+    ],
+    [
+      "Sankt-Peterburg",
+      1
+    ],
+    [
+      "Hermosa Beach",
+      1
+    ],
+    [
+      "Wrocław",
+      1
+    ],
+    [
+      "Nordrhein-Westfalen",
+      1
+    ],
+    [
+      "Kristinehamn",
+      1
+    ],
+    [
+      "Wettswil am Albis",
+      1
+    ],
+    [
+      "Brasília",
+      1
+    ],
+    [
+      "Burgas",
+      1
+    ],
+    [
+      "Indonesia",
+      1
+    ],
+    [
+      "Canada",
+      1
+    ],
+    [
+      "Vancouver",
+      1
+    ],
+    [
+      "Corpus Christi",
+      1
+    ],
+    [
+      "Råde",
+      1
+    ],
+    [
+      "Nottingham",
+      1
+    ],
+    [
+      "Beograd",
+      1
+    ],
+    [
+      "Budapest",
+      1
+    ],
+    [
+      "Brandon",
+      1
+    ],
+    [
+      "Olpe",
+      1
+    ],
+    [
+      "Beauport",
+      1
+    ],
+    [
+      "Varese",
+      1
+    ],
+    [
+      "Darmstadt",
+      1
+    ],
+    [
+      "L'Hospitalet de Llobregat",
+      1
+    ],
+    [
+      "Istanbul",
+      1
+    ],
+    [
+      "Cannes",
+      1
+    ],
+    [
+      "Catania",
+      1
+    ],
+    [
+      "Perm",
+      1
+    ],
+    [
+      "Vantaa",
+      1
+    ],
+    [
+      "Middlesbrough",
+      1
+    ],
+    [
+      "Milano",
+      1
+    ],
+    [
+      "Slovenia",
+      1
+    ],
+    [
+      "Newburgh",
+      1
+    ],
+    [
+      "San Antonio",
+      1
+    ],
+    [
+      "Delta",
+      1
+    ],
+    [
+      "Hessen",
+      1
+    ],
+    [
+      "Adelaide",
+      1
+    ],
+    [
+      "Seattle",
+      1
+    ],
+    [
+      "Messina",
+      1
+    ],
+    [
+      "Spas-Klepiki",
+      1
+    ],
+    [
+      "Bayern",
+      1
+    ],
+    [
+      "Roma",
+      1
+    ],
+    [
+      "Cincinnati",
+      1
+    ],
+    [
+      "Birmingham",
+      1
+    ],
+    [
+      "Perth",
+      1
+    ],
+    [
+      "Plzeň",
+      1
+    ],
+    [
+      "Kansas City",
+      1
+    ],
+    [
+      "Bielsko-Biała",
+      1
+    ],
+    [
+      "Fusa",
+      1
+    ],
+    [
+      "Herenthout",
+      1
+    ],
+    [
+      "Netherlands",
+      1
+    ],
+    [
+      "Québec",
+      1
+    ],
+    [
+      "Mol",
+      1
+    ],
+    [
+      "Osnabrück",
+      1
+    ],
+    [
+      "Calgary",
+      1
+    ],
+    [
+      "Ñuñoa",
+      1
+    ],
+    [
+      "Tychy",
+      1
+    ],
+    [
+      "Lorraine",
+      1
+    ],
+    [
+      "Aalborg",
+      1
+    ],
+    [
+      "Krasnogorsk",
+      1
+    ],
+    [
+      "Canyon Country",
+      1
+    ],
+    [
+      "Münster",
+      1
+    ],
+    [
+      "Odense",
+      1
+    ],
+    [
+      "Madrid",
+      1
+    ],
+    [
+      "Balingen",
+      1
+    ],
+    [
+      "São Bernardo do Campo",
+      1
+    ],
+    [
+      "Tampere",
+      1
+    ],
+    [
+      "Marbach am Neckar",
+      1
+    ],
+    [
+      "Krefeld",
+      1
+    ],
+    [
+      "Vojvodina",
+      1
+    ],
+    [
+      "Cheltenham",
+      1
+    ],
+    [
+      "Leeds",
+      1
+    ],
+    [
+      "München",
+      1
+    ],
+    [
+      "Turku",
+      1
+    ],
+    [
+      "Laurel",
+      1
+    ],
+    [
+      "Bilbao",
+      1
+    ],
+    [
+      "Aberdeen",
+      1
+    ],
+    [
+      "Barcelona",
+      1
+    ],
+    [
+      "Võru",
+      1
+    ],
+    [
+      "Iquique",
+      1
+    ],
+    [
+      "Kaiserslautern",
+      1
+    ],
+    [
+      "Worcester",
+      1
+    ],
+    [
+      "Medicine Hat",
+      1
+    ],
+    [
+      "Lake Forest",
+      1
+    ],
+    [
+      "Patras",
+      1
+    ],
+    [
+      "Buenos Aires",
+      1
+    ],
+    [
+      "Porto Alegre",
+      1
+    ],
+    [
+      "France",
+      1
+    ],
+    [
+      "Broken Hill",
+      1
+    ],
+    [
+      "Ondres",
+      1
+    ],
+    [
+      "Bremen",
+      1
+    ],
+    [
+      "González Catán",
+      1
+    ],
+    [
+      "Kavala",
+      1
+    ],
+    [
+      "Landsberg am Lech",
+      1
+    ],
+    [
+      "Wien",
+      1
+    ],
+    [
+      "Växjö Municipality",
+      1
+    ],
+    [
+      "Miami",
+      1
+    ],
+    [
+      "Singapore",
+      1
+    ],
+    [
+      "Little Rock",
+      1
+    ],
+    [
+      "Cali",
+      1
+    ],
+    [
+      "Austin",
+      1
+    ],
+    [
+      "Pittsburgh",
+      1
+    ],
+    [
+      "Lohja",
+      1
+    ],
+    [
+      "Peekskill",
+      1
+    ],
+    [
+      "New Orleans",
+      1
+    ],
+    [
+      "Rovereto",
+      1
+    ],
+    [
+      "Querétaro",
+      1
+    ],
+    [
+      "Fredrikstad",
+      1
+    ],
+    [
+      "Tilburg",
+      1
+    ],
+    [
+      "Walsrode",
+      1
+    ],
+    [
+      "Karlsruhe",
+      1
+    ],
+    [
+      "Strängnäs",
+      1
+    ]
+  ]
+}

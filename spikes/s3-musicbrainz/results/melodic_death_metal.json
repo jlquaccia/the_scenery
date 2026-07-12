@@ -1,0 +1,2299 @@
+{
+  "genre": "melodic death metal",
+  "artists_fetched": 300,
+  "cities": {
+    "Aalborg": [
+      "Mnemic"
+    ],
+    "Aalen": [
+      "Parasite Inc."
+    ],
+    "Aarhus": [
+      "HateSphere",
+      "Illdisposed"
+    ],
+    "Adelaide": [
+      "Double Dragon",
+      "Headbore",
+      "Universum"
+    ],
+    "Amos": [
+      "Quo Vadis"
+    ],
+    "Arnhem": [
+      "Deem Index"
+    ],
+    "Athens": [
+      "Aetherian",
+      "AmongRuins"
+    ],
+    "Australia": [
+      "Immorium",
+      "Red Descending"
+    ],
+    "Austria": [
+      "Collapse 7"
+    ],
+    "Avesta": [
+      "Scar Symmetry"
+    ],
+    "Avigliana": [
+      "Disarmonia Mundi"
+    ],
+    "Bad Kreuznach": [
+      "Horrizon"
+    ],
+    "Bamberg": [
+      "Varus"
+    ],
+    "Bari": [
+      "Vinterblot"
+    ],
+    "Beijing": [
+      "Frosty Eve"
+    ],
+    "Bielefeld": [
+      "Mir Zur Feier"
+    ],
+    "Bilbao": [
+      "Rise to Fall"
+    ],
+    "Boden": [
+      "Satariel"
+    ],
+    "Bogotá": [
+      "Under Threat"
+    ],
+    "Borås": [
+      "Evocation"
+    ],
+    "Boutersem": [
+      "Slaughter The Giant"
+    ],
+    "Brussels": [
+      "Fleddy Melculy"
+    ],
+    "Bucaramanga": [
+      "Perpetual"
+    ],
+    "Buenos Aires": [
+      "Acroma"
+    ],
+    "Buffalo": [
+      "The Last Reign"
+    ],
+    "Burgos": [
+      "Mistweaver"
+    ],
+    "Canada": [
+      "Silent Line"
+    ],
+    "Canton": [
+      "Battlecross"
+    ],
+    "Chicago": [
+      "Dead to Fall",
+      "Enforsaken",
+      "Starkill"
+    ],
+    "Chişinău": [
+      "Infected Rain"
+    ],
+    "Ciudad de México": [
+      "Cenotaph"
+    ],
+    "Coburg": [
+      "Varg"
+    ],
+    "Colorado": [
+      "Benightment"
+    ],
+    "Croatia": [
+      "Act of Denial"
+    ],
+    "Czechia": [
+      "Arch of Hell"
+    ],
+    "Datteln": [
+      "Nyktophobia"
+    ],
+    "Deggendorf": [
+      "Nothgard"
+    ],
+    "Denmark": [
+      "Killing Gandhi"
+    ],
+    "Drenthe": [
+      "God Dethroned"
+    ],
+    "Düsseldorf": [
+      "SuidAkrA"
+    ],
+    "Eksjö": [
+      "Orbit Culture"
+    ],
+    "Elizabethtown": [
+      "Abominant"
+    ],
+    "Espoo": [
+      "Children of Bodom",
+      "Norther",
+      "Warmen"
+    ],
+    "Falkenberg": [
+      "Ablaze My Sorrow",
+      "Sonic Syndicate"
+    ],
+    "Falkenberg Municipality": [
+      "The Unguided"
+    ],
+    "Finland": [
+      "Azure",
+      "Bloody Falls",
+      "Code for Silence",
+      "Crystalic",
+      "Damnation Plan",
+      "Division 19",
+      "Enter My Silence",
+      "Ephemerald",
+      "Horizon Ignited",
+      "Mors Subita",
+      "Rage My Bitch",
+      "Swansong",
+      "Synestesia"
+    ],
+    "Finspång": [
+      "Edge of Sanity"
+    ],
+    "Fort Collins": [
+      "Oak, Ash & Thorn"
+    ],
+    "France": [
+      "Hrothgar"
+    ],
+    "Frankfurt am Main": [
+      "Sapiency"
+    ],
+    "Germany": [
+      "All Will Know",
+      "Deadlock",
+      "Empyreal Sorrow",
+      "Grailknights",
+      "Harasai",
+      "Hero's Fate",
+      "Hiraes",
+      "Kadavrik",
+      "Mindreaper",
+      "Soul Demise",
+      "The Atmosfear",
+      "The Atmosfear",
+      "Tragedy of Mine",
+      "Words of Farewell"
+    ],
+    "Ghent": [
+      "Reject the Sickness"
+    ],
+    "Gothenburg": [
+      "Amaranthe",
+      "At the Gates",
+      "Dark Tranquillity",
+      "Dead by April",
+      "Dimension Zero",
+      "In Flames",
+      "Sacrilege"
+    ],
+    "Grand Rapids": [
+      "Still Remains"
+    ],
+    "Graz": [
+      "Edicius' Dream",
+      "Heathen Foray"
+    ],
+    "Greece": [
+      "Exhumation"
+    ],
+    "Greensboro": [
+      "Killwhitneydead."
+    ],
+    "Greenville": [
+      "Æther Realm"
+    ],
+    "Gällivare Municipality": [
+      "Torchbearer"
+    ],
+    "Haarlem": [
+      "Spartan"
+    ],
+    "Halmstad": [
+      "Arch Enemy"
+    ],
+    "Hamburg": [
+      "Dark Age"
+    ],
+    "Hamelin": [
+      "Punish My Heaven"
+    ],
+    "Hampton": [
+      "Foretoken"
+    ],
+    "Helsingborg": [
+      "Darkane",
+      "Soilwork"
+    ],
+    "Helsinki": [
+      "Amorphis",
+      "Dead End Finland",
+      "Ensiferum",
+      "Numento",
+      "Renascent",
+      "Tracedawn",
+      "Voidfallen",
+      "Wintersun",
+      "myGRAIN"
+    ],
+    "Hertfordshire": [
+      "Countless Skies"
+    ],
+    "Hämeenlinna": [
+      "Turisas"
+    ],
+    "Illertissen": [
+      "Fleshcrawl"
+    ],
+    "Indonesia": [
+      "Trauma"
+    ],
+    "Irapuato": [
+      "Agony Lords"
+    ],
+    "Italy": [
+      "Figure of Six",
+      "Through Your Silence"
+    ],
+    "Japan": [
+      "Ares",
+      "Noxious"
+    ],
+    "Jelenia Góra": [
+      "Warbell"
+    ],
+    "Joensuu": [
+      "Insomnium"
+    ],
+    "Judenburg": [
+      "CroworD"
+    ],
+    "Jyväskylä": [
+      "Callidice",
+      "Lucidity"
+    ],
+    "Kalajoki": [
+      "Diablo"
+    ],
+    "Karlsruhe": [
+      "Nachtschatten"
+    ],
+    "Karlstad": [
+      "Eyes Wide Open"
+    ],
+    "Kharkiv": [
+      "Nokturnal Mortum"
+    ],
+    "Kobe": [
+      "Veiled in Scarlet"
+    ],
+    "Kokkola": [
+      "Immortal Souls"
+    ],
+    "Kolding": [
+      "The Arcane Order"
+    ],
+    "Komsomolsk-on-Amur": [
+      "Arcanum Sanctum"
+    ],
+    "Kotka": [
+      "Omnium Gatherum"
+    ],
+    "Kristiansand": [
+      "In Vain"
+    ],
+    "Kungsängen": [
+      "A Canorous Quintet"
+    ],
+    "Kuopio": [
+      "Verjnuarmu"
+    ],
+    "Köln": [
+      "Night in Gales"
+    ],
+    "Lahti": [
+      "Dawn of Solace",
+      "Kill the Romance"
+    ],
+    "Lappeenranta": [
+      "Admire the Grim"
+    ],
+    "Latvia": [
+      "Preternatural"
+    ],
+    "Laudenbach": [
+      "Fragments of Unbecoming"
+    ],
+    "Limburg": [
+      "Callenish Circle"
+    ],
+    "Linz": [
+      "The Morphean"
+    ],
+    "Lithgow": [
+      "Valtari"
+    ],
+    "Liverpool": [
+      "Carcass"
+    ],
+    "Loimaa": [
+      "Defiled Serenity"
+    ],
+    "Ludvika": [
+      "Hypocrisy"
+    ],
+    "Ludwigsburg": [
+      "Atrocity"
+    ],
+    "Ludwigshafen": [
+      "Mystic Circle"
+    ],
+    "Luleå": [
+      "The Duskfall"
+    ],
+    "Luxembourg": [
+      "Feradur"
+    ],
+    "Lyon": [
+      "Destinity"
+    ],
+    "Madrid": [
+      "Eternal Storm"
+    ],
+    "Melbourne": [
+      "Be’lakor",
+      "Orpheus Omega"
+    ],
+    "Merano": [
+      "Ontborg"
+    ],
+    "Mikkeli": [
+      "Bloodred Hourglass",
+      "Naildown"
+    ],
+    "Milano": [
+      "Crown of Autumn"
+    ],
+    "Mjölby": [
+      "King of Asgard"
+    ],
+    "Montréal": [
+      "Kataklysm",
+      "The Agonist",
+      "Your Last Wish"
+    ],
+    "Moscow": [
+      "Б.А.У."
+    ],
+    "Muhos": [
+      "Sentenced"
+    ],
+    "Mérida": [
+      "The Genotype"
+    ],
+    "Münster": [
+      "Misery Speaks",
+      "Neaera"
+    ],
+    "Naestved Municipality": [
+      "Withering Surface"
+    ],
+    "Nashville": [
+      "Inferi"
+    ],
+    "Nastola": [
+      "Before the Dawn"
+    ],
+    "Netherlands": [
+      "Chiraw",
+      "The New Dominion"
+    ],
+    "New Delhi": [
+      "Acrid Semblance"
+    ],
+    "New Jersey": [
+      "Daughter Chaos",
+      "God Forbid"
+    ],
+    "New York": [
+      "Lipoma"
+    ],
+    "New Zealand": [
+      "Euphoreon"
+    ],
+    "Niedersachsen": [
+      "Final Cry"
+    ],
+    "Nordhausen": [
+      "Zero Degree"
+    ],
+    "Norrköping": [
+      "System Shock"
+    ],
+    "Norway": [
+      "She Said Destroy",
+      "Sublime Eyes"
+    ],
+    "Nurmijärvi": [
+      "D Creation"
+    ],
+    "Oldenburg": [
+      "Craving"
+    ],
+    "Ontario": [
+      "Odium"
+    ],
+    "Osaka": [
+      "Blood Stain Child"
+    ],
+    "Osnabrück": [
+      "Dawn of Disease"
+    ],
+    "Oulu": [
+      "Kalmah"
+    ],
+    "Padova": [
+      "Algol"
+    ],
+    "Paris": [
+      "Fractal Gates"
+    ],
+    "Perlis": [
+      "Sil Khannaz"
+    ],
+    "Perth": [
+      "The Harvest Trail"
+    ],
+    "Poland": [
+      "Victimized"
+    ],
+    "Pori": [
+      "Mors Principium Est"
+    ],
+    "Portugal": [
+      "My Enchantment"
+    ],
+    "Pudasjärvi": [
+      "Eternal Tears of Sorrow"
+    ],
+    "Puglia": [
+      "Subliminal Fear"
+    ],
+    "Püspökladány": [
+      "Dying Wish"
+    ],
+    "Regina": [
+      "Into Eternity"
+    ],
+    "Ribe": [
+      "Aphyxion"
+    ],
+    "Roma": [
+      "Black Therapy"
+    ],
+    "Romania": [
+      "L.O.S.T."
+    ],
+    "Rovaniemi": [
+      "I Am Your God"
+    ],
+    "Russia": [
+      "Biorate",
+      "Dorgmooth",
+      "Everlost",
+      "Fall From Reality",
+      "Nimphaion",
+      "Viper Inc.",
+      "Откровения дождя"
+    ],
+    "Ryazan": [
+      "Sympuls-E"
+    ],
+    "Saalfeld": [
+      "Heaven Shall Burn"
+    ],
+    "Salvador": [
+      "Malefactor"
+    ],
+    "Samara": [
+      "God Syndrome"
+    ],
+    "San Diego": [
+      "As I Lay Dying"
+    ],
+    "Sankt-Peterburg": [
+      "Dominia"
+    ],
+    "Santa Maria da Feira": [
+      "Blind The Eye"
+    ],
+    "Santos": [
+      "Hugin Munin"
+    ],
+    "Seoul": [
+      "Oathean"
+    ],
+    "Serbia": [
+      "Amon Din"
+    ],
+    "Spain": [
+      "Deathless",
+      "Sound of Silence",
+      "Suru"
+    ],
+    "Springfield": [
+      "All That Remains",
+      "Shadows Fall"
+    ],
+    "Stavanger": [
+      "Purified in Blood"
+    ],
+    "Stockholm": [
+      "Dismember",
+      "Frantic Amber",
+      "Necrophobic",
+      "Necrophobic",
+      "Opeth",
+      "This Ending"
+    ],
+    "Strömstad Municipality": [
+      "Dissection"
+    ],
+    "Svendborg": [
+      "Urkraft"
+    ],
+    "Sweden": [
+      "Carnal Forge",
+      "Gardenian",
+      "Miseration",
+      "NonExist",
+      "The Bereaved",
+      "Unmoored",
+      "Witherscape"
+    ],
+    "Switzerland": [
+      "As the Sun Falls"
+    ],
+    "São Paulo": [
+      "Noldor"
+    ],
+    "Taipei": [
+      "ChthoniC"
+    ],
+    "Tampa": [
+      "The Absence"
+    ],
+    "Tampere": [
+      "Torchia"
+    ],
+    "Tel Aviv": [
+      "Nail Within",
+      "The Fading"
+    ],
+    "Temecula": [
+      "Dark Haven"
+    ],
+    "Thessaloniki": [
+      "Nightrage"
+    ],
+    "Tobolsk": [
+      "Sunless Rise"
+    ],
+    "Tokyo": [
+      "Devil Within",
+      "Intestine Baalism",
+      "My Material Season",
+      "The Art of Mankind",
+      "Thousand Eyes"
+    ],
+    "Toledo": [
+      "Astralborne"
+    ],
+    "Torino": [
+      "Scream 3 Days"
+    ],
+    "Toulouse": [
+      "Aephanemer"
+    ],
+    "Trollhättan": [
+      "The Crown"
+    ],
+    "Trondheim": [
+      "Haunted by Silhouettes"
+    ],
+    "Tumba": [
+      "Amon Amarth"
+    ],
+    "Ukraine": [
+      "Dargothar"
+    ],
+    "United States": [
+      "Aletheian",
+      "Dreaming Dead"
+    ],
+    "Valkeakoski": [
+      "Dark the Suns"
+    ],
+    "Vantaa": [
+      "Dead Shape Figure"
+    ],
+    "Viersen": [
+      "Battlesword"
+    ],
+    "Warburg": [
+      "Burden of Grief"
+    ],
+    "Warsaw": [
+      "Aether"
+    ],
+    "Washington, D.C.": [
+      "Darkest Hour"
+    ],
+    "Waterford Township": [
+      "The Black Dahlia Murder"
+    ],
+    "Westfield": [
+      "Killswitch Engage"
+    ],
+    "Wien": [
+      "Lords of Decadence"
+    ],
+    "Winterthur": [
+      "Eluveitie"
+    ],
+    "Winthrop": [
+      "Unearth"
+    ],
+    "Woodlake": [
+      "Bleeding Through"
+    ],
+    "Ypres": [
+      "The Curse of Millhaven"
+    ],
+    "Ähtäri": [
+      "Noumena"
+    ],
+    "Östersund": [
+      "Chastisement"
+    ]
+  },
+  "city_ranking": [
+    [
+      "Germany",
+      14
+    ],
+    [
+      "Finland",
+      13
+    ],
+    [
+      "Helsinki",
+      9
+    ],
+    [
+      "Gothenburg",
+      7
+    ],
+    [
+      "Russia",
+      7
+    ],
+    [
+      "Sweden",
+      7
+    ],
+    [
+      "Stockholm",
+      6
+    ],
+    [
+      "Tokyo",
+      5
+    ],
+    [
+      "Montréal",
+      3
+    ],
+    [
+      "Espoo",
+      3
+    ],
+    [
+      "Adelaide",
+      3
+    ],
+    [
+      "Chicago",
+      3
+    ],
+    [
+      "Spain",
+      3
+    ],
+    [
+      "Helsingborg",
+      2
+    ],
+    [
+      "Springfield",
+      2
+    ],
+    [
+      "Aarhus",
+      2
+    ],
+    [
+      "Münster",
+      2
+    ],
+    [
+      "Lahti",
+      2
+    ],
+    [
+      "Melbourne",
+      2
+    ],
+    [
+      "Falkenberg",
+      2
+    ],
+    [
+      "Athens",
+      2
+    ],
+    [
+      "United States",
+      2
+    ],
+    [
+      "Jyväskylä",
+      2
+    ],
+    [
+      "Mikkeli",
+      2
+    ],
+    [
+      "Australia",
+      2
+    ],
+    [
+      "Norway",
+      2
+    ],
+    [
+      "Japan",
+      2
+    ],
+    [
+      "Graz",
+      2
+    ],
+    [
+      "New Jersey",
+      2
+    ],
+    [
+      "Netherlands",
+      2
+    ],
+    [
+      "Tel Aviv",
+      2
+    ],
+    [
+      "Italy",
+      2
+    ],
+    [
+      "Halmstad",
+      1
+    ],
+    [
+      "Tumba",
+      1
+    ],
+    [
+      "Köln",
+      1
+    ],
+    [
+      "Drenthe",
+      1
+    ],
+    [
+      "Muhos",
+      1
+    ],
+    [
+      "Beijing",
+      1
+    ],
+    [
+      "Saalfeld",
+      1
+    ],
+    [
+      "Bilbao",
+      1
+    ],
+    [
+      "Finspång",
+      1
+    ],
+    [
+      "Aalen",
+      1
+    ],
+    [
+      "Limburg",
+      1
+    ],
+    [
+      "Kotka",
+      1
+    ],
+    [
+      "Ludvika",
+      1
+    ],
+    [
+      "Ukraine",
+      1
+    ],
+    [
+      "Laudenbach",
+      1
+    ],
+    [
+      "Oulu",
+      1
+    ],
+    [
+      "Ähtäri",
+      1
+    ],
+    [
+      "Regina",
+      1
+    ],
+    [
+      "Washington, D.C.",
+      1
+    ],
+    [
+      "Liverpool",
+      1
+    ],
+    [
+      "Greensboro",
+      1
+    ],
+    [
+      "Avesta",
+      1
+    ],
+    [
+      "Falkenberg Municipality",
+      1
+    ],
+    [
+      "Ludwigsburg",
+      1
+    ],
+    [
+      "Winthrop",
+      1
+    ],
+    [
+      "Düsseldorf",
+      1
+    ],
+    [
+      "Strömstad Municipality",
+      1
+    ],
+    [
+      "Osnabrück",
+      1
+    ],
+    [
+      "Westfield",
+      1
+    ],
+    [
+      "Luleå",
+      1
+    ],
+    [
+      "Kokkola",
+      1
+    ],
+    [
+      "Ludwigshafen",
+      1
+    ],
+    [
+      "Pori",
+      1
+    ],
+    [
+      "Naestved Municipality",
+      1
+    ],
+    [
+      "Joensuu",
+      1
+    ],
+    [
+      "Tobolsk",
+      1
+    ],
+    [
+      "Waterford Township",
+      1
+    ],
+    [
+      "Hämeenlinna",
+      1
+    ],
+    [
+      "Warburg",
+      1
+    ],
+    [
+      "Lithgow",
+      1
+    ],
+    [
+      "Hamburg",
+      1
+    ],
+    [
+      "Mjölby",
+      1
+    ],
+    [
+      "Ribe",
+      1
+    ],
+    [
+      "Kuopio",
+      1
+    ],
+    [
+      "Thessaloniki",
+      1
+    ],
+    [
+      "Moscow",
+      1
+    ],
+    [
+      "Amos",
+      1
+    ],
+    [
+      "Viersen",
+      1
+    ],
+    [
+      "Borås",
+      1
+    ],
+    [
+      "Chişinău",
+      1
+    ],
+    [
+      "Kalajoki",
+      1
+    ],
+    [
+      "Taipei",
+      1
+    ],
+    [
+      "Roma",
+      1
+    ],
+    [
+      "Vantaa",
+      1
+    ],
+    [
+      "Buffalo",
+      1
+    ],
+    [
+      "Hertfordshire",
+      1
+    ],
+    [
+      "Püspökladány",
+      1
+    ],
+    [
+      "Nordhausen",
+      1
+    ],
+    [
+      "Greenville",
+      1
+    ],
+    [
+      "Karlstad",
+      1
+    ],
+    [
+      "Jelenia Góra",
+      1
+    ],
+    [
+      "Switzerland",
+      1
+    ],
+    [
+      "Datteln",
+      1
+    ],
+    [
+      "Oldenburg",
+      1
+    ],
+    [
+      "Milano",
+      1
+    ],
+    [
+      "Bogotá",
+      1
+    ],
+    [
+      "Kristiansand",
+      1
+    ],
+    [
+      "Kolding",
+      1
+    ],
+    [
+      "Toulouse",
+      1
+    ],
+    [
+      "Rovaniemi",
+      1
+    ],
+    [
+      "Burgos",
+      1
+    ],
+    [
+      "Elizabethtown",
+      1
+    ],
+    [
+      "Woodlake",
+      1
+    ],
+    [
+      "Ciudad de México",
+      1
+    ],
+    [
+      "Linz",
+      1
+    ],
+    [
+      "Grand Rapids",
+      1
+    ],
+    [
+      "Madrid",
+      1
+    ],
+    [
+      "Tampere",
+      1
+    ],
+    [
+      "Trollhättan",
+      1
+    ],
+    [
+      "Östersund",
+      1
+    ],
+    [
+      "Canada",
+      1
+    ],
+    [
+      "Austria",
+      1
+    ],
+    [
+      "Brussels",
+      1
+    ],
+    [
+      "San Diego",
+      1
+    ],
+    [
+      "Latvia",
+      1
+    ],
+    [
+      "Winterthur",
+      1
+    ],
+    [
+      "Czechia",
+      1
+    ],
+    [
+      "Frankfurt am Main",
+      1
+    ],
+    [
+      "Eksjö",
+      1
+    ],
+    [
+      "Buenos Aires",
+      1
+    ],
+    [
+      "Judenburg",
+      1
+    ],
+    [
+      "Merano",
+      1
+    ],
+    [
+      "Komsomolsk-on-Amur",
+      1
+    ],
+    [
+      "Pudasjärvi",
+      1
+    ],
+    [
+      "São Paulo",
+      1
+    ],
+    [
+      "Torino",
+      1
+    ],
+    [
+      "Bad Kreuznach",
+      1
+    ],
+    [
+      "Kharkiv",
+      1
+    ],
+    [
+      "Haarlem",
+      1
+    ],
+    [
+      "Deggendorf",
+      1
+    ],
+    [
+      "Nastola",
+      1
+    ],
+    [
+      "Ypres",
+      1
+    ],
+    [
+      "Temecula",
+      1
+    ],
+    [
+      "Nurmijärvi",
+      1
+    ],
+    [
+      "Svendborg",
+      1
+    ],
+    [
+      "Samara",
+      1
+    ],
+    [
+      "Puglia",
+      1
+    ],
+    [
+      "Valkeakoski",
+      1
+    ],
+    [
+      "Seoul",
+      1
+    ],
+    [
+      "Luxembourg",
+      1
+    ],
+    [
+      "Padova",
+      1
+    ],
+    [
+      "Tampa",
+      1
+    ],
+    [
+      "Portugal",
+      1
+    ],
+    [
+      "New Zealand",
+      1
+    ],
+    [
+      "Toledo",
+      1
+    ],
+    [
+      "Gällivare Municipality",
+      1
+    ],
+    [
+      "Denmark",
+      1
+    ],
+    [
+      "Indonesia",
+      1
+    ],
+    [
+      "Perlis",
+      1
+    ],
+    [
+      "Paris",
+      1
+    ],
+    [
+      "Kobe",
+      1
+    ],
+    [
+      "Kungsängen",
+      1
+    ],
+    [
+      "Avigliana",
+      1
+    ],
+    [
+      "Ontario",
+      1
+    ],
+    [
+      "Loimaa",
+      1
+    ],
+    [
+      "Mérida",
+      1
+    ],
+    [
+      "Warsaw",
+      1
+    ],
+    [
+      "Ghent",
+      1
+    ],
+    [
+      "Osaka",
+      1
+    ],
+    [
+      "Santos",
+      1
+    ],
+    [
+      "Niedersachsen",
+      1
+    ],
+    [
+      "Fort Collins",
+      1
+    ],
+    [
+      "Ryazan",
+      1
+    ],
+    [
+      "Sankt-Peterburg",
+      1
+    ],
+    [
+      "Canton",
+      1
+    ],
+    [
+      "Aalborg",
+      1
+    ],
+    [
+      "Wien",
+      1
+    ],
+    [
+      "Nashville",
+      1
+    ],
+    [
+      "Coburg",
+      1
+    ],
+    [
+      "Perth",
+      1
+    ],
+    [
+      "Bucaramanga",
+      1
+    ],
+    [
+      "Trondheim",
+      1
+    ],
+    [
+      "Lyon",
+      1
+    ],
+    [
+      "Norrköping",
+      1
+    ],
+    [
+      "Lappeenranta",
+      1
+    ],
+    [
+      "Santa Maria da Feira",
+      1
+    ],
+    [
+      "Romania",
+      1
+    ],
+    [
+      "Boden",
+      1
+    ],
+    [
+      "Irapuato",
+      1
+    ],
+    [
+      "Hampton",
+      1
+    ],
+    [
+      "Bamberg",
+      1
+    ],
+    [
+      "Boutersem",
+      1
+    ],
+    [
+      "Hamelin",
+      1
+    ],
+    [
+      "Serbia",
+      1
+    ],
+    [
+      "Salvador",
+      1
+    ],
+    [
+      "Colorado",
+      1
+    ],
+    [
+      "Illertissen",
+      1
+    ],
+    [
+      "Arnhem",
+      1
+    ],
+    [
+      "Karlsruhe",
+      1
+    ],
+    [
+      "Poland",
+      1
+    ],
+    [
+      "France",
+      1
+    ],
+    [
+      "Croatia",
+      1
+    ],
+    [
+      "New Delhi",
+      1
+    ],
+    [
+      "Bari",
+      1
+    ],
+    [
+      "Bielefeld",
+      1
+    ],
+    [
+      "Greece",
+      1
+    ],
+    [
+      "Stavanger",
+      1
+    ],
+    [
+      "New York",
+      1
+    ]
+  ],
+  "metro_ranking": [
+    [
+      "Germany",
+      14
+    ],
+    [
+      "Finland",
+      13
+    ],
+    [
+      "Helsinki",
+      9
+    ],
+    [
+      "Gothenburg",
+      7
+    ],
+    [
+      "Russia",
+      7
+    ],
+    [
+      "Sweden",
+      7
+    ],
+    [
+      "Stockholm",
+      6
+    ],
+    [
+      "Tokyo",
+      5
+    ],
+    [
+      "Montréal",
+      3
+    ],
+    [
+      "Espoo",
+      3
+    ],
+    [
+      "Adelaide",
+      3
+    ],
+    [
+      "Chicago",
+      3
+    ],
+    [
+      "Spain",
+      3
+    ],
+    [
+      "Helsingborg",
+      2
+    ],
+    [
+      "Springfield",
+      2
+    ],
+    [
+      "Aarhus",
+      2
+    ],
+    [
+      "Münster",
+      2
+    ],
+    [
+      "Lahti",
+      2
+    ],
+    [
+      "Melbourne",
+      2
+    ],
+    [
+      "Falkenberg",
+      2
+    ],
+    [
+      "Athens",
+      2
+    ],
+    [
+      "United States",
+      2
+    ],
+    [
+      "Jyväskylä",
+      2
+    ],
+    [
+      "Mikkeli",
+      2
+    ],
+    [
+      "Australia",
+      2
+    ],
+    [
+      "Norway",
+      2
+    ],
+    [
+      "Japan",
+      2
+    ],
+    [
+      "Graz",
+      2
+    ],
+    [
+      "New Jersey",
+      2
+    ],
+    [
+      "Netherlands",
+      2
+    ],
+    [
+      "Tel Aviv",
+      2
+    ],
+    [
+      "Italy",
+      2
+    ],
+    [
+      "Halmstad",
+      1
+    ],
+    [
+      "Tumba",
+      1
+    ],
+    [
+      "Köln",
+      1
+    ],
+    [
+      "Drenthe",
+      1
+    ],
+    [
+      "Muhos",
+      1
+    ],
+    [
+      "Beijing",
+      1
+    ],
+    [
+      "Saalfeld",
+      1
+    ],
+    [
+      "Bilbao",
+      1
+    ],
+    [
+      "Finspång",
+      1
+    ],
+    [
+      "Aalen",
+      1
+    ],
+    [
+      "Limburg",
+      1
+    ],
+    [
+      "Kotka",
+      1
+    ],
+    [
+      "Ludvika",
+      1
+    ],
+    [
+      "Ukraine",
+      1
+    ],
+    [
+      "Laudenbach",
+      1
+    ],
+    [
+      "Oulu",
+      1
+    ],
+    [
+      "Ähtäri",
+      1
+    ],
+    [
+      "Regina",
+      1
+    ],
+    [
+      "Washington, D.C.",
+      1
+    ],
+    [
+      "Liverpool",
+      1
+    ],
+    [
+      "Greensboro",
+      1
+    ],
+    [
+      "Avesta",
+      1
+    ],
+    [
+      "Falkenberg Municipality",
+      1
+    ],
+    [
+      "Ludwigsburg",
+      1
+    ],
+    [
+      "Winthrop",
+      1
+    ],
+    [
+      "Düsseldorf",
+      1
+    ],
+    [
+      "Strömstad Municipality",
+      1
+    ],
+    [
+      "Osnabrück",
+      1
+    ],
+    [
+      "Westfield",
+      1
+    ],
+    [
+      "Luleå",
+      1
+    ],
+    [
+      "Kokkola",
+      1
+    ],
+    [
+      "Ludwigshafen",
+      1
+    ],
+    [
+      "Pori",
+      1
+    ],
+    [
+      "Naestved Municipality",
+      1
+    ],
+    [
+      "Joensuu",
+      1
+    ],
+    [
+      "Tobolsk",
+      1
+    ],
+    [
+      "Waterford Township",
+      1
+    ],
+    [
+      "Hämeenlinna",
+      1
+    ],
+    [
+      "Warburg",
+      1
+    ],
+    [
+      "Lithgow",
+      1
+    ],
+    [
+      "Hamburg",
+      1
+    ],
+    [
+      "Mjölby",
+      1
+    ],
+    [
+      "Ribe",
+      1
+    ],
+    [
+      "Kuopio",
+      1
+    ],
+    [
+      "Thessaloniki",
+      1
+    ],
+    [
+      "Moscow",
+      1
+    ],
+    [
+      "Amos",
+      1
+    ],
+    [
+      "Viersen",
+      1
+    ],
+    [
+      "Borås",
+      1
+    ],
+    [
+      "Chişinău",
+      1
+    ],
+    [
+      "Kalajoki",
+      1
+    ],
+    [
+      "Taipei",
+      1
+    ],
+    [
+      "Roma",
+      1
+    ],
+    [
+      "Vantaa",
+      1
+    ],
+    [
+      "Buffalo",
+      1
+    ],
+    [
+      "Hertfordshire",
+      1
+    ],
+    [
+      "Püspökladány",
+      1
+    ],
+    [
+      "Nordhausen",
+      1
+    ],
+    [
+      "Greenville",
+      1
+    ],
+    [
+      "Karlstad",
+      1
+    ],
+    [
+      "Jelenia Góra",
+      1
+    ],
+    [
+      "Switzerland",
+      1
+    ],
+    [
+      "Datteln",
+      1
+    ],
+    [
+      "Oldenburg",
+      1
+    ],
+    [
+      "Milano",
+      1
+    ],
+    [
+      "Bogotá",
+      1
+    ],
+    [
+      "Kristiansand",
+      1
+    ],
+    [
+      "Kolding",
+      1
+    ],
+    [
+      "Toulouse",
+      1
+    ],
+    [
+      "Rovaniemi",
+      1
+    ],
+    [
+      "Burgos",
+      1
+    ],
+    [
+      "Elizabethtown",
+      1
+    ],
+    [
+      "Woodlake",
+      1
+    ],
+    [
+      "Ciudad de México",
+      1
+    ],
+    [
+      "Linz",
+      1
+    ],
+    [
+      "Grand Rapids",
+      1
+    ],
+    [
+      "Madrid",
+      1
+    ],
+    [
+      "Tampere",
+      1
+    ],
+    [
+      "Trollhättan",
+      1
+    ],
+    [
+      "Östersund",
+      1
+    ],
+    [
+      "Canada",
+      1
+    ],
+    [
+      "Austria",
+      1
+    ],
+    [
+      "Brussels",
+      1
+    ],
+    [
+      "San Diego",
+      1
+    ],
+    [
+      "Latvia",
+      1
+    ],
+    [
+      "Winterthur",
+      1
+    ],
+    [
+      "Czechia",
+      1
+    ],
+    [
+      "Frankfurt am Main",
+      1
+    ],
+    [
+      "Eksjö",
+      1
+    ],
+    [
+      "Buenos Aires",
+      1
+    ],
+    [
+      "Judenburg",
+      1
+    ],
+    [
+      "Merano",
+      1
+    ],
+    [
+      "Komsomolsk-on-Amur",
+      1
+    ],
+    [
+      "Pudasjärvi",
+      1
+    ],
+    [
+      "Greater São Paulo",
+      1
+    ],
+    [
+      "Torino",
+      1
+    ],
+    [
+      "Bad Kreuznach",
+      1
+    ],
+    [
+      "Kharkiv",
+      1
+    ],
+    [
+      "Haarlem",
+      1
+    ],
+    [
+      "Deggendorf",
+      1
+    ],
+    [
+      "Nastola",
+      1
+    ],
+    [
+      "Ypres",
+      1
+    ],
+    [
+      "Temecula",
+      1
+    ],
+    [
+      "Nurmijärvi",
+      1
+    ],
+    [
+      "Svendborg",
+      1
+    ],
+    [
+      "Samara",
+      1
+    ],
+    [
+      "Puglia",
+      1
+    ],
+    [
+      "Valkeakoski",
+      1
+    ],
+    [
+      "Seoul",
+      1
+    ],
+    [
+      "Luxembourg",
+      1
+    ],
+    [
+      "Padova",
+      1
+    ],
+    [
+      "Tampa",
+      1
+    ],
+    [
+      "Portugal",
+      1
+    ],
+    [
+      "New Zealand",
+      1
+    ],
+    [
+      "Toledo",
+      1
+    ],
+    [
+      "Gällivare Municipality",
+      1
+    ],
+    [
+      "Denmark",
+      1
+    ],
+    [
+      "Indonesia",
+      1
+    ],
+    [
+      "Perlis",
+      1
+    ],
+    [
+      "Paris",
+      1
+    ],
+    [
+      "Kobe",
+      1
+    ],
+    [
+      "Kungsängen",
+      1
+    ],
+    [
+      "Avigliana",
+      1
+    ],
+    [
+      "Ontario",
+      1
+    ],
+    [
+      "Loimaa",
+      1
+    ],
+    [
+      "Mérida",
+      1
+    ],
+    [
+      "Warsaw",
+      1
+    ],
+    [
+      "Ghent",
+      1
+    ],
+    [
+      "Osaka",
+      1
+    ],
+    [
+      "Santos",
+      1
+    ],
+    [
+      "Niedersachsen",
+      1
+    ],
+    [
+      "Fort Collins",
+      1
+    ],
+    [
+      "Ryazan",
+      1
+    ],
+    [
+      "Sankt-Peterburg",
+      1
+    ],
+    [
+      "Canton",
+      1
+    ],
+    [
+      "Aalborg",
+      1
+    ],
+    [
+      "Wien",
+      1
+    ],
+    [
+      "Nashville",
+      1
+    ],
+    [
+      "Coburg",
+      1
+    ],
+    [
+      "Perth",
+      1
+    ],
+    [
+      "Bucaramanga",
+      1
+    ],
+    [
+      "Trondheim",
+      1
+    ],
+    [
+      "Lyon",
+      1
+    ],
+    [
+      "Norrköping",
+      1
+    ],
+    [
+      "Lappeenranta",
+      1
+    ],
+    [
+      "Santa Maria da Feira",
+      1
+    ],
+    [
+      "Romania",
+      1
+    ],
+    [
+      "Boden",
+      1
+    ],
+    [
+      "Irapuato",
+      1
+    ],
+    [
+      "Hampton",
+      1
+    ],
+    [
+      "Bamberg",
+      1
+    ],
+    [
+      "Boutersem",
+      1
+    ],
+    [
+      "Hamelin",
+      1
+    ],
+    [
+      "Serbia",
+      1
+    ],
+    [
+      "Salvador",
+      1
+    ],
+    [
+      "Colorado",
+      1
+    ],
+    [
+      "Illertissen",
+      1
+    ],
+    [
+      "Arnhem",
+      1
+    ],
+    [
+      "Karlsruhe",
+      1
+    ],
+    [
+      "Poland",
+      1
+    ],
+    [
+      "France",
+      1
+    ],
+    [
+      "Croatia",
+      1
+    ],
+    [
+      "New Delhi",
+      1
+    ],
+    [
+      "Bari",
+      1
+    ],
+    [
+      "Bielefeld",
+      1
+    ],
+    [
+      "Greece",
+      1
+    ],
+    [
+      "Stavanger",
+      1
+    ],
+    [
+      "New York metro",
+      1
+    ]
+  ]
+}

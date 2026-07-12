@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "spike-s1-a2ui-angular",
+      "cwd": "spikes/s1-a2ui-angular",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["ng", "serve", "--port", "4300"],
+      "port": 4300
+    }
+  ]
+}

@@ -1,0 +1,1956 @@
+{
+  "genre": "grunge",
+  "artists_fetched": 300,
+  "cities": {
+    "Aberdeen": [
+      "Nirvana"
+    ],
+    "Abingdon-on-Thames": [
+      "Radiohead"
+    ],
+    "Adelaide": [
+      "The Superjesus"
+    ],
+    "Agoura Hills": [
+      "Hoobastank"
+    ],
+    "Amherst": [
+      "Gobblehoof"
+    ],
+    "Annapolis": [
+      "Fire Escape",
+      "Jimmie’s Chicken Shack"
+    ],
+    "Antwerp": [
+      "The Hickey Underworld"
+    ],
+    "Argentina": [
+      "La Cruda"
+    ],
+    "Arlington": [
+      "Life After Youth"
+    ],
+    "Athens": [
+      "R.E.M."
+    ],
+    "Atlanta": [
+      "Stereomud"
+    ],
+    "Auckland": [
+      "Deja Voodoo"
+    ],
+    "Australia": [
+      "General Mayhem",
+      "Sick Puppies",
+      "Spiderbait"
+    ],
+    "Bailiff Bridge": [
+      "Embrace"
+    ],
+    "Baton Rouge": [
+      "Better Than Ezra"
+    ],
+    "Belfast": [
+      "Therapy?"
+    ],
+    "Belton": [
+      "Flyleaf"
+    ],
+    "Benalla": [
+      "Incursion"
+    ],
+    "Berkeley": [
+      "Green Day"
+    ],
+    "Blackwood": [
+      "Manic Street Preachers"
+    ],
+    "Bordeaux": [
+      "Noir Désir"
+    ],
+    "Boston": [
+      "Extreme"
+    ],
+    "Brazil": [
+      "Imperfection"
+    ],
+    "Brighton": [
+      "Blood Red Shoes",
+      "Tigercub"
+    ],
+    "Brisbane": [
+      "Fur",
+      "Powderfinger"
+    ],
+    "Brooklyn": [
+      "Scully"
+    ],
+    "Brussels": [
+      "Lou K"
+    ],
+    "Buffalo": [
+      "Goo Goo Dolls"
+    ],
+    "Burlington": [
+      "Finger Eleven"
+    ],
+    "California": [
+      "Crossing I's Dotting T's"
+    ],
+    "Castleton": [
+      "Celladoor"
+    ],
+    "Charleston": [
+      "Deepfield"
+    ],
+    "Charlestown": [
+      "Days of the New"
+    ],
+    "Chernihiv": [
+      "Димна суміш"
+    ],
+    "Chicago": [
+      "Cuss",
+      "SOiL",
+      "The Smashing Pumpkins",
+      "Veruca Salt"
+    ],
+    "Chile": [
+      "Weichafe"
+    ],
+    "Cincinnati": [
+      "The Afghan Whigs"
+    ],
+    "Clearwater": [
+      "The Almost"
+    ],
+    "Coatbridge": [
+      "Stiltskin"
+    ],
+    "Columbia": [
+      "Crossfade"
+    ],
+    "County Kilkenny": [
+      "Kerbdog"
+    ],
+    "Dallas": [
+      "After a Night of Unsettling Dreams",
+      "Drowning Pool",
+      "Narrow Head"
+    ],
+    "Delta": [
+      "Theory of a Deadman"
+    ],
+    "Denton": [
+      "Deep Blue Something",
+      "Spun"
+    ],
+    "Derby": [
+      "MuddiBrooke"
+    ],
+    "Des Moines": [
+      "Stone Sour"
+    ],
+    "Detroit": [
+      "Sponge"
+    ],
+    "East Lansing": [
+      "The Verve Pipe"
+    ],
+    "Edinburgh": [
+      "Idlewild"
+    ],
+    "Ellensburg": [
+      "Screaming Trees"
+    ],
+    "Erie": [
+      "First to Eleven"
+    ],
+    "Escatawpa": [
+      "3 Doors Down"
+    ],
+    "Europe": [
+      "Tardis"
+    ],
+    "Finland": [
+      "Suburban Tribe"
+    ],
+    "Fort Worth": [
+      "Toadies"
+    ],
+    "France": [
+      "Heckel & Jeckel",
+      "Witness"
+    ],
+    "Fullerton": [
+      "Lit"
+    ],
+    "Gdańsk": [
+      "Illusion"
+    ],
+    "Germany": [
+      "Ophelia"
+    ],
+    "Greece": [
+      "Chinese Basement"
+    ],
+    "Greenville": [
+      "Radish"
+    ],
+    "Göttingen": [
+      "Guano Apes"
+    ],
+    "Hanna": [
+      "Nickelback"
+    ],
+    "Haugesund": [
+      "Årabrot"
+    ],
+    "Heidelberg": [
+      "Liquido"
+    ],
+    "Helsinki": [
+      "Cosmos Tango"
+    ],
+    "Hollywood": [
+      "Warrant"
+    ],
+    "Huntington Beach": [
+      "The Offspring"
+    ],
+    "Isla Vista": [
+      "Ugly Kid Joe"
+    ],
+    "Israel": [
+      "זקני צפת"
+    ],
+    "Istanbul": [
+      "Duman"
+    ],
+    "Jackson": [
+      "Fuel"
+    ],
+    "Jacksonville": [
+      "Cold",
+      "Rein Sanction",
+      "Shinedown"
+    ],
+    "Japan": [
+      "THE BACK HORN"
+    ],
+    "Jefferson City": [
+      "Shaman’s Harvest"
+    ],
+    "Kansas City": [
+      "Puddle of Mudd"
+    ],
+    "Kapellen": [
+      "K’s Choice"
+    ],
+    "Kentucky": [
+      "Bad Monster Black"
+    ],
+    "Knoxville": [
+      "10 Years"
+    ],
+    "Kuala Lumpur": [
+      "Butterfingers"
+    ],
+    "Las Vegas": [
+      "Adelitas Way",
+      "Otherwise"
+    ],
+    "Lausanne": [
+      "Shovel"
+    ],
+    "Lawrence": [
+      "Godsmack",
+      "Paw"
+    ],
+    "Leeds": [
+      "Dinosaur Pile‐Up"
+    ],
+    "Leicester": [
+      "SKAM"
+    ],
+    "Limerick": [
+      "The Cranberries"
+    ],
+    "Little Rock": [
+      "Evanescence"
+    ],
+    "Lochwinnoch": [
+      "OVERHAUL"
+    ],
+    "London": [
+      "Big Joanie",
+      "Blur",
+      "Bush",
+      "Cay",
+      "Keo",
+      "Nirvana",
+      "QueenAdreena"
+    ],
+    "Los Angeles": [
+      "A Perfect Circle",
+      "Audioslave",
+      "Badflower",
+      "Blind Melon",
+      "Dig",
+      "Dogstar",
+      "Hole",
+      "L7",
+      "Lifehouse",
+      "Maroon 5",
+      "Metallica",
+      "Oingo Boingo",
+      "Ramonda Hammer",
+      "Tonic",
+      "Weezer"
+    ],
+    "Los Gatos": [
+      "Trapt"
+    ],
+    "Louisville": [
+      "Tantric"
+    ],
+    "Madison": [
+      "Garbage"
+    ],
+    "Madrid": [
+      "Skizoo"
+    ],
+    "Mandeville": [
+      "12 Stones"
+    ],
+    "Melbourne": [
+      "Cosmic Psychos",
+      "Scott & Charlene’s Wedding"
+    ],
+    "Memphis": [
+      "SafetySuit"
+    ],
+    "Michigan": [
+      "Citizen"
+    ],
+    "Minneapolis": [
+      "Babes in Toyland",
+      "Soul Asylum",
+      "Sugar"
+    ],
+    "Montesano": [
+      "Melvins"
+    ],
+    "Montréal": [
+      "Druidess",
+      "Les Vétérans"
+    ],
+    "Moreno Valley": [
+      "Alien Ant Farm"
+    ],
+    "Moscow": [
+      "Mad Pilot"
+    ],
+    "Murfreesboro": [
+      "Self"
+    ],
+    "Mönchengladbach": [
+      "Sun"
+    ],
+    "Nashville": [
+      "Bully",
+      "Red"
+    ],
+    "New Haven": [
+      "Flowerland"
+    ],
+    "New York": [
+      "Anthrax",
+      "Postmodern Jukebox",
+      "Ruth Ruth",
+      "Sonic Youth",
+      "The Pretty Reckless"
+    ],
+    "New Zealand": [
+      "Shihad"
+    ],
+    "Newcastle": [
+      "Silverchair"
+    ],
+    "Newport": [
+      "Feeder"
+    ],
+    "Nitriansky kraj": [
+      "Gladiator"
+    ],
+    "North Muskegon": [
+      "Pop Evil"
+    ],
+    "Northern Ireland": [
+      "Trucker Diablo"
+    ],
+    "Norwood": [
+      "Three Days Grace"
+    ],
+    "Oklahoma City": [
+      "Skating Polly",
+      "The Nixons"
+    ],
+    "Olympia": [
+      "Earth"
+    ],
+    "Ontario": [
+      "Softcult"
+    ],
+    "Orlando": [
+      "Alter Bridge",
+      "Matchbox Twenty",
+      "No More Lullabies"
+    ],
+    "Oslo": [
+      "Savoy"
+    ],
+    "Ovingham": [
+      "China Drum"
+    ],
+    "Paris": [
+      "A Void",
+      "Sister Iodine",
+      "Toxxic Queen",
+      "Wonderflu"
+    ],
+    "Perth": [
+      "Ammonia",
+      "Gyroscope",
+      "Powder for Pigeons",
+      "Psychedelic Porn Crumpets",
+      "navy june"
+    ],
+    "Phoenix": [
+      "Grey Daze"
+    ],
+    "Plymouth": [
+      "CreepCave"
+    ],
+    "Portland": [
+      "Crackerbash",
+      "Everclear",
+      "Red Fang"
+    ],
+    "Porto Alegre": [
+      "Niil'"
+    ],
+    "Pretoria": [
+      "Seether"
+    ],
+    "Queens": [
+      "Danger Danger",
+      "KISS"
+    ],
+    "Red Lion": [
+      "Halestorm"
+    ],
+    "Redlands": [
+      "Cracker"
+    ],
+    "Richmond": [
+      "Hgual"
+    ],
+    "Rostock": [
+      "Coogans Bluff"
+    ],
+    "Roy": [
+      "Milk Krayt"
+    ],
+    "Russia": [
+      "7раса"
+    ],
+    "Sacramento": [
+      "Oleander"
+    ],
+    "Salt Lake City": [
+      "Citizen Soldier"
+    ],
+    "San Diego": [
+      "Stone Temple Pilots",
+      "Switchfoot",
+      "Wavves"
+    ],
+    "San Francisco": [
+      "4 Non Blondes",
+      "Ain’t",
+      "Third Eye Blind"
+    ],
+    "Sankt-Peterburg": [
+      "Аффинаж"
+    ],
+    "Seattle": [
+      "7 Year Bitch",
+      "Alice in Chains",
+      "Brad",
+      "Candlebox",
+      "Dickless",
+      "Foo Fighters",
+      "Green River",
+      "Gruntruck",
+      "Helms Alee",
+      "Love Battery",
+      "Mad Season",
+      "Mother Love Bone",
+      "Mudhoney",
+      "Painted Shield",
+      "Pearl Jam",
+      "Satchel",
+      "Skin Yard",
+      "Soundgarden",
+      "Sunny Day Real Estate",
+      "Tad",
+      "Temple of the Dog",
+      "The Presidents of the United States of America",
+      "Vendetta Red"
+    ],
+    "Sheffield": [
+      "Def Leppard"
+    ],
+    "South Korea": [
+      "Unchained"
+    ],
+    "Spain": [
+      "Havalina"
+    ],
+    "Springfield": [
+      "Staind"
+    ],
+    "St. Catharines": [
+      "Alexisonfire"
+    ],
+    "St. Louis": [
+      "Modern Day Zero",
+      "Story of the Year"
+    ],
+    "Stewarton": [
+      "Baby Chaos"
+    ],
+    "Stockbridge": [
+      "Collective Soul"
+    ],
+    "Switzerland": [
+      "Bahnhofbuffet Chancental",
+      "Wake"
+    ],
+    "Sydney": [
+      "The Vines"
+    ],
+    "Tallahassee": [
+      "Creed"
+    ],
+    "Teignmouth": [
+      "Muse"
+    ],
+    "Toronto": [
+      "Harem Scarem",
+      "I Mother Earth",
+      "METZ",
+      "Our Lady Peace",
+      "Thornley"
+    ],
+    "Trondheim": [
+      "Motorpsycho"
+    ],
+    "Tucson": [
+      "Supersuckers"
+    ],
+    "Tver": [
+      "Пионерлагерь Пыльная Радуга"
+    ],
+    "United Kingdom": [
+      "Daisy Chainsaw",
+      "Drenge",
+      "Final Coil",
+      "God Damn",
+      "Valve"
+    ],
+    "United States": [
+      "Adema",
+      "Birdbrain",
+      "Comet",
+      "Daughtry",
+      "Future Leaders of the World",
+      "Kutless",
+      "Saving Abel",
+      "Seven Mary Three",
+      "Smile Empty Soul",
+      "Socialburn",
+      "The Fluid"
+    ],
+    "Vancouver": [
+      "Art of Dying",
+      "Default",
+      "Econoline Crush",
+      "Moist"
+    ],
+    "Waldorf": [
+      "Good Charlotte"
+    ],
+    "Warsaw": [
+      "Venflon"
+    ],
+    "Whitby": [
+      "Chastity"
+    ],
+    "Wilkes-Barre": [
+      "Breaking Benjamin"
+    ],
+    "Worthing": [
+      "Royal Blood"
+    ],
+    "Yokohama": [
+      "noodles"
+    ],
+    "York": [
+      "Live"
+    ],
+    "Zion": [
+      "Local H"
+    ],
+    "Örebro": [
+      "Smash Into Pieces"
+    ]
+  },
+  "city_ranking": [
+    [
+      "Seattle",
+      23
+    ],
+    [
+      "Los Angeles",
+      15
+    ],
+    [
+      "United States",
+      11
+    ],
+    [
+      "London",
+      7
+    ],
+    [
+      "New York",
+      5
+    ],
+    [
+      "Toronto",
+      5
+    ],
+    [
+      "Perth",
+      5
+    ],
+    [
+      "United Kingdom",
+      5
+    ],
+    [
+      "Chicago",
+      4
+    ],
+    [
+      "Vancouver",
+      4
+    ],
+    [
+      "Paris",
+      4
+    ],
+    [
+      "Minneapolis",
+      3
+    ],
+    [
+      "San Diego",
+      3
+    ],
+    [
+      "Portland",
+      3
+    ],
+    [
+      "Orlando",
+      3
+    ],
+    [
+      "Jacksonville",
+      3
+    ],
+    [
+      "San Francisco",
+      3
+    ],
+    [
+      "Australia",
+      3
+    ],
+    [
+      "Dallas",
+      3
+    ],
+    [
+      "Queens",
+      2
+    ],
+    [
+      "Brisbane",
+      2
+    ],
+    [
+      "Lawrence",
+      2
+    ],
+    [
+      "Nashville",
+      2
+    ],
+    [
+      "Annapolis",
+      2
+    ],
+    [
+      "Brighton",
+      2
+    ],
+    [
+      "Switzerland",
+      2
+    ],
+    [
+      "Las Vegas",
+      2
+    ],
+    [
+      "St. Louis",
+      2
+    ],
+    [
+      "Denton",
+      2
+    ],
+    [
+      "Oklahoma City",
+      2
+    ],
+    [
+      "Melbourne",
+      2
+    ],
+    [
+      "France",
+      2
+    ],
+    [
+      "Montréal",
+      2
+    ],
+    [
+      "Aberdeen",
+      1
+    ],
+    [
+      "Abingdon-on-Thames",
+      1
+    ],
+    [
+      "Athens",
+      1
+    ],
+    [
+      "Berkeley",
+      1
+    ],
+    [
+      "Sheffield",
+      1
+    ],
+    [
+      "Blackwood",
+      1
+    ],
+    [
+      "Limerick",
+      1
+    ],
+    [
+      "York",
+      1
+    ],
+    [
+      "Madison",
+      1
+    ],
+    [
+      "Teignmouth",
+      1
+    ],
+    [
+      "Stockbridge",
+      1
+    ],
+    [
+      "Montesano",
+      1
+    ],
+    [
+      "Pretoria",
+      1
+    ],
+    [
+      "Newcastle",
+      1
+    ],
+    [
+      "Zion",
+      1
+    ],
+    [
+      "Little Rock",
+      1
+    ],
+    [
+      "Huntington Beach",
+      1
+    ],
+    [
+      "Hanna",
+      1
+    ],
+    [
+      "Erie",
+      1
+    ],
+    [
+      "Waldorf",
+      1
+    ],
+    [
+      "Hollywood",
+      1
+    ],
+    [
+      "Springfield",
+      1
+    ],
+    [
+      "Ellensburg",
+      1
+    ],
+    [
+      "Buffalo",
+      1
+    ],
+    [
+      "Cincinnati",
+      1
+    ],
+    [
+      "Detroit",
+      1
+    ],
+    [
+      "Kapellen",
+      1
+    ],
+    [
+      "Bordeaux",
+      1
+    ],
+    [
+      "Escatawpa",
+      1
+    ],
+    [
+      "Tallahassee",
+      1
+    ],
+    [
+      "Belfast",
+      1
+    ],
+    [
+      "Newport",
+      1
+    ],
+    [
+      "Fort Worth",
+      1
+    ],
+    [
+      "Trondheim",
+      1
+    ],
+    [
+      "Japan",
+      1
+    ],
+    [
+      "Göttingen",
+      1
+    ],
+    [
+      "Edinburgh",
+      1
+    ],
+    [
+      "Boston",
+      1
+    ],
+    [
+      "Sankt-Peterburg",
+      1
+    ],
+    [
+      "Norwood",
+      1
+    ],
+    [
+      "Tucson",
+      1
+    ],
+    [
+      "Redlands",
+      1
+    ],
+    [
+      "Delta",
+      1
+    ],
+    [
+      "Isla Vista",
+      1
+    ],
+    [
+      "Agoura Hills",
+      1
+    ],
+    [
+      "Wilkes-Barre",
+      1
+    ],
+    [
+      "Istanbul",
+      1
+    ],
+    [
+      "Red Lion",
+      1
+    ],
+    [
+      "Kansas City",
+      1
+    ],
+    [
+      "Des Moines",
+      1
+    ],
+    [
+      "Fullerton",
+      1
+    ],
+    [
+      "North Muskegon",
+      1
+    ],
+    [
+      "Adelaide",
+      1
+    ],
+    [
+      "Charlestown",
+      1
+    ],
+    [
+      "Baton Rouge",
+      1
+    ],
+    [
+      "Finland",
+      1
+    ],
+    [
+      "Jackson",
+      1
+    ],
+    [
+      "Columbia",
+      1
+    ],
+    [
+      "Nitriansky kraj",
+      1
+    ],
+    [
+      "Phoenix",
+      1
+    ],
+    [
+      "New Zealand",
+      1
+    ],
+    [
+      "Tver",
+      1
+    ],
+    [
+      "East Lansing",
+      1
+    ],
+    [
+      "Los Gatos",
+      1
+    ],
+    [
+      "Russia",
+      1
+    ],
+    [
+      "St. Catharines",
+      1
+    ],
+    [
+      "Mönchengladbach",
+      1
+    ],
+    [
+      "Bailiff Bridge",
+      1
+    ],
+    [
+      "Yokohama",
+      1
+    ],
+    [
+      "Louisville",
+      1
+    ],
+    [
+      "Gdańsk",
+      1
+    ],
+    [
+      "Sydney",
+      1
+    ],
+    [
+      "Oslo",
+      1
+    ],
+    [
+      "Burlington",
+      1
+    ],
+    [
+      "Roy",
+      1
+    ],
+    [
+      "Leeds",
+      1
+    ],
+    [
+      "Jefferson City",
+      1
+    ],
+    [
+      "Heidelberg",
+      1
+    ],
+    [
+      "Örebro",
+      1
+    ],
+    [
+      "Salt Lake City",
+      1
+    ],
+    [
+      "Chile",
+      1
+    ],
+    [
+      "Leicester",
+      1
+    ],
+    [
+      "Coatbridge",
+      1
+    ],
+    [
+      "Chernihiv",
+      1
+    ],
+    [
+      "Sacramento",
+      1
+    ],
+    [
+      "Belton",
+      1
+    ],
+    [
+      "Worthing",
+      1
+    ],
+    [
+      "Murfreesboro",
+      1
+    ],
+    [
+      "Knoxville",
+      1
+    ],
+    [
+      "Moreno Valley",
+      1
+    ],
+    [
+      "County Kilkenny",
+      1
+    ],
+    [
+      "Kuala Lumpur",
+      1
+    ],
+    [
+      "New Haven",
+      1
+    ],
+    [
+      "Lausanne",
+      1
+    ],
+    [
+      "Ontario",
+      1
+    ],
+    [
+      "Germany",
+      1
+    ],
+    [
+      "Michigan",
+      1
+    ],
+    [
+      "Spain",
+      1
+    ],
+    [
+      "Charleston",
+      1
+    ],
+    [
+      "Haugesund",
+      1
+    ],
+    [
+      "Antwerp",
+      1
+    ],
+    [
+      "Olympia",
+      1
+    ],
+    [
+      "Benalla",
+      1
+    ],
+    [
+      "Amherst",
+      1
+    ],
+    [
+      "Ovingham",
+      1
+    ],
+    [
+      "Mandeville",
+      1
+    ],
+    [
+      "Whitby",
+      1
+    ],
+    [
+      "Brazil",
+      1
+    ],
+    [
+      "Arlington",
+      1
+    ],
+    [
+      "Kentucky",
+      1
+    ],
+    [
+      "Richmond",
+      1
+    ],
+    [
+      "Warsaw",
+      1
+    ],
+    [
+      "Stewarton",
+      1
+    ],
+    [
+      "Moscow",
+      1
+    ],
+    [
+      "Europe",
+      1
+    ],
+    [
+      "Castleton",
+      1
+    ],
+    [
+      "Brussels",
+      1
+    ],
+    [
+      "Brooklyn",
+      1
+    ],
+    [
+      "Helsinki",
+      1
+    ],
+    [
+      "Madrid",
+      1
+    ],
+    [
+      "Rostock",
+      1
+    ],
+    [
+      "Greece",
+      1
+    ],
+    [
+      "Israel",
+      1
+    ],
+    [
+      "Derby",
+      1
+    ],
+    [
+      "Atlanta",
+      1
+    ],
+    [
+      "South Korea",
+      1
+    ],
+    [
+      "Clearwater",
+      1
+    ],
+    [
+      "California",
+      1
+    ],
+    [
+      "Plymouth",
+      1
+    ],
+    [
+      "Lochwinnoch",
+      1
+    ],
+    [
+      "Porto Alegre",
+      1
+    ],
+    [
+      "Northern Ireland",
+      1
+    ],
+    [
+      "Auckland",
+      1
+    ],
+    [
+      "Memphis",
+      1
+    ],
+    [
+      "Argentina",
+      1
+    ],
+    [
+      "Greenville",
+      1
+    ]
+  ],
+  "metro_ranking": [
+    [
+      "Seattle",
+      23
+    ],
+    [
+      "Greater Los Angeles",
+      16
+    ],
+    [
+      "United States",
+      11
+    ],
+    [
+      "New York metro",
+      8
+    ],
+    [
+      "London",
+      7
+    ],
+    [
+      "San Francisco Bay Area",
+      5
+    ],
+    [
+      "Toronto",
+      5
+    ],
+    [
+      "Perth",
+      5
+    ],
+    [
+      "United Kingdom",
+      5
+    ],
+    [
+      "Chicago",
+      4
+    ],
+    [
+      "Vancouver",
+      4
+    ],
+    [
+      "Paris",
+      4
+    ],
+    [
+      "Minneapolis",
+      3
+    ],
+    [
+      "San Diego",
+      3
+    ],
+    [
+      "Portland",
+      3
+    ],
+    [
+      "Orlando",
+      3
+    ],
+    [
+      "Jacksonville",
+      3
+    ],
+    [
+      "Australia",
+      3
+    ],
+    [
+      "Dallas",
+      3
+    ],
+    [
+      "Brisbane",
+      2
+    ],
+    [
+      "Lawrence",
+      2
+    ],
+    [
+      "Nashville",
+      2
+    ],
+    [
+      "Annapolis",
+      2
+    ],
+    [
+      "Brighton",
+      2
+    ],
+    [
+      "Switzerland",
+      2
+    ],
+    [
+      "Las Vegas",
+      2
+    ],
+    [
+      "St. Louis",
+      2
+    ],
+    [
+      "Denton",
+      2
+    ],
+    [
+      "Oklahoma City",
+      2
+    ],
+    [
+      "Melbourne",
+      2
+    ],
+    [
+      "France",
+      2
+    ],
+    [
+      "Montréal",
+      2
+    ],
+    [
+      "Aberdeen",
+      1
+    ],
+    [
+      "Abingdon-on-Thames",
+      1
+    ],
+    [
+      "Athens",
+      1
+    ],
+    [
+      "Sheffield",
+      1
+    ],
+    [
+      "Blackwood",
+      1
+    ],
+    [
+      "Limerick",
+      1
+    ],
+    [
+      "York",
+      1
+    ],
+    [
+      "Madison",
+      1
+    ],
+    [
+      "Teignmouth",
+      1
+    ],
+    [
+      "Stockbridge",
+      1
+    ],
+    [
+      "Montesano",
+      1
+    ],
+    [
+      "Pretoria",
+      1
+    ],
+    [
+      "Newcastle",
+      1
+    ],
+    [
+      "Zion",
+      1
+    ],
+    [
+      "Little Rock",
+      1
+    ],
+    [
+      "Huntington Beach",
+      1
+    ],
+    [
+      "Hanna",
+      1
+    ],
+    [
+      "Erie",
+      1
+    ],
+    [
+      "Waldorf",
+      1
+    ],
+    [
+      "Springfield",
+      1
+    ],
+    [
+      "Ellensburg",
+      1
+    ],
+    [
+      "Buffalo",
+      1
+    ],
+    [
+      "Cincinnati",
+      1
+    ],
+    [
+      "Detroit",
+      1
+    ],
+    [
+      "Kapellen",
+      1
+    ],
+    [
+      "Bordeaux",
+      1
+    ],
+    [
+      "Escatawpa",
+      1
+    ],
+    [
+      "Tallahassee",
+      1
+    ],
+    [
+      "Belfast",
+      1
+    ],
+    [
+      "Newport",
+      1
+    ],
+    [
+      "Fort Worth",
+      1
+    ],
+    [
+      "Trondheim",
+      1
+    ],
+    [
+      "Japan",
+      1
+    ],
+    [
+      "Göttingen",
+      1
+    ],
+    [
+      "Edinburgh",
+      1
+    ],
+    [
+      "Boston",
+      1
+    ],
+    [
+      "Sankt-Peterburg",
+      1
+    ],
+    [
+      "Norwood",
+      1
+    ],
+    [
+      "Tucson",
+      1
+    ],
+    [
+      "Redlands",
+      1
+    ],
+    [
+      "Delta",
+      1
+    ],
+    [
+      "Isla Vista",
+      1
+    ],
+    [
+      "Agoura Hills",
+      1
+    ],
+    [
+      "Wilkes-Barre",
+      1
+    ],
+    [
+      "Istanbul",
+      1
+    ],
+    [
+      "Red Lion",
+      1
+    ],
+    [
+      "Kansas City",
+      1
+    ],
+    [
+      "Des Moines",
+      1
+    ],
+    [
+      "Fullerton",
+      1
+    ],
+    [
+      "North Muskegon",
+      1
+    ],
+    [
+      "Adelaide",
+      1
+    ],
+    [
+      "Charlestown",
+      1
+    ],
+    [
+      "Baton Rouge",
+      1
+    ],
+    [
+      "Finland",
+      1
+    ],
+    [
+      "Jackson",
+      1
+    ],
+    [
+      "Columbia",
+      1
+    ],
+    [
+      "Nitriansky kraj",
+      1
+    ],
+    [
+      "Phoenix",
+      1
+    ],
+    [
+      "New Zealand",
+      1
+    ],
+    [
+      "Tver",
+      1
+    ],
+    [
+      "East Lansing",
+      1
+    ],
+    [
+      "Los Gatos",
+      1
+    ],
+    [
+      "Russia",
+      1
+    ],
+    [
+      "St. Catharines",
+      1
+    ],
+    [
+      "Mönchengladbach",
+      1
+    ],
+    [
+      "Bailiff Bridge",
+      1
+    ],
+    [
+      "Yokohama",
+      1
+    ],
+    [
+      "Louisville",
+      1
+    ],
+    [
+      "Gdańsk",
+      1
+    ],
+    [
+      "Sydney",
+      1
+    ],
+    [
+      "Oslo",
+      1
+    ],
+    [
+      "Burlington",
+      1
+    ],
+    [
+      "Roy",
+      1
+    ],
+    [
+      "Leeds",
+      1
+    ],
+    [
+      "Jefferson City",
+      1
+    ],
+    [
+      "Heidelberg",
+      1
+    ],
+    [
+      "Örebro",
+      1
+    ],
+    [
+      "Salt Lake City",
+      1
+    ],
+    [
+      "Chile",
+      1
+    ],
+    [
+      "Leicester",
+      1
+    ],
+    [
+      "Coatbridge",
+      1
+    ],
+    [
+      "Chernihiv",
+      1
+    ],
+    [
+      "Sacramento",
+      1
+    ],
+    [
+      "Belton",
+      1
+    ],
+    [
+      "Worthing",
+      1
+    ],
+    [
+      "Murfreesboro",
+      1
+    ],
+    [
+      "Knoxville",
+      1
+    ],
+    [
+      "Moreno Valley",
+      1
+    ],
+    [
+      "County Kilkenny",
+      1
+    ],
+    [
+      "Kuala Lumpur",
+      1
+    ],
+    [
+      "New Haven",
+      1
+    ],
+    [
+      "Lausanne",
+      1
+    ],
+    [
+      "Ontario",
+      1
+    ],
+    [
+      "Germany",
+      1
+    ],
+    [
+      "Michigan",
+      1
+    ],
+    [
+      "Spain",
+      1
+    ],
+    [
+      "Charleston",
+      1
+    ],
+    [
+      "Haugesund",
+      1
+    ],
+    [
+      "Antwerp",
+      1
+    ],
+    [
+      "Olympia",
+      1
+    ],
+    [
+      "Benalla",
+      1
+    ],
+    [
+      "Amherst",
+      1
+    ],
+    [
+      "Ovingham",
+      1
+    ],
+    [
+      "Mandeville",
+      1
+    ],
+    [
+      "Whitby",
+      1
+    ],
+    [
+      "Brazil",
+      1
+    ],
+    [
+      "Arlington",
+      1
+    ],
+    [
+      "Kentucky",
+      1
+    ],
+    [
+      "Warsaw",
+      1
+    ],
+    [
+      "Stewarton",
+      1
+    ],
+    [
+      "Moscow",
+      1
+    ],
+    [
+      "Europe",
+      1
+    ],
+    [
+      "Castleton",
+      1
+    ],
+    [
+      "Brussels",
+      1
+    ],
+    [
+      "Helsinki",
+      1
+    ],
+    [
+      "Madrid",
+      1
+    ],
+    [
+      "Rostock",
+      1
+    ],
+    [
+      "Greece",
+      1
+    ],
+    [
+      "Israel",
+      1
+    ],
+    [
+      "Derby",
+      1
+    ],
+    [
+      "Atlanta",
+      1
+    ],
+    [
+      "South Korea",
+      1
+    ],
+    [
+      "Clearwater",
+      1
+    ],
+    [
+      "California",
+      1
+    ],
+    [
+      "Plymouth",
+      1
+    ],
+    [
+      "Lochwinnoch",
+      1
+    ],
+    [
+      "Porto Alegre",
+      1
+    ],
+    [
+      "Northern Ireland",
+      1
+    ],
+    [
+      "Auckland",
+      1
+    ],
+    [
+      "Memphis",
+      1
+    ],
+    [
+      "Argentina",
+      1
+    ],
+    [
+      "Greenville",
+      1
+    ]
+  ]
+}

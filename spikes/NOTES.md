@@ -121,4 +121,35 @@ All three eval-C golden cases pass already — these runs ARE the seed of the go
 
 ## S4 — MySQL checkpointer viability (roadmap 0.4)
 
-_Not started._
+**Date:** 2026-07-11 · **Verdict: GO** ✅
+
+`langgraph-checkpoint-mysql 3.0.0` works against the exact stack S2 validated (langgraph 1.2.9,
+langgraph-checkpoint 4.1.1). `spikes/s4-mysql-checkpointer/checkpoint_test.py` runs a toy graph
+in two **separate processes** per mode: phase 1 writes state, phase 2 resumes it from MySQL —
+both `PyMySQLSaver` (sync) and `AIOMySQLSaver` (async, what FastAPI will use) pass. `setup()`
+auto-creates `checkpoints`, `checkpoint_blobs`, `checkpoint_writes`, `checkpoint_migrations`.
+
+**To reproduce:** start MySQL (`mysqld_safe --datadir=/opt/homebrew/var/mysql`), create db
+`scenery_spike`, then run the four commands in the script docstring.
+
+### Findings (feed into M5, task 5.1)
+
+1. **Maintenance status: acceptable, monitor.** Single-maintainer community package
+   (github.com/tjni/langgraph-checkpoint-mysql); v3.0.0 released 2026-01-23, tracks modern
+   langgraph-checkpoint (>=2.1.2, works with 4.1.1). Fallbacks stay documented: custom saver
+   (DESIGN.md A.3) or LangGraph's official Postgres saver if we ever loosen the MySQL constraint.
+2. **DSN format** is `mysql://user:pass@host:port/db` via `from_conn_string`; context-manager
+   lifecycle matches DESIGN.md A.3's sketch exactly.
+3. **Quirk:** `setup()` re-runs emit a harmless `Table 'checkpoint_migrations' already exists`
+   warning through aiomysql — run setup once at deploy (Liquibase-adjacent init step), not on
+   every app boot, or filter the warning.
+4. Checkpoint tables live alongside app tables in the same schema — name-prefix collision risk
+   is nil (all `checkpoint*`), but keep them out of Liquibase's changelog (the package owns its
+   own migrations via `checkpoint_migrations`).
+
+### Environment notes (for M1 task 1.1)
+
+- **Docker is NOT installed** on this machine — needed for the docker-compose stack at 1.1
+  (install Docker Desktop or colima before starting M1).
+- MySQL 8.4.10 installed via `brew install mysql@8.4` for this spike (server stopped afterward);
+  the project's canonical MySQL comes from docker-compose.

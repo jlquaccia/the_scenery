@@ -51,10 +51,9 @@ Guiding principles:
   *Done when:* a script produces a city ranking from real data + scoring formula v1 is written up.
   *Fallback:* heavier manual curation of seed `scene_signals`.
 
-- [ ] **0.4 — Spike S4: MySQL checkpointer viability.**
-  Verify `langgraph-checkpoint-mysql` is maintained and works against our LangGraph version.
-  *Done when:* a toy graph checkpoints/resumes against MySQL, or a no-go + fallback
-  (custom saver per DESIGN.md A.3, or defer persistence to M5) is recorded.
+- [x] **0.4 — Spike S4: MySQL checkpointer viability.** ✅ **GO** — v3.0.0 persists/resumes across
+  processes (sync + async savers) against langgraph 1.2.9; single-maintainer package, fallbacks
+  stay documented. See `spikes/NOTES.md`.
 
 - [ ] **0.5 — Decision gate: record locked decisions.**
   Write `DECISIONS.md`: scoring formula v1 + weights (Q1), nightly batch freshness for MVP (Q2),

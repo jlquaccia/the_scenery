@@ -55,7 +55,9 @@ Guiding principles:
   processes (sync + async savers) against langgraph 1.2.9; single-maintainer package, fallbacks
   stay documented. See `spikes/NOTES.md`.
 
-- [ ] **0.5 — Decision gate: record locked decisions.**
+- [x] **0.5 — Decision gate: record locked decisions.** ✅ `DECISIONS.md` written — scoring
+  formula v1, nightly batch, anonymous sessions, LangSmith in dev, A2UI v0.9 entry-point pin
+  (+ spike-inherited constraints). **Milestone 0 complete.**
   Write `DECISIONS.md`: scoring formula v1 + weights (Q1), nightly batch freshness for MVP (Q2),
   anonymous sessions / defer auth (Q3), LangSmith for dev tracing (Q5), A2UI version pin (Q7).
   *Done when:* all five decisions recorded with a one-line rationale each.
@@ -82,9 +84,13 @@ Guiding principles:
     replayable/exportable as fixtures (feeds the 2.6 replay harness), and exposes a
     `window.__scenery` debug handle to the renderer (spike S1 had to dig via `ng.getComponent`;
     this bakes the handle in).
+  - **Linters/formatters:** backend **Ruff** (lint + format) + **mypy**; frontend
+    **angular-eslint** + **Prettier** (added to the workspace at 2.1); config committed, wired
+    into VS Code via `.vscode/settings.json` + `extensions.json` (format-on-save, fix-on-save).
   - **`DEBUGGING.md`** cheat sheet tying it together.
   *Done when:* Adminer reachable via compose; a forced backend error shows a rich, correlated
-  traceback; debugpy attach documented and tested; `DEBUGGING.md` covers all of the above.
+  traceback; debugpy attach documented and tested; Ruff/mypy run clean on the scaffold;
+  `DEBUGGING.md` covers all of the above.
 
 - [ ] **1.3 — Liquibase changesets: `genres` + `locations`.**
   SQL-formatted changesets with `--rollback` blocks; changelog-master wiring.

@@ -1,0 +1,53 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?set in .env}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-scenery}
+      # Consumed by backend/db/init/01-create-users.sh on first boot.
+      MYSQL_MIGRATOR_USER: ${MYSQL_MIGRATOR_USER:?set in .env}
+      MYSQL_MIGRATOR_PASSWORD: ${MYSQL_MIGRATOR_PASSWORD:?set in .env}
+      MYSQL_APP_USER: ${MYSQL_APP_USER:?set in .env}
+      MYSQL_APP_PASSWORD: ${MYSQL_APP_PASSWORD:?set in .env}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./backend/db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      # App user, not root; also proves the init script ran.
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u$${MYSQL_APP_USER} -p$${MYSQL_APP_PASSWORD} --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  liquibase:
+    build:
+      context: backend/db
+      dockerfile: Dockerfile.liquibase
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - ./backend/db/changelog:/liquibase/changelog:ro
+    environment:
+      LIQUIBASE_COMMAND_URL: jdbc:mysql://mysql:3306/${MYSQL_DATABASE:-scenery}
+      LIQUIBASE_COMMAND_USERNAME: ${MYSQL_MIGRATOR_USER}
+      LIQUIBASE_COMMAND_PASSWORD: ${MYSQL_MIGRATOR_PASSWORD}
+      LIQUIBASE_COMMAND_CHANGELOG_FILE: changelog/changelog-master.yaml
+    command: update
+
+  backend:
+    build: backend
+    depends_on:
+      mysql:
+        condition: service_healthy
+      liquibase:
+        condition: service_completed_successfully
+    ports:
+      - "8000:8000"
+    environment:
+      MYSQL_DSN: mysql://${MYSQL_APP_USER}:${MYSQL_APP_PASSWORD}@mysql:3306/${MYSQL_DATABASE:-scenery}
+
+volumes:
+  mysql-data:

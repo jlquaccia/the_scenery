@@ -1,0 +1,31 @@
+[project]
+name = "the-scenery-backend"
+version = "0.1.0"
+description = "The Scenery — music scene locator backend"
+requires-python = ">=3.13"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*", "mcp_servers*", "ingestion*", "observability*", "evals*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+# E/W pycodestyle · F pyflakes · I isort · UP pyupgrade · B bugbear · SIM simplify
+select = ["E", "W", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+# Pragmatic strictness: agent-framework libs ship loose types; revisit per-module.
+disallow_untyped_decorators = false
+warn_return_any = false
+
+[[tool.mypy.overrides]]
+module = ["langgraph.*", "langchain_core.*"]
+ignore_missing_imports = true

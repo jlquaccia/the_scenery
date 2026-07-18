@@ -72,7 +72,9 @@ Guiding principles:
   backend Python project bootstrapped (FastAPI app that boots, health endpoint).
   *Done when:* `docker compose up` gives a healthy MySQL and an empty-but-running API.
 
-- [ ] **1.2 — Debugging & DX baseline.**
+- [x] **1.2 — Debugging & DX baseline.** ✅ structlog + rich request-correlated tracebacks
+  (`/debug/boom` demo), debugpy attach tested, LangGraph Studio serving the stub graph,
+  Adminer verified as `scenery_app`, Ruff + mypy clean, `.vscode/` wiring, `DEBUGGING.md`.
   Stand up the debugging toolkit so every later item is easier to diagnose:
   - **Backend:** `structlog` + rich tracebacks (pretty, correlated logs from day one); `debugpy`
     attach config for breakpoints inside graph nodes; **LangGraph Studio** config

@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "scenery": "./app/orchestrator/graph.py:graph"
+  },
+  "env": "../.env"
+}

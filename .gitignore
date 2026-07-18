@@ -1,6 +1,9 @@
 # Secrets / local config
 .env
 
+# LangGraph dev server scratch state (langgraph dev)
+.langgraph_api/
+
 # Python
 __pycache__/
 *.pyc

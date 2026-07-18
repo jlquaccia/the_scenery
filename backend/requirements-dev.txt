@@ -1,0 +1,6 @@
+# Host-side dev tooling (the container only gets requirements.txt).
+-r requirements.txt
+ruff
+mypy
+langgraph
+langgraph-cli[inmem]

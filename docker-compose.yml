@@ -46,8 +46,21 @@ services:
         condition: service_completed_successfully
     ports:
       - "8000:8000"
+      - "5678:5678" # debugpy attach (only listens when DEBUGPY=1)
     environment:
       MYSQL_DSN: mysql://${MYSQL_APP_USER}:${MYSQL_APP_PASSWORD}@mysql:3306/${MYSQL_DATABASE:-scenery}
+      DEBUG_ENDPOINTS: "1" # dev stack: /debug/* endpoints enabled
+      DEBUGPY: ${DEBUGPY:-0} # DEBUGPY=1 docker compose up -d backend → attachable
+
+  adminer:
+    image: adminer:5
+    depends_on:
+      mysql:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+    environment:
+      ADMINER_DEFAULT_SERVER: mysql
 
 volumes:
   mysql-data:

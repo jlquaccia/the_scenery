@@ -1,0 +1,19 @@
+# Secrets / local config
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+
+# OS / editor noise
+.DS_Store
+*.log

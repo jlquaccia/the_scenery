@@ -66,7 +66,8 @@ Guiding principles:
 
 ## Milestone 1 — Data foundation (weeks 1–2)
 
-- [ ] **1.1 — Repo scaffold + docker-compose.**
+- [x] **1.1 — Repo scaffold + docker-compose.** ✅ Skeleton per DESIGN.md §6; compose stack
+  (MySQL 8.4 → Liquibase init → API) healthy end-to-end; Docker via colima.
   Project skeleton per DESIGN.md §6, docker-compose with MySQL + Liquibase init container,
   backend Python project bootstrapped (FastAPI app that boots, health endpoint).
   *Done when:* `docker compose up` gives a healthy MySQL and an empty-but-running API.

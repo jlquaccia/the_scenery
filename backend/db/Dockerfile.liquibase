@@ -1,0 +1,6 @@
+# Official liquibase image + MySQL Connector/J (not bundled for licensing reasons).
+FROM liquibase:4.33
+
+ADD --chown=liquibase:liquibase \
+    https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.3.0/mysql-connector-j-9.3.0.jar \
+    /liquibase/lib/mysql-connector-j.jar

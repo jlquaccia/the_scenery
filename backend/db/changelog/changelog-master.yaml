@@ -1,5 +1,11 @@
 # The Scenery — Liquibase master changelog.
-# Changesets are included in order; each lives in changesets/ as formatted SQL
-# with a --rollback block (see DESIGN.md §3.5). First real changesets land at
-# roadmap items 1.3–1.4.
-databaseChangeLog: []
+# Changesets are included in order; each is formatted SQL with a --rollback block
+# (see DESIGN.md §3.5). The changelog — not the SQLAlchemy models — is the source
+# of truth for the schema.
+databaseChangeLog:
+  - include:
+      file: changesets/001-genres.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changesets/002-locations.sql
+      relativeToChangelogFile: true

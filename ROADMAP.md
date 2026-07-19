@@ -95,7 +95,10 @@ Guiding principles:
   traceback; debugpy attach documented and tested; Ruff/mypy run clean on the scaffold;
   `DEBUGGING.md` covers all of the above.
 
-- [ ] **1.3 — Liquibase changesets: `genres` + `locations`.**
+- [x] **1.3 — Liquibase changesets: `genres` + `locations`.** ✅ Changesets 001/002 applied,
+  rolled back (both tables dropped in reverse order), and re-applied against compose MySQL.
+  Schema deltas from S3: `locations.level` gains `'metro'`; `mb_area_id` added for
+  MusicBrainz identity.
   SQL-formatted changesets with `--rollback` blocks; changelog-master wiring.
   *Done when:* `liquibase update` and `liquibase rollback` both work against the compose MySQL.
 

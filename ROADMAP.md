@@ -102,7 +102,10 @@ Guiding principles:
   SQL-formatted changesets with `--rollback` blocks; changelog-master wiring.
   *Done when:* `liquibase update` and `liquibase rollback` both work against the compose MySQL.
 
-- [ ] **1.4 — Liquibase changesets: `scenes`, `scene_signals`, `conversations`, `messages`.**
+- [x] **1.4 — Liquibase changesets: `scenes`, `scene_signals`, `conversations`, `messages`.** ✅
+  Changesets 003/004 applied + rollback-tested; SQLAlchemy models for all 6 tables;
+  `python -m app.models.validate` diffs models vs migrated DB (CI-ready) — "schema OK".
+  S3 delta: `scene_signals.mb_id` (unique per scene) for ingestion dedup.
   *Done when:* full DESIGN.md §3.3 schema migrates cleanly; SQLAlchemy models match
   (CI-checkable metadata validation).
 

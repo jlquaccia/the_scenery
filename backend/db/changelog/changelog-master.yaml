@@ -15,3 +15,6 @@ databaseChangeLog:
   - include:
       file: changesets/004-conversations.sql
       relativeToChangelogFile: true
+  - include:
+      file: changesets/005-seed-data.sql
+      relativeToChangelogFile: true

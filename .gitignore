@@ -20,3 +20,6 @@ dist/
 # OS / editor noise
 .DS_Store
 *.log
+
+# Ingestion HTTP cache
+backend/ingestion/.cache/

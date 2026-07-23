@@ -109,7 +109,10 @@ Guiding principles:
   *Done when:* full DESIGN.md §3.3 schema migrates cleanly; SQLAlchemy models match
   (CI-checkable metadata validation).
 
-- [ ] **1.5 — Seed data: ~5 genres × ~50 locations.**
+- [x] **1.5 — Seed data: ~5 genres × ~50 locations.** ✅ `ingestion/generate_seed.py`
+  (MusicBrainz + Wikidata coords, cached) emits `005-seed-data.sql` under `context:seed`:
+  9 genres (5 scene-bearing), 110 locations incl. 5 metros, 71 scenes, 210 band signals.
+  Bay Area #1 for thrash, Seattle #1 for grunge — pre-scoring sanity holds.
   `context:seed` changesets (or seed scripts) from MusicBrainz/Wikipedia per spike S3 method.
   *Done when:* dev DB contains genres, locations, scenes, and signals for 5 genres.
 

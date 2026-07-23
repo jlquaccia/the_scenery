@@ -35,6 +35,9 @@ services:
       LIQUIBASE_COMMAND_USERNAME: ${MYSQL_MIGRATOR_USER}
       LIQUIBASE_COMMAND_PASSWORD: ${MYSQL_MIGRATOR_PASSWORD}
       LIQUIBASE_COMMAND_CHANGELOG_FILE: changelog/changelog-master.yaml
+      # Dev stack loads context:seed changesets; prod deploys run without it
+      # (prod data comes from the ingestion pipeline, DESIGN.md §3.5).
+      LIQUIBASE_COMMAND_CONTEXT_FILTER: seed
     command: update
 
   backend:

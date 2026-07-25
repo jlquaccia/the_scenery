@@ -116,7 +116,10 @@ Guiding principles:
   `context:seed` changesets (or seed scripts) from MusicBrainz/Wikipedia per spike S3 method.
   *Done when:* dev DB contains genres, locations, scenes, and signals for 5 genres.
 
-- [ ] **1.6 — Scoring batch job.**
+- [x] **1.6 — Scoring batch job.** ✅ `ingestion/compute_scores.py` implements formula v1:
+  signal-weight rollup city→metro→state→country, normalized 0–100 per (genre, level).
+  Materializes 90 rollup scene rows; scored all 161; idempotent (re-run stable). Rankings
+  hold: Bay Area #1 thrash @ metro, Seattle #1 grunge @ city.
   Implements formula v1 from 0.5; writes `scene_score` + `score_updated_at`.
   *Done when:* running the job produces nonzero, plausible scores for all seeded scenes.
 

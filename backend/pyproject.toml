@@ -29,3 +29,10 @@ warn_return_any = false
 [[tool.mypy.overrides]]
 module = ["langgraph.*", "langchain_core.*"]
 ignore_missing_imports = true
+
+# One-shot seed ETL over arbitrary-shaped MusicBrainz/Wikidata JSON — not
+# type-checked, since annotating dynamic JSON traversal is churn without safety.
+# The runtime scoring job (ingestion.compute_scores) stays fully strict.
+[[tool.mypy.overrides]]
+module = ["ingestion.generate_seed"]
+ignore_errors = true

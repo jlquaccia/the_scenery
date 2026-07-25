@@ -72,7 +72,7 @@ etc. — the fastest way to test tool contracts without an agent in the loop.
 ```bash
 cd backend
 .venv/bin/ruff check . && .venv/bin/ruff format --check .   # lint + format
-.venv/bin/mypy app                                           # strict typing
+.venv/bin/mypy app ingestion                                 # strict typing
 ```
 
 VS Code runs Ruff on save (`.vscode/settings.json`); install prompts come from

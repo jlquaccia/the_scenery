@@ -123,7 +123,12 @@ Guiding principles:
   Implements formula v1 from 0.5; writes `scene_score` + `score_updated_at`.
   *Done when:* running the job produces nonzero, plausible scores for all seeded scenes.
 
-- [ ] **1.7 — `scene_service` + REST endpoints.**
+- [x] **1.7 — `scene_service` + REST endpoints.** ✅ `app/services/scene_service.py`
+  (framework-agnostic: `list_genres`, `resolve_genre`, `query_scenes`, `get_scene_detail`) +
+  Pydantic DTOs in `app/models/schemas.py` and routers in `app/api/`. `top_signals` walks the
+  location subtree so rollup scenes carry their cities' evidence; umbrella genres ("metal")
+  roll up their subgenres. Verified against compose: Bay Area #1 thrash @ metro, Seattle #1
+  grunge @ city, Sweden #1 melodeath @ country.
   `/api/scenes`, `/api/scenes/{id}`, `/api/genres` on the shared service layer.
   *Done when:* `GET /api/scenes?genre=thrash+metal&level=city` returns a ranked list with coords.
 

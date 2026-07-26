@@ -48,6 +48,24 @@ endpoint. Detach any time; `docker compose up -d backend` (without the var) turn
 - **MySQL Workbench / CLI:** host `127.0.0.1:3306`, same credentials. Root exists for
   emergencies only; nothing in the stack uses it.
 
+## REST API (from 1.7)
+
+- **Interactive docs:** http://localhost:8000/docs — every endpoint with its schema, runnable
+  from the browser. `/openapi.json` is the same contract for the frontend (2.x).
+- Quick checks:
+
+```bash
+curl -s "localhost:8000/api/scenes?genre=thrash+metal&level=city&limit=5" | jq
+curl -s localhost:8000/api/scenes/76 | jq            # detail: signals + location path
+curl -s localhost:8000/api/genres | jq
+```
+
+Reading results: `score` is normalized 0–100 **within a (genre, level)**, so 100 just means
+"top of its tier" — never compare a `city` score to a `metro` one. Empty list with a 200 means
+the genre resolved but has no scenes at that level; unknown genres are a 404. Scores come from
+the last `ingestion.compute_scores` run (`score_updated_at` in the detail payload) — if a
+ranking looks stale, re-run that job before debugging the API.
+
 ## LangGraph Studio (agent step-through, real from 3.1)
 
 ```bash

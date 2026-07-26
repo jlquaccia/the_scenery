@@ -8,6 +8,7 @@ import structlog
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import JSONResponse
 
+from app.api import genres, scenes
 from app.logging_config import configure_logging
 
 configure_logging()
@@ -54,6 +55,10 @@ async def request_context(
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok", "service": "the-scenery-api"}
+
+
+app.include_router(scenes.router)
+app.include_router(genres.router)
 
 
 if os.environ.get("DEBUG_ENDPOINTS") == "1":

@@ -63,3 +63,29 @@ class SceneDetail(SceneSummary):
     )
     signal_count: int = 0
     signals: list[SignalOut] = Field(default_factory=list)
+
+
+class ComparedScene(SceneSummary):
+    """One side of a comparison."""
+
+    signal_count: int = 0
+    distinctive_signals: list[str] = Field(
+        default_factory=list, description="Signals this scene has and the others do not."
+    )
+
+
+class SceneComparison(BaseModel):
+    """Side-by-side scenes, with an explicit verdict on whether scores can be compared.
+
+    Scores are normalized per (genre, level), so two 100.0s from different genres or
+    different geo tiers mean "top of its own tier", not "equal". `comparable` says
+    whether a score comparison is meaningful; `caveat` explains it in words the agent
+    can pass through to the user rather than inventing a conclusion.
+    """
+
+    scenes: list[ComparedScene]
+    comparable: bool
+    caveat: str | None = None
+    shared_signals: list[str] = Field(
+        default_factory=list, description="Signals present in every compared scene."
+    )

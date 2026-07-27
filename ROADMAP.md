@@ -132,10 +132,24 @@ Guiding principles:
   `/api/scenes`, `/api/scenes/{id}`, `/api/genres` on the shared service layer.
   *Done when:* `GET /api/scenes?genre=thrash+metal&level=city` returns a ranked list with coords.
 
-- [ ] **1.8 — scene-db MCP server.**
+- [x] **1.8 — scene-db MCP server.** ✅ `mcp_servers/scene_db/server.py` (FastMCP 3.4,
+  streamable-HTTP on :8001/mcp, own compose service reusing the backend image). Five tools —
+  the four specified plus `list_genres`. `compare_scenes` returns an explicit `comparable`
+  flag + `caveat`, since scores normalized per (genre, level) must not be compared across
+  either. Verified end-to-end with the MCP Inspector CLI against the container.
   FastMCP server exposing `query_scenes`, `get_scene_detail`, `compare_scenes`, `resolve_genre`
   over streamable-HTTP, wrapping `scene_service`.
   *Done when:* an external MCP client (MCP Inspector or Claude Desktop) can query scenes.
+
+- [x] **1.8.5 — pytest baseline for the shared layer.** ✅ 48 tests in `backend/tests/`
+  (service, REST, MCP tools) against the compose MySQL, each in a rolled-back transaction;
+  `pytest` needs no env vars (DSN built from `.env`). Mutation-checked, which caught a real
+  `resolve_genre` defect: one substring rank conflated "query mentions a genre" (most
+  specific must win — "i like death metal" was resolving to *metal*) with "query is a
+  fragment" (least specific wins); now separate ranks with opposite tie-breaks.
+  Unplanned item, added because 1.7/1.8 made `scene_service` the shared foundation for REST,
+  MCP and every later agent, and eval C tests ranking *quality*, not this logic.
+  *Done when:* `pytest` is green and a broken comparability rule or genre tie-break fails it.
 
 - [ ] **1.9 — Eval C: golden rankings.**
   `golden_rankings.json` (Bay Area top-3 for thrash, Gothenburg for melodeath, Seattle for

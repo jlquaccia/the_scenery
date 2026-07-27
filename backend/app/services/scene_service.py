@@ -23,7 +23,15 @@ from sqlalchemy import Select, select
 from sqlalchemy.orm import Session
 
 from app.models import Genre, Location, Scene, SceneSignal
-from app.models.schemas import GenreOut, GeoLevel, SceneDetail, SceneSummary, SignalOut
+from app.models.schemas import (
+    ComparedScene,
+    GenreOut,
+    GeoLevel,
+    SceneComparison,
+    SceneDetail,
+    SceneSummary,
+    SignalOut,
+)
 
 TOP_SIGNALS = 3
 MAX_DETAIL_SIGNALS = 25
@@ -63,24 +71,27 @@ def resolve_genre(session: Session, query: str) -> GenreOut | None:
         return None
 
     genres = list_genres(session)
-    by_rank: list[tuple[int, int, GenreOut]] = []
+    # (rank, tie-break, genre) — lowest wins. The two containment cases pull in
+    # opposite directions, so they get separate ranks and opposite tie-breaks.
+    candidates: list[tuple[int, int, GenreOut]] = []
     for genre in genres:
         name = _normalize(genre.name)
         if name == normalized:
-            rank = 0
+            candidates.append((0, 0, genre))
         elif name.startswith(normalized) or normalized.startswith(name):
-            rank = 1
-        elif normalized in name or name in normalized:
-            rank = 2
-        else:
-            continue
-        # Tie-break on the shorter name: "thrash" should land on "thrash metal",
-        # not "melodic death metal"-style longer accidental containments.
-        by_rank.append((rank, len(name), genre))
+            # "thrash" → "thrash metal"; closest length wins.
+            candidates.append((1, abs(len(name) - len(normalized)), genre))
+        elif name in normalized:
+            # The query names a genre amid other words ("i like death metal") —
+            # the most specific name wins, or "metal" would swallow it.
+            candidates.append((2, -len(name), genre))
+        elif normalized in name:
+            # The query is a fragment ("dea") — the least specific name wins.
+            candidates.append((3, len(name), genre))
 
-    if not by_rank:
+    if not candidates:
         return None
-    return min(by_rank, key=lambda item: (item[0], item[1]))[2]
+    return min(candidates, key=lambda item: (item[0], item[1]))[2]
 
 
 def _genre_ids(session: Session, genre: GenreOut, include_subgenres: bool) -> list[int]:
@@ -142,6 +153,7 @@ def query_scenes(
     *,
     genre: GenreOut,
     level: GeoLevel | None = None,
+    location: str | None = None,
     limit: int = 10,
     include_subgenres: bool = True,
 ) -> list[SceneSummary]:
@@ -149,13 +161,20 @@ def query_scenes(
 
     `level` filters to one tier of the geo hierarchy (city/metro/state/country);
     omitting it mixes tiers, whose scores are not comparable — callers that rank
-    should pass one.
+    should pass one. `location` narrows to places matching a name fragment, which
+    is how a caller reaches a specific scene ("Germany") that a top-N ranking
+    wouldn't surface.
     """
     genre_ids = _genre_ids(session, genre, include_subgenres)
+    filters = []
+    if level:
+        filters.append(Location.level == level)
+    if location:
+        filters.append(Location.name.like(f"%{location}%"))
     rows = session.execute(
         _scene_query()
         .where(Scene.genre_id.in_(genre_ids))
-        .where(*([Location.level == level] if level else []))
+        .where(*filters)
         .order_by(Scene.scene_score.desc(), Location.name)
         .limit(limit)
     ).all()
@@ -183,6 +202,61 @@ def get_scene_detail(session: Session, scene_id: int) -> SceneDetail | None:
     )
     detail.top_signals = [_format_signal(s) for s in signals[:TOP_SIGNALS]]
     return detail
+
+
+def compare_scenes(session: Session, scene_ids: list[int]) -> SceneComparison:
+    """Two or more scenes side by side, with the score-comparability question settled.
+
+    Raises `LookupError` naming the ids that don't exist, so the caller can say
+    which one was wrong instead of silently comparing fewer scenes.
+    """
+    details = [(sid, get_scene_detail(session, sid)) for sid in scene_ids]
+    missing = [sid for sid, detail in details if detail is None]
+    if missing:
+        raise LookupError(f"no scene with id {', '.join(str(sid) for sid in missing)}")
+    found = [detail for _, detail in details if detail is not None]
+
+    # Full signal lists, not `detail.signals` — that one is truncated for display.
+    signal_sets = [
+        {s.name for s in _signals_for(session, genre_id=d.genre_id, location_id=d.location_id)}
+        for d in found
+    ]
+    shared = set.intersection(*signal_sets) if signal_sets else set()
+
+    scenes = [
+        ComparedScene(
+            **detail.model_dump(
+                exclude={"signals", "description", "score_updated_at", "location_path"}
+            ),
+            distinctive_signals=sorted(own - shared),
+        )
+        for detail, own in zip(found, signal_sets, strict=True)
+    ]
+
+    genres = {s.genre_id for s in found}
+    levels = {s.level for s in found}
+    comparable = len(genres) == 1 and len(levels) == 1
+    caveat = None
+    if not comparable:
+        differs = " and ".join(
+            part
+            for part in (
+                "genres" if len(genres) > 1 else "",
+                "geo levels" if len(levels) > 1 else "",
+            )
+            if part
+        )
+        caveat = (
+            f"Scores are normalized separately per genre and geo level, and these scenes "
+            f"span different {differs} — compare their signals and rank within their own "
+            f"lists, not the raw scores."
+        )
+    return SceneComparison(
+        scenes=scenes,
+        comparable=comparable,
+        caveat=caveat,
+        shared_signals=sorted(shared),
+    )
 
 
 # --------------------------------------------------------------------------- signals

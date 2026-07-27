@@ -19,6 +19,11 @@ target-version = "py313"
 # E/W pycodestyle · F pyflakes · I isort · UP pyupgrade · B bugbear · SIM simplify
 select = ["E", "W", "F", "I", "UP", "B", "SIM"]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Integration tests against the compose MySQL; async MCP tests need no per-test marker.
+asyncio_mode = "auto"
+
 [tool.mypy]
 python_version = "3.13"
 strict = true

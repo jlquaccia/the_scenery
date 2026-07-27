@@ -55,6 +55,23 @@ services:
       DEBUG_ENDPOINTS: "1" # dev stack: /debug/* endpoints enabled
       DEBUGPY: ${DEBUGPY:-0} # DEBUGPY=1 docker compose up -d backend → attachable
 
+  mcp:
+    # Same image as the API — the MCP server is the same code with a different
+    # entry point, wrapping the same scene_service (DESIGN.md §4.5).
+    build: backend
+    depends_on:
+      mysql:
+        condition: service_healthy
+      liquibase:
+        condition: service_completed_successfully
+    ports:
+      - "8001:8001"
+    environment:
+      MYSQL_DSN: mysql://${MYSQL_APP_USER}:${MYSQL_APP_PASSWORD}@mysql:3306/${MYSQL_DATABASE:-scenery}
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8001"
+    command: ["python", "-m", "mcp_servers.scene_db.server"]
+
   adminer:
     image: adminer:5
     depends_on:

@@ -2,5 +2,7 @@
 -r requirements.txt
 ruff
 mypy
+pytest
+pytest-asyncio
 langgraph
 langgraph-cli[inmem]

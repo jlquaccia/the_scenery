@@ -20,6 +20,7 @@ def list_scenes(
     session: Annotated[Session, Depends(get_session)],
     genre: Annotated[str, Query(description="Genre name; resolved loosely, e.g. 'thrash'.")],
     level: Annotated[GeoLevel | None, Query(description="Geo tier to rank within.")] = None,
+    location: Annotated[str | None, Query(description="Narrow to matching place names.")] = None,
     limit: Annotated[int, Query(ge=1, le=100)] = 10,
     include_subgenres: Annotated[
         bool, Query(description="Roll umbrella genres ('metal') up from their subgenres.")
@@ -33,6 +34,7 @@ def list_scenes(
         session,
         genre=resolved,
         level=level,
+        location=location,
         limit=limit,
         include_subgenres=include_subgenres,
     )

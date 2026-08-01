@@ -1,0 +1,80 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    env:
+      # Throwaway credentials for the ephemeral CI database — the compose file
+      # requires them, and nothing here is reachable from outside the runner.
+      MYSQL_DATABASE: scenery
+      MYSQL_ROOT_PASSWORD: ci-root-pw
+      MYSQL_MIGRATOR_USER: scenery_migrator
+      MYSQL_MIGRATOR_PASSWORD: ci-migrator-pw
+      MYSQL_APP_USER: scenery_app
+      MYSQL_APP_PASSWORD: ci-app-pw
+      MYSQL_DSN: mysql://scenery_app:ci-app-pw@127.0.0.1:3306/scenery
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: backend/requirements*.txt
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: pip install -r requirements-dev.txt
+
+      - name: Lint and format check
+        working-directory: backend
+        run: |
+          ruff check .
+          ruff format --check .
+
+      - name: Type check
+        working-directory: backend
+        run: mypy app ingestion mcp_servers
+
+      # The same compose stack developers run, so CI can't drift from local:
+      # MySQL, then Liquibase applies the changelog including the seed context.
+      - name: Start MySQL
+        run: docker compose up -d --wait mysql
+
+      - name: Apply migrations + seed data
+        run: docker compose run --rm liquibase
+
+      - name: Verify models match the migrated schema
+        working-directory: backend
+        run: python -m app.models.validate
+
+      - name: Compute scene scores
+        working-directory: backend
+        run: python -m ingestion.compute_scores
+
+      - name: Tests
+        working-directory: backend
+        run: python -m pytest -q
+
+      # Eval C gates PRs that touch scoring, seed data or the service layer.
+      - name: Eval C — golden rankings
+        working-directory: backend
+        run: python -m evals.runners.eval_c_rankings -v --json eval_c_results.json
+
+      - name: Upload eval C results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-c-results
+          path: backend/eval_c_results.json
+          if-no-files-found: ignore
+
+      - name: Dump service logs on failure
+        if: failure()
+        run: docker compose logs --tail=100

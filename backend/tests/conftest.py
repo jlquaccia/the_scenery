@@ -11,37 +11,18 @@ test that writes can't leak into the next one.
 """
 
 import os
-import re
 from collections.abc import Iterator
-from pathlib import Path
 
 import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import Engine, create_engine, text
 from sqlalchemy.orm import Session
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+from app.db import dev_dsn
 
-
-def _dsn_from_env_file() -> str:
-    """Build the dev DSN from the repo .env so `pytest` works with no setup."""
-    env_path = REPO_ROOT / ".env"
-    if not env_path.exists():
-        return ""
-    values = dict(
-        re.findall(r"^([A-Z_]+)=(.*)$", env_path.read_text(), flags=re.MULTILINE),
-    )
-    user = values.get("MYSQL_APP_USER")
-    password = values.get("MYSQL_APP_PASSWORD")
-    database = values.get("MYSQL_DATABASE", "scenery")
-    if not (user and password):
-        return ""
-    return f"mysql://{user}:{password}@127.0.0.1:3306/{database}"
-
-
-# Set before anything imports app.db: the MCP server builds its own sessions from
-# this variable, so it has to be in place at import time.
-os.environ.setdefault("MYSQL_DSN", _dsn_from_env_file())
+# Set before anything imports app.db's engine: the MCP server builds its own
+# sessions from this variable, so it has to be in place at import time.
+os.environ.setdefault("MYSQL_DSN", dev_dsn())
 
 
 @pytest.fixture(scope="session")

@@ -151,10 +151,38 @@ Guiding principles:
   MCP and every later agent, and eval C tests ranking *quality*, not this logic.
   *Done when:* `pytest` is green and a broken comparability rule or genre tie-break fails it.
 
-- [ ] **1.9 — Eval C: golden rankings.**
+- [x] **1.9 — Eval C: golden rankings.** ✅ `evals/datasets/golden_rankings.json` (9 cases) +
+  `evals/runners/eval_c_rankings.py` (Recall@k / NDCG@k, tie-tolerant competition ranking).
+  **6 gating cases pass; 3 known gaps** are measured and reported without failing CI, each
+  with its cause and fix: no Seattle metro row (grunge at metro returns Greater LA), the
+  MusicBrainz `techno` tag pulling UK big-beat so London beats Detroit and Berlin is absent,
+  and Atlanta missing entirely. First CI in the repo — `.github/workflows/ci.yml` runs
+  ruff + mypy + schema validation + scoring + pytest + eval C against the compose stack.
   `golden_rankings.json` (Bay Area top-3 for thrash, Gothenburg for melodeath, Seattle for
   grunge, …) + Recall@3/NDCG runner wired into CI. Spike S3's `results/*.json` seed the dataset.
   *Done when:* eval C runs in CI and passes against the seeded data.
+
+- [ ] **1.10 — Close eval C's known gaps (seed data quality).**
+  Four defects the data layer has, all found by 1.7–1.9 and all currently documented rather
+  than fixed. Geography curation and ingestion coverage — no scoring-weight changes (D1 says
+  weights move only against a failing eval, and none of these are weight problems):
+  - **No Seattle metro.** Seattle parents straight to Washington, so `grunge` at metro level
+    returns Greater Los Angeles. Seed a "Greater Seattle" metro and reparent Seattle
+    (spike S3 finding #3 — metros are ours to define; MusicBrainz has no metro concept).
+  - **Richmond, Virginia is parented to the San Francisco Bay Area** (`locations` id 101,
+    lat 37.54/lng ‑77.44), so GWAR counts toward Bay Area thrash. Same-named cities need
+    disambiguating by coordinates against the intended parent; check for others.
+  - **`techno` is polluted by UK big-beat.** The MusicBrainz tag pulls Faithless, Groove
+    Armada and The Chemical Brothers, so London outranks Detroit; Berlin has no row at all.
+    Needs genre disambiguation at ingestion plus enough coverage to seed Berlin.
+  - **Atlanta is missing entirely** — the top-500-by-relevance fetch never reached it.
+  *Done when:* the three `known_gap` cases in `golden_rankings.json` are promoted to gating
+  and eval C passes 9/9, with no regression in the existing six.
+  *Ordering:* parallelizable with M2 frontend work, but land it before the 2.6 demo — a map
+  that calls Greater LA the top grunge metro is the first thing anyone will notice.
+
+**Milestone 1 complete.** Data foundation done: schema, seed, scoring, REST, MCP, tests, eval C.
+(1.10 is data-quality follow-up, not a blocker for M2's start.)
 
 ---
 

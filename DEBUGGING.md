@@ -166,6 +166,36 @@ which. The MCP tests use FastMCP's in-memory client, so the `mcp` service needn'
 Tests never hardcode a `scene_id` — they look scenes up by (genre, location), because
 rollup ids are assigned by the scoring job and change on a database rebuild.
 
+## Evals (eval C from 1.9)
+
+```bash
+cd backend && .venv/bin/python -m evals.runners.eval_c_rankings -v
+```
+
+Ranking quality of the data layer — no LLM. `-v` prints each case's top 5 with its rank;
+`--json out.json` writes machine-readable results. Exit code is 1 only when a **gating**
+case fails.
+
+Reading the output: `pass`/`FAIL` are gating cases. `gap` means a case marked `known_gap`
+in the dataset — a documented shortcoming in the seed or scoring, measured and reported
+but not gating, so it stays visible instead of being deleted. `XPASS` means a gap started
+passing: fix the dataset (promote or drop the case). Ranks are tie-tolerant — equal scores
+share a rank, since the tie-break inside a score is alphabetical and meaningless.
+
+When a gating case fails after a scoring change, that is eval C doing its job (DECISIONS.md
+D1: iterate weights only against a failing eval). Decide whether the ranking got worse or
+the golden case was wrong — and if the latter, change the dataset in its own commit.
+
+## CI
+
+`.github/workflows/ci.yml` on every PR: ruff → mypy → compose MySQL + Liquibase →
+`app.models.validate` → `ingestion.compute_scores` → pytest → eval C. It runs the same
+compose stack you run locally, so CI can't drift from dev. Reproduce a CI failure exactly:
+
+```bash
+cd backend && .venv/bin/ruff check . && .venv/bin/mypy app ingestion mcp_servers && .venv/bin/python -m pytest -q && .venv/bin/python -m evals.runners.eval_c_rankings
+```
+
 ## Linters / type checking
 
 ```bash

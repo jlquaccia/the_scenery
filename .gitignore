@@ -23,3 +23,6 @@ dist/
 
 # Ingestion HTTP cache
 backend/ingestion/.cache/
+
+# Eval run output (CI uploads it as an artifact)
+backend/eval_c_results.json

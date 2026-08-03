@@ -15,6 +15,11 @@ databaseChangeLog:
   - include:
       file: changesets/004-conversations.sql
       relativeToChangelogFile: true
+  # Ordered by dependency, not filename: the seed inserts 'artist' signals, so the
+  # ENUM has to be widened before it runs.
+  - include:
+      file: changesets/006-signal-type-artist.sql
+      relativeToChangelogFile: true
   - include:
       file: changesets/005-seed-data.sql
       relativeToChangelogFile: true

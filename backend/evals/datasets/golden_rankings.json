@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 3,
   "about": [
     "Eval C — ranking quality of the data layer (DESIGN.md §10.1 C). No LLM involved.",
     "Golden cases encode DOMAIN TRUTH about where scenes are, not whatever the current",
@@ -16,7 +16,16 @@
     "",
     "Ranking is tie-tolerant: positions use competition ranking (equal scores share a",
     "rank), because the tie-break within a score is alphabetical and arbitrary — failing",
-    "on it would measure name order, not scene quality."
+    "on it would measure name order, not scene quality.",
+    "",
+    "v2 (roadmap 1.10): reseeded from 500 artists/genre with tag verification. Three gaps",
+    "closed, one narrowed, and one new gap recorded — formula v1 counts bands, so it",
+    "measures VOLUME, and any golden case that really asserts INFLUENCE will fail until",
+    "the scoring gains an influence signal (DECISIONS.md D1 deferred refinements).",
+    "",
+    "v3 (roadmap 1.11): D1a amendment — solo artists count, and signals are never",
+    "discarded, only re-attached. Coverage went from 485 signals to 2,070. Both",
+    "remaining gaps now share one cause: volume vs influence (roadmap 1.12)."
   ],
   "cases": [
     {
@@ -25,7 +34,10 @@
       "level": "metro",
       "k": 3,
       "must_rank_first": "San Francisco Bay Area",
-      "relevant": { "San Francisco Bay Area": 3, "Greater Los Angeles": 2 },
+      "relevant": {
+        "San Francisco Bay Area": 3,
+        "Greater Los Angeles": 2
+      },
       "source": "spike S3 metro_ranking: Bay Area 21 bands, Greater LA 14",
       "rationale": "Bay Area thrash is the textbook case — Metallica, Exodus, Testament, Death Angel, Ruthie's Inn."
     },
@@ -33,10 +45,14 @@
       "id": "thrash-metal-city",
       "genre": "thrash metal",
       "level": "city",
-      "k": 3,
-      "relevant": { "San Francisco": 3, "Los Angeles": 2, "New York": 2 },
-      "source": "spike S3 city_ranking: LA 13, SF 9 (Bay Area splits across cities at this level)",
-      "rationale": "No must_rank_first: at city level the Bay Area scene is split across SF, Oakland and Richmond, so LA legitimately leads. All three must still make top-3."
+      "k": 5,
+      "relevant": {
+        "San Francisco": 3,
+        "Los Angeles": 2,
+        "New York": 2
+      },
+      "source": "spike S3 city_ranking: LA 13, SF 9, Chicago 9",
+      "rationale": "No must_rank_first and k=5, both deliberately: at city level the Bay Area scene is split across SF, Oakland and Richmond, so LA leads legitimately, and Chicago (9 bands in the spike too) sits in the same cluster. The defensible claim is that all three are top-5 thrash cities, not that they hold exact positions."
     },
     {
       "id": "grunge-city",
@@ -44,28 +60,49 @@
       "level": "city",
       "k": 3,
       "must_rank_first": "Seattle",
-      "relevant": { "Seattle": 3, "Los Angeles": 1 },
+      "relevant": {
+        "Seattle": 3,
+        "Los Angeles": 1
+      },
       "source": "spike S3 city_ranking: Seattle 23 bands, +53% over #2",
       "rationale": "If Seattle is ever not #1 for grunge, the scoring is broken."
+    },
+    {
+      "id": "grunge-metro",
+      "genre": "grunge",
+      "level": "metro",
+      "k": 3,
+      "must_rank_first": "Greater Seattle",
+      "relevant": {
+        "Greater Seattle": 3
+      },
+      "source": "spike S3 metro_ranking had Seattle #1 at 23 bands",
+      "rationale": "Closed in 1.10 by seeding the Greater Seattle metro (Seattle–Tacoma–Bellevue MSA). Before that, Seattle parented straight to Washington and this query returned Greater Los Angeles."
     },
     {
       "id": "melodic-death-metal-city",
       "genre": "melodic death metal",
       "level": "city",
       "k": 3,
-      "relevant": { "Gothenburg": 3, "Helsinki": 2, "Stockholm": 2 },
+      "relevant": {
+        "Gothenburg": 3,
+        "Helsinki": 2,
+        "Stockholm": 2
+      },
       "source": "spike S3 city_ranking: Helsinki 9, Gothenburg 7, Stockholm 6",
-      "rationale": "The Gothenburg sound defines melodeath, but Finland out-produces it by volume — so the claim is top-3, not first. This is the case the tie-tolerance exists for: Gothenburg and Stockholm currently tie."
+      "rationale": "The Gothenburg sound defines melodeath, but Finland out-produces it by volume — so the claim is top-3, not first."
     },
     {
       "id": "melodic-death-metal-country",
       "genre": "melodic death metal",
       "level": "country",
       "k": 3,
-      "must_rank_first": "Sweden",
-      "relevant": { "Sweden": 3, "Finland": 2 },
-      "source": "spike S3 + roadmap 1.6 verification",
-      "rationale": "Aggregated to country level, Sweden's lead is unambiguous."
+      "relevant": {
+        "Sweden": 3,
+        "Finland": 2
+      },
+      "source": "spike S3: Finland 13 bands, Sweden 7",
+      "rationale": "Both must be top-3. Which of the two leads is a volume-vs-influence question — see melodic-death-metal-country-sweden-first."
     },
     {
       "id": "hip-hop-city",
@@ -73,20 +110,36 @@
       "level": "city",
       "k": 3,
       "must_rank_first": "New York",
-      "relevant": { "New York": 3, "Los Angeles": 2 },
+      "relevant": {
+        "New York": 3,
+        "Los Angeles": 2
+      },
       "source": "roadmap 1.5 seed",
       "rationale": "Birthplace of the genre; LA is the other undisputed major scene."
     },
     {
-      "id": "grunge-metro",
-      "genre": "grunge",
-      "level": "metro",
+      "id": "hip-hop-city-atlanta",
+      "genre": "hip hop",
+      "level": "city",
+      "k": 5,
+      "relevant": {
+        "Atlanta": 2
+      },
+      "source": "domain truth: Atlanta is a defining hip hop scene (OutKast, Goodie Mob, and the whole trap lineage)",
+      "rationale": "Closed in 1.10 by fetching 500 artists per genre instead of 200 — Atlanta now ranks 3rd. It previously had no location row at all."
+    },
+    {
+      "id": "melodic-death-metal-country-sweden-first",
+      "genre": "melodic death metal",
+      "level": "country",
       "k": 3,
-      "must_rank_first": "Seattle",
-      "relevant": { "Seattle": 3 },
-      "known_gap": "`locations` has no Seattle metro row, so Seattle's signals roll up to Washington (state) and the metro ranking returns Greater Los Angeles for grunge — wrong by any domain standard.",
-      "fix": "Seed a 'Greater Seattle' metro and reparent Seattle under it (spike S3 finding #3: metro regions are ours to define; MusicBrainz has no metro concept).",
-      "source": "spike S3 metro_ranking had Seattle #1 at 23 — the spike treated Seattle as its own metro"
+      "must_rank_first": "Sweden",
+      "relevant": {
+        "Sweden": 3
+      },
+      "known_gap": "Sweden ranks 3rd (88.4) behind Finland (100) and Germany (91.3). With 1.11's complete attribution the three are within 12 points of each other, but Sweden's claim to melodeath is that Gothenburg INVENTED it — At the Gates, In Flames, Dark Tranquillity — which is influence, not volume. Formula v1 counts artists, so it cannot express this at any level of coverage.",
+      "fix": "Needs an influence signal (roadmap 1.12): historic-era multiplier, popularity, or tag-vote strength. Coverage is no longer the confound — 1.11 fixed that — so this is now purely a weighting question.",
+      "source": "domain truth: the Gothenburg sound is the origin of melodic death metal"
     },
     {
       "id": "techno-city",
@@ -94,20 +147,14 @@
       "level": "city",
       "k": 3,
       "must_rank_first": "Detroit",
-      "relevant": { "Detroit": 3, "Berlin": 3, "London": 1 },
-      "known_gap": "London ranks first and Berlin is absent from `locations` entirely. The MusicBrainz 'techno' tag pulls in UK big-beat and electronica (Faithless, Groove Armada, The Chemical Brothers), which swamps the actual techno lineage.",
-      "fix": "Genre disambiguation during ingestion (don't accept a bare 'techno' tag from acts whose primary tags are big beat / trip hop), plus enough coverage to seed Berlin.",
-      "source": "domain truth: Detroit is the origin of techno (Belleville Three, Underground Resistance); Berlin is its second home"
-    },
-    {
-      "id": "hip-hop-city-atlanta",
-      "genre": "hip hop",
-      "level": "city",
-      "k": 5,
-      "relevant": { "Atlanta": 2 },
-      "known_gap": "Atlanta has no location row at all — the top-500-by-relevance fetch missed it.",
-      "fix": "Widen the ingestion fetch per genre, or curate the seed for scenes this obviously major.",
-      "source": "domain truth: Atlanta is a defining hip hop scene (OutKast, Goodie Mob, and the whole trap lineage)"
+      "relevant": {
+        "Detroit": 3,
+        "Berlin": 3,
+        "London": 1
+      },
+      "known_gap": "Recall is now perfect — after 1.11's D1a amendment all three of Detroit, Berlin and London are top-3, and Detroit's scene finally contains Juan Atkins, Derrick May, Jeff Mills and Carl Craig instead of being empty of its own founders. Only `must_rank_first` still fails: London leads on volume (100 vs Berlin 58.3, Detroit 54.2), because it genuinely has more techno-tagged artists than the city that invented the genre.",
+      "fix": "Same question as melodic-death-metal-country-sweden-first, and the same answer: an influence signal (roadmap 1.12). Both remaining gaps are now one decision — whether scoring stays pure volume — rather than two data problems.",
+      "source": "domain truth: Detroit is the origin of techno; Berlin is its second home"
     }
   ]
 }

@@ -16,6 +16,7 @@ import sys
 from sqlalchemy import create_engine, inspect
 from sqlalchemy.dialects import mysql
 
+from app.db import dev_dsn
 from app.models import Base
 
 # Tables owned by other tools (never modeled): Liquibase + LangGraph checkpointer.
@@ -32,7 +33,7 @@ def normalize(type_sql: str) -> str:
 
 
 def main() -> int:
-    dsn = os.environ.get("MYSQL_DSN", "")
+    dsn = os.environ.get("MYSQL_DSN", "") or dev_dsn()
     if not dsn:
         print("MYSQL_DSN is required (e.g. mysql://user:pass@localhost:3306/scenery)")
         return 2

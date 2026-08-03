@@ -162,27 +162,79 @@ Guiding principles:
   grunge, …) + Recall@3/NDCG runner wired into CI. Spike S3's `results/*.json` seed the dataset.
   *Done when:* eval C runs in CI and passes against the seeded data.
 
-- [ ] **1.10 — Close eval C's known gaps (seed data quality).**
-  Four defects the data layer has, all found by 1.7–1.9 and all currently documented rather
-  than fixed. Geography curation and ingestion coverage — no scoring-weight changes (D1 says
-  weights move only against a failing eval, and none of these are weight problems):
-  - **No Seattle metro.** Seattle parents straight to Washington, so `grunge` at metro level
-    returns Greater Los Angeles. Seed a "Greater Seattle" metro and reparent Seattle
-    (spike S3 finding #3 — metros are ours to define; MusicBrainz has no metro concept).
-  - **Richmond, Virginia is parented to the San Francisco Bay Area** (`locations` id 101,
-    lat 37.54/lng ‑77.44), so GWAR counts toward Bay Area thrash. Same-named cities need
-    disambiguating by coordinates against the intended parent; check for others.
-  - **`techno` is polluted by UK big-beat.** The MusicBrainz tag pulls Faithless, Groove
-    Armada and The Chemical Brothers, so London outranks Detroit; Berlin has no row at all.
-    Needs genre disambiguation at ingestion plus enough coverage to seed Berlin.
-  - **Atlanta is missing entirely** — the top-500-by-relevance fetch never reached it.
-  *Done when:* the three `known_gap` cases in `golden_rankings.json` are promoted to gating
-  and eval C passes 9/9, with no regression in the existing six.
-  *Ordering:* parallelizable with M2 frontend work, but land it before the 2.6 demo — a map
-  that calls Greater LA the top grunge metro is the first thing anyone will notice.
+- [x] **1.10 — Close eval C's known gaps (seed data quality).** ✅ Reseeded from 500 artists per
+  genre with tag verification: 214 locations, 147 scenes, 485 signals (was 110/71/210).
+  **Three of four defects fully closed** — Greater Seattle metro seeded (grunge at metro now
+  answers Greater Seattle #1), Richmond VA disambiguated from Richmond CA (GWAR moved to
+  Virginia), Atlanta present and 3rd for hip hop. **Techno narrowed but not closed:** tag
+  verification moved Detroit 3rd → 2nd and Berlin now exists (5th), but the remaining cause
+  turned out to be D1's Group-only rule, not tag pollution — techno's founders are Person
+  artists, so the scoring cannot see them.
+  Also fixed: `http_json` retried only HTTP 429/503, so a transient connection reset killed a
+  full run (a run makes ~600 sequential requests); a metro whose `state` no longer matches
+  MusicBrainz's spelling now fails loudly instead of silently emptying — "North Rhine-Westphalia"
+  vs "Nordrhein-Westfalen" was live.
+  **New gap recorded:** with fuller data Finland outranks Sweden for melodeath by band count
+  (as spike S3's raw numbers already showed). Sweden's claim is influence, not volume, and
+  formula v1 counts bands — D1's revisit trigger, needing an influence signal rather than
+  ad-hoc weight tuning.
+  *Result:* eval C 8/8 gating (was 6/6 of 9), 2 documented gaps (was 3). Both remaining gaps
+  now point at the same decision — whether to amend DECISIONS.md D1 — rather than at the data.
+  *Follow-up:* that D1 amendment (count Person artists / add an influence signal) wants its own
+  item and a full eval C re-run; it is not weight tuning.
+
+  *Note:* regenerating `005-seed-data.sql` changes its checksum, so this needs a
+  `docker compose down -v` rebuild (CI always starts empty, so it is unaffected).
+
+- [x] **1.11 — D1 amendment: what counts as a signal, and where it attaches.** ✅ `DECISIONS.md`
+  **D1a** written; changeset `006-signal-type-artist.sql` adds `artist` to the `signal_type`
+  enum. Coverage went from 485 signals to **2,070** (568 locations, 860 scenes); of 2,071
+  located artists exactly **1** is now dropped, and only because it has no geography at all.
+  Effect is genre-shaped exactly as predicted: techno 109 → 357 artists (246 solo), hip hop
+  → 435 (346 solo), while thrash gained 4 solo and melodeath 2 — metal really is band-based,
+  so the change is nearly a no-op there.
+  **Nirvana is in**, and without bending any geography: counting Kurt Cobain as an `artist`
+  gave Aberdeen a second grunge signal, so it clears `MIN_BANDS` on its own merits.
+  Detroit's techno scene now contains Juan Atkins, Derrick May, Jeff Mills and Carl Craig
+  instead of being empty of its own founders — `techno-city` recall@3 went 0.67 → **1.00**
+  (Berlin absent → #2), leaving only `must_rank_first`.
+  *Result:* eval C 8/8 gating, 2 known gaps — and both now reduce to the **same** question,
+  volume vs influence, which is 1.12. Coverage is no longer a confound for either.
+  Eval C's two remaining gaps both trace to the *definition* of a signal, not to the data, so
+  this is DECISIONS.md D1's revisit trigger firing as designed. Measured on the 1.10 fetch,
+  the pipeline discards ~40% of correctly-tagged, located bands (thrash: 473 kept, 314
+  dropped; grunge: 299 kept, 174 dropped). Three changes, one reseed:
+  - **Signals are never dropped, only re-attached.** A band in a city below `MIN_BANDS`
+    currently vanishes — it counts for nothing at city, state *or* country level. It should
+    attach to the nearest ancestor that does have a scene. `MIN_BANDS` decides whether a
+    *city scene* exists, not whether a band exists.
+  - **Country/state-attributed bands feed country/state scenes** (spike S3 finding #2, never
+    implemented). 123 thrash and 76 grunge bands resolve to no city at all and are silently
+    lost, which makes every country-level ranking undercount.
+  - **Person artists count.** D1 says "artist of type *Group*", which makes techno's founders
+    invisible (Juan Atkins, Derrick May, Kevin Saunderson, Jeff Mills are all Person) and
+    costs grunge 32 signals. Needs a `signal_type` of `artist` alongside `band` — a schema
+    changeset — so the two stay distinguishable rather than being conflated.
+  *Done when:* D1 is amended in `DECISIONS.md` with rationale; the reseed drops no located,
+  correctly-tagged artist; eval C's gating cases still pass and `techno-city` is re-measured
+  against the new definition.
+  *Not in scope:* weighting. This changes what the scoring can *see*, not what anything is
+  worth — every signal stays weight 1.0.
+
+- [ ] **1.12 — Influence weighting (the Sweden problem).**
+  With signal coverage fixed (1.11), decide whether scoring stays pure volume. Sweden invented
+  melodic death metal in Gothenburg; Finland has more bands. Formula v1 counts bands, so it
+  ranks Finland first and cannot express the difference — likewise Detroit vs London for techno.
+  D1's deferred refinements are the candidates: historic-era multiplier from band begin dates,
+  popularity via release counts, tag-vote strength as a notability proxy (Nirvana's grunge tag
+  has 64 votes; the London band that shares its name has 1).
+  *Done when:* either the golden cases `melodic-death-metal-country-sweden-first` and
+  `techno-city` pass, or they are retired with a written argument that volume is the right
+  metric and the cases were wrong.
+  *Warning:* this is the eval-tuning trap. Change the formula against the whole eval C suite,
+  never case by case.
 
 **Milestone 1 complete.** Data foundation done: schema, seed, scoring, REST, MCP, tests, eval C.
-(1.10 is data-quality follow-up, not a blocker for M2's start.)
 
 ---
 

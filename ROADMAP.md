@@ -221,7 +221,33 @@ Guiding principles:
   *Not in scope:* weighting. This changes what the scoring can *see*, not what anything is
   worth — every signal stays weight 1.0.
 
-- [ ] **1.12 — Influence weighting (the Sweden problem).**
+- [ ] **1.12 — Influence weighting (the Sweden problem).** ⏸ **Deferred until after M3**, and
+  likely to be *retired* rather than implemented. Product steer (2026-08-02): the scene itself
+  is what matters — a location's volume of artists in a genre — not whether the genre
+  originated there. That matches DESIGN.md's framing ("the **biggest** thrash metal scene"),
+  so volume is the right metric and the two `known_gap` cases asserting origin-first
+  (`techno-city`, `melodic-death-metal-country-sweden-first`) are probably wrong cases.
+  Origin belongs in what the agent *says* — `scene_signals` exists so rankings can be
+  explained (DESIGN.md §181, the `scene-scoring` skill at 4.6) — not in the score.
+  *Revisit when:* M3's tracer bullet works and you can read a scene with its explanation
+  attached; then either retire both cases with that argument written down, or reopen.
+
+  **Separate idea, parked deliberately (2026-08-02):** a *temporal* view — where a scene
+  originated, and where it was strongest at a given point in time. That is a **feature**, not
+  a weighting tweak, and it is the more interesting of the two: "Bay Area thrash in 1985 vs
+  2020" is a question the current single static score cannot ask at all.
+  Worth knowing before it gets designed: **the data is already there.** `scene_signals.metadata`
+  stores MusicBrainz `begin`/`ended` dates — 1,776 of 2,070 signals (86%) have a begin date,
+  237 have an end date (Metallica 1981-10-28, Exodus 1979, Nirvana 1987). So this needs a
+  time-filtered scoring pass and a UI affordance, not new ingestion. **Do not drop those
+  metadata fields** in any future seed change.
+  Deferred as feature creep until the core loop (M2–M4) works — correctly so; it would widen
+  the scoring model, the tool contract, and the map UI all at once.
+  Shape it as an **era filter** ("the 80s", "1985", "active now") layered over the default,
+  which DECISIONS.md **D1b** fixes as all-time cumulative. Note that "active now" cannot be
+  the default: `ended` is set on only ~15% of signals, so filtering on it would measure
+  metadata completeness, and it would cost the Seattle grunge and Bay Area thrash cases that
+  make the product worth using.
   With signal coverage fixed (1.11), decide whether scoring stays pure volume. Sweden invented
   melodic death metal in Gothenburg; Finland has more bands. Formula v1 counts bands, so it
   ranks Finland first and cannot express the difference — likewise Detroit vs London for techno.
@@ -243,7 +269,12 @@ Guiding principles:
 No agent yet — the frontend is built against hand-written A2UI streams, which become permanent
 fixtures: the frontend contract test *and* golden data for eval D later.
 
-- [ ] **2.1 — Angular workspace scaffold.**
+- [x] **2.1 — Angular workspace scaffold.** ✅ Angular 21.2 workspace in `frontend/`, DESIGN.md
+  §6 directories created, shell = CSS grid (map left, chat right; stacks under 720px).
+  angular-eslint + Prettier wired per 1.2; 2 component tests (vitest); `.claude/launch.json`
+  serves it on :4200; CI gains a `frontend` job (install → format → lint → test → build).
+  Layout gotcha found and documented: pane hosts need `:host { display: contents }` or the
+  `<section>` keeps its content height and the composer floats mid-pane.
   Workspace per DESIGN.md §6 layout; app shell with map + chat panes (static).
   *Done when:* `ng serve` shows the empty two-pane shell.
 

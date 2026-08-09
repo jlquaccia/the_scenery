@@ -43,6 +43,24 @@ unanswerable until fixed. The most vivid case: Nirvana carries a `grunge` tag wi
 but was discarded because Aberdeen has one grunge band, while a 1960s London band of the same
 name (grunge tag: 1 vote) survived because London cleared the threshold.
 
+### D1b — What the score means in time (2026-08-02)
+
+`scene_score` is **all-time cumulative**: every artist ever tagged with the genre whose
+`begin-area` is that place, regardless of whether they are still active. It is "everything
+this place has contributed to the genre", not "what is happening there now".
+
+**Rationale:** the two are very different, and cumulative is the one that answers the
+product's question. Seattle is the grunge city because of 1988–1994 — filter to currently
+active bands and that claim mostly disappears, taking eval C's `grunge-city` case with it
+(303 of 472 thrash signals and 126 of 330 grunge signals began pre-2000). "Still active" is
+also not reliably knowable from what we store: MusicBrainz marks `ended` on only ~15% of
+signals (51 of 330 grunge, 65 of 472 thrash), so an active-only filter would mostly be
+measuring metadata completeness rather than scenes.
+
+**Future (deferred, roadmap 1.12 note):** an **era filter** — "the 80s", "1985", "active
+now" — as a view on top of this default, not a replacement for it. `scene_signals.metadata`
+already carries `begin`/`ended` for 86% of signals, so the data supports it today.
+
 **Still deferred (roadmap 1.12):** whether scoring stays pure volume. Counting more signals
 does not make Sweden outrank Finland or Detroit outrank London — those need an influence
 signal, and that is a weighting decision to be made against the whole eval C suite at once.

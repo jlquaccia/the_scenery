@@ -217,6 +217,28 @@ npm run lint && npx ng test --watch=false && npm run build
 Angular 21 + vitest. `.claude/launch.json` has a `frontend` entry, so the in-app browser can
 start it directly. The two-pane shell is static until 2.2 (chat stream) and 2.4 (MapLibre).
 
+**Streaming chat needs an AG-UI endpoint.** Until 3.2 that's the spike S2 server:
+
+```bash
+cd spikes/s2-agui-langgraph/server && ./.venv/bin/uvicorn app:app --port 8020
+```
+
+The URL comes from `SCENERY_CONFIG` (`frontend/src/app/core/config.ts`) — change it there,
+not in a component. Without it the chat shows "Couldn't reach the agent" rather than hanging.
+
+**`window.__scenery`** (dev builds only) is the console handle:
+
+```js
+__scenery.dump();          // status, transcript, streamingText, a2uiMessages, event log
+__scenery.events;          // every AG-UI event type seen this session
+__scenery.stream.send('what city has the biggest thrash scene?', 'http://localhost:8020/agui');
+```
+
+Two AG-UI quirks are handled in the service and pinned by tests — both from spike S2, and
+both fail silently rather than loudly if reintroduced: accumulate `event.delta` (not
+`textMessageBuffer`, which excludes the in-flight delta until TEXT_MESSAGE_END), and ignore
+the CUSTOM event named `manually_emit_message` (it duplicates the assistant message).
+
 Layout gotcha worth remembering: pane components set `:host { display: contents }`. An Angular
 component's host element is `display: inline` by default — as a grid item it stretches, but the
 `<section>` inside it does not, so `grid-template-rows: auto 1fr auto` collapses to content

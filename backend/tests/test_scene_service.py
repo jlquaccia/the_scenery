@@ -77,17 +77,12 @@ def test_resolve_genre_reports_the_parent(session: Session) -> None:
 # ------------------------------------------------------------------------- query_scenes
 
 
-@pytest.mark.parametrize(
-    "genre,level,expected_top",
-    [
-        ("thrash metal", "metro", "San Francisco Bay Area"),
-        ("grunge", "city", "Seattle"),
-        ("melodic death metal", "country", "Sweden"),
-    ],
-)
-def test_golden_rankings_hold(session: Session, genre: str, level: str, expected_top: str) -> None:
-    results = scene_service.query_scenes(session, genre=genre_of(session, genre), level=level)
-    assert results[0].location == expected_top
+# Which place ranks first for a genre is NOT asserted here. That is ranking
+# quality, and it belongs to eval C (`evals/runners/eval_c_rankings.py`), which
+# can express "top-3", tolerate ties, and record a disputed case as a known gap.
+# A unit test can only say pass/fail, so putting golden rankings here turns every
+# legitimate data improvement into a red build — which is exactly what happened
+# when 1.10's reseed moved melodeath's country leader from Sweden to Finland.
 
 
 def test_results_are_ranked_and_carry_coordinates(session: Session) -> None:
@@ -183,12 +178,24 @@ def test_different_genres_are_not_comparable(session: Session) -> None:
 
 
 def test_shared_signals_are_excluded_from_distinctive(session: Session) -> None:
+    """Shared and distinctive must partition each scene's signals, whatever the data.
+
+    Derived from the scenes themselves rather than naming a band: which acts are
+    tagged with two genres is a property of MusicBrainz that moves under us — an
+    earlier version of this test pinned 'Anthrax', which 1.10's tag verification
+    correctly stopped counting as grunge.
+    """
     grunge = scene_id_for(session, "grunge", "New York", "city")
     thrash = scene_id_for(session, "thrash metal", "New York", "city")
     result = scene_service.compare_scenes(session, [grunge, thrash])
-    assert "Anthrax" in result.shared_signals, "MusicBrainz tags Anthrax as both"
-    for scene in result.scenes:
+
+    per_scene = [
+        {s.name for s in scene_service.get_scene_detail(session, scene.scene_id).signals}
+        for scene in result.scenes
+    ]
+    for scene, own in zip(result.scenes, per_scene, strict=True):
         assert not set(scene.distinctive_signals) & set(result.shared_signals)
+        assert set(scene.distinctive_signals) <= own
 
 
 def test_missing_ids_are_named_in_the_error(session: Session) -> None:

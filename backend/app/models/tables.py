@@ -73,7 +73,7 @@ class SceneSignal(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     scene_id: Mapped[int] = mapped_column(ForeignKey("scenes.id"), nullable=False)
     signal_type: Mapped[str | None] = mapped_column(
-        ENUM("band", "venue", "festival", "label", "release", "historic"), nullable=True
+        ENUM("band", "artist", "venue", "festival", "label", "release", "historic"), nullable=True
     )
     name: Mapped[str | None] = mapped_column(String(200), nullable=True)
     weight: Mapped[Decimal | None] = mapped_column(

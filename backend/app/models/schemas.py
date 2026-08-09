@@ -12,7 +12,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 GeoLevel = Literal["city", "metro", "state", "country"]
-SignalType = Literal["band", "venue", "festival", "label", "release", "historic"]
+SignalType = Literal["band", "artist", "venue", "festival", "label", "release", "historic"]
 
 
 class GenreOut(BaseModel):

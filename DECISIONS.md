@@ -17,6 +17,54 @@ per (genre, level): `100 * count / max_count`.
 **Revisit when:** eval C (1.9) fails on a new golden case — then iterate weights (historic-era
 multiplier, activity status, venue/festival/label signals), never before there's a failing eval.
 
+### D1a — Amendment (roadmap 1.11): what counts, and where it attaches
+
+The revisit trigger above fired: eval C's `techno-city` and
+`melodic-death-metal-country-sweden-first` both failed for reasons that were about the
+*definition* of a signal, not about weights. Three changes, all inclusion — **no weight
+changes; every signal is still 1.0**:
+
+1. **Solo artists count.** "Artist of type *Group*" made techno structurally unrankable —
+   Juan Atkins, Derrick May, Kevin Saunderson and Jeff Mills are all typed Person, so the
+   Belleville lineage was invisible and London led Detroit. Person artists now seed signals
+   with `signal_type = 'artist'`, kept distinct from `'band'` so the two can be weighted
+   separately later without another reseed.
+2. **A signal is never discarded, only re-attached.** `MIN_BANDS` decides whether a *city
+   scene* exists; it must not decide whether an artist exists. An artist in a sub-threshold
+   city now attaches to the nearest ancestor that has a scene.
+3. **Artists with no city attach to their state or country** (spike S3 finding #2, specified
+   but never implemented). MusicBrainz `begin-area` is frequently just "Germany".
+
+**Rationale:** measured on the 1.10 fetch, the pipeline was discarding ~40% of located,
+correctly-tagged artists (thrash 473 kept / 314 dropped; grunge 299 / 174). Because they were
+dropped rather than re-attached, they counted at *no* level, so every state and country
+ranking was computed from a partial set — which made the volume-vs-influence question
+unanswerable until fixed. The most vivid case: Nirvana carries a `grunge` tag with 64 votes
+but was discarded because Aberdeen has one grunge band, while a 1960s London band of the same
+name (grunge tag: 1 vote) survived because London cleared the threshold.
+
+### D1b — What the score means in time (2026-08-02)
+
+`scene_score` is **all-time cumulative**: every artist ever tagged with the genre whose
+`begin-area` is that place, regardless of whether they are still active. It is "everything
+this place has contributed to the genre", not "what is happening there now".
+
+**Rationale:** the two are very different, and cumulative is the one that answers the
+product's question. Seattle is the grunge city because of 1988–1994 — filter to currently
+active bands and that claim mostly disappears, taking eval C's `grunge-city` case with it
+(303 of 472 thrash signals and 126 of 330 grunge signals began pre-2000). "Still active" is
+also not reliably knowable from what we store: MusicBrainz marks `ended` on only ~15% of
+signals (51 of 330 grunge, 65 of 472 thrash), so an active-only filter would mostly be
+measuring metadata completeness rather than scenes.
+
+**Future (deferred, roadmap 1.12 note):** an **era filter** — "the 80s", "1985", "active
+now" — as a view on top of this default, not a replacement for it. `scene_signals.metadata`
+already carries `begin`/`ended` for 86% of signals, so the data supports it today.
+
+**Still deferred (roadmap 1.12):** whether scoring stays pure volume. Counting more signals
+does not make Sweden outrank Finland or Detroit outrank London — those need an influence
+signal, and that is a weighting decision to be made against the whole eval C suite at once.
+
 ## D2 — Data freshness (§11 Q2)
 
 **Decision:** Nightly batch recompute is sufficient for MVP. "Emerging scene" recency questions

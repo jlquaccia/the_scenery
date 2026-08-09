@@ -207,6 +207,21 @@ cd backend
 VS Code runs Ruff on save (`.vscode/settings.json`); install prompts come from
 `.vscode/extensions.json`. Frontend (2.1+): angular-eslint + Prettier, ESLint fix-on-save.
 
+## Frontend (from 2.1)
+
+```bash
+cd frontend && npm start          # ng serve → http://localhost:4200
+npm run lint && npx ng test --watch=false && npm run build
+```
+
+Angular 21 + vitest. `.claude/launch.json` has a `frontend` entry, so the in-app browser can
+start it directly. The two-pane shell is static until 2.2 (chat stream) and 2.4 (MapLibre).
+
+Layout gotcha worth remembering: pane components set `:host { display: contents }`. An Angular
+component's host element is `display: inline` by default — as a grid item it stretches, but the
+`<section>` inside it does not, so `grid-template-rows: auto 1fr auto` collapses to content
+height and the chat composer floats mid-pane instead of pinning to the bottom.
+
 ## Frontend debug tooling (built at 2.2–2.3)
 
 - **Angular DevTools** browser extension — component tree, signals, change-detection profiler.

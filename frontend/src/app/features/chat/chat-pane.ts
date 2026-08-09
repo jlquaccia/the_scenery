@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+
+import { SCENERY_CONFIG } from '../../core/config';
+import { AguiStreamService } from '../../core/services/agui-stream.service';
 
 /**
  * The chat half of the shell.
  *
- * Static at 2.1. At 2.2 the composer sends through the AG-UI client service and
- * the transcript renders streamed `TEXT_MESSAGE_CONTENT`; at 2.3 A2UI surfaces
- * (SceneCard and friends) mount inside the transcript. The input is disabled
- * until there is something to send.
+ * Reads the AG-UI stream through Signals (2.2). At 2.3 A2UI surfaces mount
+ * inside the transcript; today assistant turns render as plain text.
  */
 @Component({
   selector: 'app-chat-pane',
@@ -17,21 +18,36 @@ import { Component } from '@angular/core';
         <p class="tagline">Find the places a genre actually comes from.</p>
       </header>
 
-      <div class="transcript">
-        <p class="placeholder-msg">
-          Ask about a scene once the agent is wired up — “What city has the biggest thrash metal
-          scene?”
-        </p>
+      <div class="transcript" role="log" aria-live="polite">
+        @for (message of stream.transcript(); track message.id) {
+          <article class="turn" [class.user]="message.role === 'user'">
+            <span class="who">{{ message.role === 'user' ? 'You' : 'Scenery' }}</span>
+            <p>{{ message.content }}</p>
+          </article>
+        } @empty {
+          <p class="placeholder-msg">
+            Ask about a scene — “What city has the biggest thrash metal scene?”
+          </p>
+        }
+
+        @if (stream.isRunning() && !stream.streamingText()) {
+          <p class="thinking">Thinking…</p>
+        }
+        @if (stream.error(); as message) {
+          <p class="error" role="alert">Couldn’t reach the agent: {{ message }}</p>
+        }
       </div>
 
-      <form class="composer" (submit)="$event.preventDefault()">
+      <form class="composer" (submit)="send($event)">
         <input
           type="text"
-          placeholder="Streaming chat arrives at 2.2"
+          [value]="draft()"
+          (input)="draft.set($any($event.target).value)"
+          placeholder="Ask about a scene…"
           aria-label="Message"
-          disabled
+          [disabled]="stream.isRunning()"
         />
-        <button type="submit" disabled>Send</button>
+        <button type="submit" [disabled]="stream.isRunning() || !draft().trim()">Send</button>
       </form>
     </section>
   `,
@@ -67,12 +83,45 @@ import { Component } from '@angular/core';
       overflow-y: auto;
       padding: 1.25rem;
       min-height: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
-    .placeholder-msg {
+    .turn {
+      display: grid;
+      gap: 0.25rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+    .who {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .turn p {
+      margin: 0;
+    }
+    .turn.user p {
+      padding: 0.5rem 0.75rem;
+      border-radius: 8px;
+      background: var(--surface-sunken);
+    }
+    .placeholder-msg,
+    .thinking {
       margin: 0;
       color: var(--text-muted);
       font-size: 0.875rem;
       line-height: 1.5;
+    }
+    .thinking {
+      font-style: italic;
+    }
+    .error {
+      margin: 0;
+      font-size: 0.8125rem;
+      color: var(--accent);
     }
     .composer {
       display: flex;
@@ -105,4 +154,15 @@ import { Component } from '@angular/core';
     }
   `,
 })
-export class ChatPane {}
+export class ChatPane {
+  protected readonly stream = inject(AguiStreamService);
+  private readonly config = inject(SCENERY_CONFIG);
+  protected readonly draft = signal('');
+
+  protected async send(event: Event): Promise<void> {
+    event.preventDefault();
+    const text = this.draft();
+    this.draft.set('');
+    await this.stream.send(text, this.config.aguiUrl);
+  }
+}

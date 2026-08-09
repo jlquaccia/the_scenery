@@ -278,7 +278,14 @@ fixtures: the frontend contract test *and* golden data for eval D later.
   Workspace per DESIGN.md §6 layout; app shell with map + chat panes (static).
   *Done when:* `ng serve` shows the empty two-pane shell.
 
-- [ ] **2.2 — AG-UI client service.**
+- [x] **2.2 — AG-UI client service.** ✅ `core/services/agui-stream.service.ts` exposes the
+  stream as Signals (`transcript`, `streamingText`, `status`, `error`, `a2uiMessages`,
+  `isRunning`); endpoint injected via `SCENERY_CONFIG` so 3.2 is a one-line swap. Chat pane
+  now sends and renders streamed turns. Verified live against the spike S2 server: text
+  streams in, the A2UI payload arrives intact (`/map/viewport`, lat 37.77 — what 2.4 needs),
+  and both spike quirks are handled and unit-tested (accumulate `event.delta`, ignore the
+  duplicate `manually_emit_message` CUSTOM event). 7 frontend tests.
+  Also lands the dev-only `window.__scenery` handle specified at 1.2, with an AG-UI event log.
   Wrap `@ag-ui/client` in an Angular service exposing the event stream as Signals.
   *Done when:* the service consumes the spike S2 endpoint and Signals update live.
 
